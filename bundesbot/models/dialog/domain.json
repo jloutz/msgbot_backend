@@ -1,0 +1,21 @@
+{
+  "states": [
+    "intent_affirm",
+    "intent_deny",
+    "intent_fallback",
+    "intent_start",
+    "entity_dummy",
+    "slot_dummy_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_utter_welcome_infos",
+    "prev_utter_ask_show_cheatsheet",
+    "prev_utter_show_cheatsheet",
+    "prev_action_show_cheatsheet",
+    "prev_utter_goodbye",
+    "prev_utter_fallback_cheatsheet",
+    "prev_utter_fallback2",
+    "prev_utter_aufgeben"
+  ]
+}

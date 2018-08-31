@@ -1,0 +1,58 @@
+%YAML 1.1
+---
+actions:
+- utter_welcome_infos
+- utter_ask_show_cheatsheet
+- utter_show_cheatsheet
+- action_show_cheatsheet
+- utter_goodbye
+- utter_fallback_cheatsheet
+- utter_fallback2
+- utter_aufgeben
+config:
+  store_entities_as_slots: true
+entities:
+- dummy
+intents:
+- start:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- fallback:
+    use_entities: true
+slots:
+  dummy:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_show_cheatsheet:
+  - text: Aber jetzt habe ich genug geredet. Detailinfos gibt es im Cheatsheet. Soll
+      ich den jetzt aufmachen?
+  utter_aufgeben:
+  - text: Pfffft....
+  utter_fallback2:
+  - text: Nö ich habe das immer noch nicht verstanden... probieren Sie das bitte einfacher
+  utter_fallback_cheatsheet:
+  - text: Sorry, das habe ich nicht verstanden. Soll ich die Datei aufmachen oder
+      nicht?
+  utter_goodbye:
+  - text: Viel Spaß und viel Erfolg!
+  - text: Ich wünsche viel Spaß beim Workshop!
+  utter_show_cheatsheet:
+  - text: OK, wird gemacht!
+  utter_welcome_infos:
+  - text: "Hallo! Willkommen zum KI Workshop.\nIhr werdet heute einen Chatbot mit\
+      \ Machine Learning und NLP (Natural Language Processing) Technologien entwickeln.\n\
+      Ihr werdet euch heute viele Trainings-Daten ausdenken und euren Bot so hintrainieren,\
+      \ dass er halbwegs robust eine einfache Aufgabe erledigen kann.\n- Eure Aufgabe\
+      \ ist 'München' oder 'Einrichtungs- und Dienstleistungsfinder'.\n- Bei dieser\
+      \ Aufgabe geht es darum, einen Bot zu realisieren, der einem Münchner helfen\
+      \ kann, eine Vielzahl an verschiedenen behördlichen Dienstleistungen und Ansprechpartnern\
+      \ zu finden, die zu seinen Anliegen passen.\n - Bei dieser Aufgabe geht es darum,\
+      \ eine Vielzahl (wenigstens 6) an Anliegen zu erkennen, und die richtigen Ansprechpartner\
+      \ dem Nutzer vorzuschlagen.\n - Wenn das funktioniert, kann man schon mit Fehlerbehandlung\
+      \ anfangen. U.a. wie reagiert der Bot auf unsinnige oder unerwartete Eingaben?\n\
+      \ - Versucht den Bot so robust und natürlich wie möglich zu gestalten, damit\
+      \ dem Nutzer schnell und einfach geholfen wird.\n"

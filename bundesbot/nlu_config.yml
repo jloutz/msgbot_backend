@@ -1,0 +1,17 @@
+language : "de"
+pipeline:
+- name: "nlp_spacy"
+  model: "de_core_news_sm"
+- name: "tokenizer_spacy"
+- name: "intent_entity_featurizer_regex"
+#- name: "intent_featurizer_spacy"
+#- name: "intent_featurizer_count_vectors"
+#- name: "components.intent_featurizer_tfidf_vectors.TfIdfFeaturizer"
+- name: "components.intent_featurizer_tfidf_char_word_vectors.TfIdfCharWordFeaturizer"
+- name: "intent_classifier_sklearn"
+- name: "components.fallback_intent_filter.FallbackIntentFilter"
+#- name: "ner_duckling"
+#  dimensions: ["time"]
+- name: "ner_crf"
+  BILOU_flag: false
+- name: "ner_synonyms"

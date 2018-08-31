@@ -1,0 +1,60 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "Ja"
+      },
+      {
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "intent": "affirm",
+        "text": "ja, sicher"
+      },
+      {
+        "intent": "affirm",
+        "text": "ja mach das bitte"
+      },
+      {
+        "intent": "affirm",
+        "text": "ja bitte"
+      },
+      {
+        "intent": "affirm",
+        "text": "ja anzeigen bitte"
+      },
+      {
+        "intent": "affirm",
+        "text": "ja bitte cheatsheet anzeigen"
+      },
+      {
+        "intent": "negate",
+        "text": "nicht nötig"
+      },
+      {
+        "intent": "negate",
+        "text": "nein danke"
+      },
+      {
+        "intent": "negate",
+        "text": "nein nicht jetzt"
+      },
+      {
+        "intent": "negate",
+        "text": "nein Ciao!"
+      },
+      {
+        "intent": "negate",
+        "text": "Ciao auf wiedersehen!"
+      },
+      {
+        "intent": "negate",
+        "text": "bye bye"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
