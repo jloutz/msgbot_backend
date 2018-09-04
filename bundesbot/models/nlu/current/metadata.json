@@ -28,7 +28,7 @@
             "max_features": null,
             "name": "intent_featurizer_char_word_gram",
             "featurizer_file": "intent_featurizer_char_word_gram.pkl",
-            "class": "components.intent_featurizer_tfidf_char_word_vectors.TfIdfCharWordFeaturizer"
+            "class": "components.intent_featurizer_tfidf_vectors.TfIdfCharWordFeaturizer"
         },
         {
             "C": [
@@ -93,6 +93,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20180831-191753",
+    "trained_at": "20180904-184634",
     "rasa_nlu_version": "0.13.2"
 }

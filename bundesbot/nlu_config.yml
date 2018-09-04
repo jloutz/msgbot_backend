@@ -7,7 +7,7 @@ pipeline:
 #- name: "intent_featurizer_spacy"
 #- name: "intent_featurizer_count_vectors"
 #- name: "components.intent_featurizer_tfidf_vectors.TfIdfFeaturizer"
-- name: "components.intent_featurizer_tfidf_char_word_vectors.TfIdfCharWordFeaturizer"
+- name: "components.intent_featurizer_tfidf_vectors.TfIdfCharWordFeaturizer"
 - name: "intent_classifier_sklearn"
 - name: "components.fallback_intent_filter.FallbackIntentFilter"
 #- name: "ner_duckling"

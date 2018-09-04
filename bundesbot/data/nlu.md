@@ -12,5 +12,4 @@
 - nein danke
 - nein nicht jetzt
 - nein Ciao!
-- Ciao auf wiedersehen!
-- bye bye
+- bitte nicht

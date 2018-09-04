@@ -1,12 +1,18 @@
 %YAML 1.1
 ---
 actions:
-- utter_welcome_infos
-- utter_ask_show_cheatsheet
-- utter_show_cheatsheet
-- action_show_cheatsheet
+- utter_welcome
+- utter_rasa
+- utter_ask_open_rasa
+- action_open_rasa
+- utter_acknowledge
+- utter_ask_open_doc
+- action_open_doc
+- utter_ask_open_googledoc
+- action_open_googledoc
 - utter_goodbye
-- utter_fallback_cheatsheet
+- utter_fallback
+- utter_fallback_link
 - utter_fallback2
 - utter_aufgeben
 config:
@@ -27,32 +33,32 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  utter_ask_show_cheatsheet:
-  - text: Aber jetzt habe ich genug geredet. Detailinfos gibt es im Cheatsheet. Soll
-      ich den jetzt aufmachen?
+  utter_acknowledge:
+  - text: OK, wird gemacht!
+  - text: Sehr gut...
+  - text: Mache ich!
+  utter_ask_open_doc:
+  - text: Wenn Du die RASA technische Dokumentation noch nicht gefunden hast, kann
+      ich das für Dich auch aufmachen...
+  utter_ask_open_googledoc:
+  - text: Eine weitere sehr hilfreiche Ressource für Chatbot Entwicklung sind die
+      Conversation Design Guidelines von Google. Die kann ich auch aufmachen wenn
+      Du  willst..
+  utter_ask_open_rasa:
+  - text: Darf ich die RASA Website aufmachen?
   utter_aufgeben:
   - text: Pfffft....
   utter_fallback2:
-  - text: Nö ich habe das immer noch nicht verstanden... probieren Sie das bitte einfacher
-  utter_fallback_cheatsheet:
-  - text: Sorry, das habe ich nicht verstanden. Soll ich die Datei aufmachen oder
-      nicht?
+  - text: Nö ich habe das immer noch nicht verstanden... probieren Sie das mit ja
+      oder nein...
+  utter_fallback_link:
+  - text: Sorry, das habe ich nicht verstanden. Soll ich den Link aufmachen?
+  utter_fallbeck:
+  - text: Sorry, das habe ich nicht verstanden.
   utter_goodbye:
-  - text: Viel Spaß und viel Erfolg!
-  - text: Ich wünsche viel Spaß beim Workshop!
-  utter_show_cheatsheet:
-  - text: OK, wird gemacht!
-  utter_welcome_infos:
-  - text: "Hallo! Willkommen zum KI Workshop.\nIhr werdet heute einen Chatbot mit\
-      \ Machine Learning und NLP (Natural Language Processing) Technologien entwickeln.\n\
-      Ihr werdet euch heute viele Trainings-Daten ausdenken und euren Bot so hintrainieren,\
-      \ dass er halbwegs robust eine einfache Aufgabe erledigen kann.\n- Eure Aufgabe\
-      \ ist 'München' oder 'Einrichtungs- und Dienstleistungsfinder'.\n- Bei dieser\
-      \ Aufgabe geht es darum, einen Bot zu realisieren, der einem Münchner helfen\
-      \ kann, eine Vielzahl an verschiedenen behördlichen Dienstleistungen und Ansprechpartnern\
-      \ zu finden, die zu seinen Anliegen passen.\n - Bei dieser Aufgabe geht es darum,\
-      \ eine Vielzahl (wenigstens 6) an Anliegen zu erkennen, und die richtigen Ansprechpartner\
-      \ dem Nutzer vorzuschlagen.\n - Wenn das funktioniert, kann man schon mit Fehlerbehandlung\
-      \ anfangen. U.a. wie reagiert der Bot auf unsinnige oder unerwartete Eingaben?\n\
-      \ - Versucht den Bot so robust und natürlich wie möglich zu gestalten, damit\
-      \ dem Nutzer schnell und einfach geholfen wird.\n"
+  - text: OK jetzt legen wir los! Viel Spaß und viel Erfolg!
+  utter_rasa:
+  - text: RASA ist ein super open-source Bibliothek, für die Entwicklung von KI-getriebene
+      Chatbots.
+  utter_welcome:
+  - text: Hallo! Heute werden wir anfangen einen Chatbot zu bauen mit RASA.

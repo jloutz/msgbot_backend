@@ -65,7 +65,7 @@ def train_dialog(online=False, nlu=True):
     ## TODO sobald der Bot ein wenig stabil wird, nach ein duzent Stories oder so, probiere nur Keras
     ##agent = Agent("domain.yml", policies=[KerasPolicy(),fallback])
     agent = Agent("domain.yml", policies=[KerasPolicy()])
-    stories_file = "data\stories.md"
+    stories_file = "data\stories"
     stories_data = agent.load_data(stories_file)
     output_path = "models\dialog"
     kwargs = {"epochs": 100}
@@ -135,7 +135,7 @@ if __name__ == '__main__':
             print("TARGETS: ")
             print("actions -- start action server: ")
             print("train_nlu -- train (und persistieren) das NLU Modell mit Daten in nlu.md.")
-            print("train_dialog -- train (und persistieren) das dialog Modell mit Daten in stories.md")
+            print("train_dialog -- train (und persistieren) das dialog Modell mit Daten in stories folder")
             print("train_interactive -- interaktives Dialog-Trainieren starten")
             print("run -- startet den Bot in der Konsole.")
             print("run d -- startet den Bot in der Konsole mit debug-Ausgaben")

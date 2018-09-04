@@ -3,16 +3,25 @@
     "action_listen": {
       "slots": []
     },
+    "utter_fallback2": {
+      "slots": []
+    },
+    "utter_aufgeben": {
+      "slots": []
+    },
+    "utter_ask_open_rasa": {
+      "slots": []
+    },
+    "utter_fallback_link": {
+      "slots": []
+    },
+    "action_open_rasa": {
+      "slots": []
+    },
     "utter_goodbye": {
       "slots": []
     },
-    "utter_ask_show_cheatsheet": {
-      "slots": []
-    },
-    "utter_fallback_cheatsheet": {
-      "slots": []
-    },
-    "utter_fallback2": {
+    "action_open_doc": {
       "slots": []
     }
   },

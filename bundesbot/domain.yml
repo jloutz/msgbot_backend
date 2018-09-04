@@ -12,41 +12,45 @@ slots:
     type: text
 
 actions:
-  # diese 5 actions unten können ersetzt werden
-  - utter_welcome_infos
-  - utter_ask_show_cheatsheet
-  - utter_show_cheatsheet
-  - action_show_cheatsheet
+  - utter_welcome
+  - utter_rasa
+  - utter_ask_open_rasa
+  - action_open_rasa
+  - utter_acknowledge
+  - utter_ask_open_doc
+  - action_open_doc
+  - utter_ask_open_googledoc
+  - action_open_googledoc
   - utter_goodbye
 
-  # fallback (error handling) - können angepasst werden für error handling
-  - utter_fallback_cheatsheet
+  # fallback (error handling) -
+  - utter_fallback
+  - utter_fallback_link
   - utter_fallback2
   - utter_aufgeben
 
-
 templates:
-
-  utter_welcome_infos:
-    - "Hallo! Willkommen zum KI Workshop.\nIhr werdet heute einen Chatbot mit Machine Learning und NLP (Natural Language Processing) Technologien entwickeln.\nIhr werdet euch heute viele Trainings-Daten ausdenken und euren Bot so hintrainieren, dass er halbwegs robust eine einfache Aufgabe erledigen kann.\n- Eure Aufgabe ist 'München' oder 'Einrichtungs- und Dienstleistungsfinder'.\n- Bei dieser Aufgabe geht es darum, einen Bot zu realisieren, der einem Münchner helfen kann, eine Vielzahl an verschiedenen behördlichen Dienstleistungen und Ansprechpartnern zu finden, die zu seinen Anliegen passen.\n - Bei dieser Aufgabe geht es darum, eine Vielzahl (wenigstens 6) an Anliegen zu erkennen, und die richtigen Ansprechpartner dem Nutzer vorzuschlagen.\n - Wenn das funktioniert, kann man schon mit Fehlerbehandlung anfangen. U.a. wie reagiert der Bot auf unsinnige oder unerwartete Eingaben?\n - Versucht den Bot so robust und natürlich wie möglich zu gestalten, damit dem Nutzer schnell und einfach geholfen wird.\n"
-
-  utter_show_cheatsheet:
+  utter_welcome:
+  - "Hallo! Heute werden wir anfangen einen Chatbot zu bauen mit RASA."
+  utter_rasa:
+  - "RASA ist ein super open-source Bibliothek, für die Entwicklung von KI-getriebene Chatbots."
+  utter_ask_open_rasa:
+  - "Darf ich die RASA Website aufmachen?"
+  utter_acknowledge:
     - "OK, wird gemacht!"
-
-  utter_ask_show_cheatsheet:
-    - "Aber jetzt habe ich genug geredet. Detailinfos gibt es im Cheatsheet. Soll ich den jetzt aufmachen?"
-
+    - "Sehr gut..."
+    - "Mache ich!"
+  utter_ask_open_doc:
+    - "Wenn Du die RASA technische Dokumentation noch nicht gefunden hast, kann ich das für Dich auch aufmachen..."
+  utter_ask_open_googledoc:
+    - "Eine weitere sehr hilfreiche Ressource für Chatbot Entwicklung sind die Conversation Design Guidelines von Google. Die kann ich auch aufmachen wenn Du  willst.."
   utter_goodbye:
-    - "Viel Spaß und viel Erfolg!"
-    - "Ich wünsche viel Spaß beim Workshop!"
-
-
-  utter_fallback_cheatsheet:
-    - "Sorry, das habe ich nicht verstanden. Soll ich die Datei aufmachen oder nicht?"
-
+    - "OK jetzt legen wir los! Viel Spaß und viel Erfolg!"
+  utter_fallbeck:
+  - "Sorry, das habe ich nicht verstanden."
+  utter_fallback_link:
+    - "Sorry, das habe ich nicht verstanden. Soll ich den Link aufmachen?"
   utter_fallback2:
-    - "Nö ich habe das immer noch nicht verstanden... probieren Sie das bitte einfacher"
-
-
+    - "Nö ich habe das immer noch nicht verstanden... probieren Sie das mit ja oder nein..."
   utter_aufgeben:
     - "Pfffft...."

@@ -47,11 +47,7 @@
       },
       {
         "intent": "negate",
-        "text": "Ciao auf wiedersehen!"
-      },
-      {
-        "intent": "negate",
-        "text": "bye bye"
+        "text": "bitte nicht"
       }
     ],
     "regex_features": [],
