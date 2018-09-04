@@ -3,7 +3,7 @@ import sqlite3
 class Backend():
     def __init__(self):
         ## name von db Datei
-        self.dbfile = "backend/muenchen.db"
+        self.dbfile = "backend/bundesbot.db"
 
     def eval(self,sql,parameters=(),doprint=False):
         ## benutze eval, um sql auszufüren
@@ -24,16 +24,14 @@ class Backend():
         print("SETTING up database")
 
         ## TODO einkommentieren und fertig implementieren, um db zu erstellen
-        cursor.execute("DROP TABLE IF EXISTS muenchen")
-        cursor.execute('''CREATE TABLE muenchen
+        cursor.execute("DROP TABLE IF EXISTS bundesbot")
+        cursor.execute('''CREATE TABLE bundesbot
                         (name text)''')
 
         ## TODO einkommentieren und fertig implementieren, um Beispiel daten zu erstellen
         cursor.execute(
-          "INSERT INTO volunteeringDB VALUES ('Amt Eins')")
-        cursor.execute(
-            "INSERT INTO volunteeringDB VALUES ('Amt Zwei')")
-        res = cursor.execute("SELECT count(*) from muenchen")
+          "INSERT INTO bundesbot VALUES ('bla')")
+        res = cursor.execute("SELECT count(*) from bundesbot")
         print("DB hat "+str(res.fetchone()[0])+" Einträge")
         conn.commit()
         conn.close()

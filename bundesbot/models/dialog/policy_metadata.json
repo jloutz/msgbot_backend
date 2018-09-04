@@ -3,35 +3,37 @@
     "action_listen": {
       "slots": []
     },
-    "utter_fallback2": {
-      "slots": []
-    },
     "utter_aufgeben": {
       "slots": []
     },
-    "utter_ask_open_rasa": {
+    "utter_fallback2": {
+      "slots": []
+    },
+    "utter_ask_open_googledoc": {
       "slots": []
     },
     "utter_fallback_link": {
       "slots": []
     },
-    "action_open_rasa": {
-      "slots": []
-    },
     "utter_goodbye": {
       "slots": []
     },
-    "action_open_doc": {
+    "utter_ask_open_doc": {
+      "slots": []
+    },
+    "utter_ask_open_rasa": {
       "slots": []
     }
   },
   "rasa_core": "0.11.1",
   "python": "3.6.5",
   "max_histories": [
+    5,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ]
 }

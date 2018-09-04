@@ -61,10 +61,9 @@ def get_interpreter():
 
 def train_dialog(online=False, nlu=True):
     ## TODO bei sehr wenig stories - wie am Anfang - probiert erst memoization unk keras
-    # agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy()])
+    agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy()])
     ## TODO sobald der Bot ein wenig stabil wird, nach ein duzent Stories oder so, probiere nur Keras
-    ##agent = Agent("domain.yml", policies=[KerasPolicy(),fallback])
-    agent = Agent("domain.yml", policies=[KerasPolicy()])
+    #agent = Agent("domain.yml", policies=[KerasPolicy()])
     stories_file = "data\stories"
     stories_data = agent.load_data(stories_file)
     output_path = "models\dialog"
@@ -94,9 +93,10 @@ def redirect_stderr():
     sys.stderr = f
 
 def runbot(dbug=False, online_training=False):
-    redirect_stderr()
     if dbug:
         init_debug_logging()
+    else:
+        redirect_stderr()
     interpreter = NaturalLanguageInterpreter.create("models/nlu/current")
     from rasa_core.utils import EndpointConfig
     action_endpoint = EndpointConfig(url="http://localhost:5056/webhook")
@@ -133,7 +133,7 @@ if __name__ == '__main__':
             print("USAGE:")
             print("python dev_targets <target> <option>")
             print("TARGETS: ")
-            print("actions -- start action server: ")
+            print("actions -- start action server. Do this in a separate shell ")
             print("train_nlu -- train (und persistieren) das NLU Modell mit Daten in nlu.md.")
             print("train_dialog -- train (und persistieren) das dialog Modell mit Daten in stories folder")
             print("train_interactive -- interaktives Dialog-Trainieren starten")
