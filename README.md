@@ -1,5 +1,5 @@
-# bundesbot
-chatbot template project for Tech4Germany Fellowship program
+# msgbot
+chatbot template project for msg public sector demo bot
 - You will need to install Python 3.x. Latest is 3.7 - get it here
 https://www.python.org/downloads/
 
