@@ -114,7 +114,9 @@ def runbot(dbug=False, mode='cmd'):
     elif mode == 'cmd':
         rasa_core.run.serve_application(agent, channel='cmdline')
     elif mode == 'server':
-
+        from bot_engine.frontent_integration.bot_server_channel import BotServerInputChannel
+        channel = BotServerInputChannel(agent, port=5005)
+        agent.handle_channels([channel], http_port=5005)
 
 
 def start_action_server():
