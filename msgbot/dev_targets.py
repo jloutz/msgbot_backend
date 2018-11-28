@@ -59,7 +59,7 @@ def get_interpreter():
     return interpreter
 
 
-def train_dialog(online=False, nlu=True):
+def train_dialog():
     ## TODO bei sehr wenig stories - wie am Anfang - probiert erst memoization unk keras
     agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy()])
     ## TODO sobald der Bot ein wenig stabil wird, nach ein duzent Stories oder so, probiere nur Keras
@@ -67,7 +67,6 @@ def train_dialog(online=False, nlu=True):
     stories_file = "data\stories"
     stories_data = agent.load_data(stories_file)
     output_path = "models\dialog"
-    #kwargs = {"epochs": 100}
     agent.train(
         stories_data,
         validation_split=0.2,
@@ -91,20 +90,31 @@ def redirect_stderr():
     f = open(os.devnull, 'w')
     sys.stderr = f
 
-def runbot(dbug=False, online_training=False):
-    if dbug:
-        init_debug_logging()
-    else:
-        redirect_stderr()
+def create_agent():
     interpreter = NaturalLanguageInterpreter.create("models/nlu/current")
     from rasa_core.utils import EndpointConfig
     action_endpoint = EndpointConfig(url="http://localhost:5056/webhook")
     agent = Agent.load("models/dialog", interpreter=interpreter, action_endpoint=action_endpoint)
-    if online_training:
+    return agent
+
+
+def runbot(dbug=False, mode='cmd'):
+    ## mode
+    ## 'cmd' is bot on command line
+    ## 'interactive' is interactive training
+    ## 'server' is http rest server
+    agent = create_agent()
+    if dbug:
+        init_debug_logging()
+    else:
+        redirect_stderr()
+    if mode == 'interactive':
         from rasa_core.train import online
         online.serve_agent(agent)
-    else:
+    elif mode == 'cmd':
         rasa_core.run.serve_application(agent, channel='cmdline')
+    elif mode == 'server':
+
 
 
 def start_action_server():
@@ -161,6 +171,9 @@ if __name__ == '__main__':
                 arg = sys.argv[2]
                 if arg == 'd':
                     dbug = True
+            runbot(dbug)
+        elif command == "serve":
+            dbug = False
             runbot(dbug)
         elif command == "setup_db":
             from msgbot.backend.backend import Backend
