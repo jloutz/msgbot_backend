@@ -49,7 +49,7 @@ def do_nlu_eval(txt):
 
 def get_interpreter():
     """ in python console verwenden:
-    from dev_targets import get_interpreter()
+    from msgbot.dev_targets import get_interpreter
     nterp = get_interpreter()
     nterp.parse('kennst du Chuck Norris?')
     """
@@ -67,11 +67,10 @@ def train_dialog(online=False, nlu=True):
     stories_file = "data\stories"
     stories_data = agent.load_data(stories_file)
     output_path = "models\dialog"
-    kwargs = {"epochs": 100}
+    #kwargs = {"epochs": 100}
     agent.train(
         stories_data,
         validation_split=0.2,
-        **kwargs
     )
     agent.persist(output_path)
 
@@ -164,13 +163,13 @@ if __name__ == '__main__':
                     dbug = True
             runbot(dbug)
         elif command == "setup_db":
-            from bundesbot.backend.backend import Backend
+            from msgbot.backend.backend import Backend
             back = Backend()
             back.setup()
         elif command == "eval_sql":
             if len(sys.argv) >= 3:
                 query = sys.argv[2]
-                from bundesbot.backend.backend import Backend
+                from msgbot.backend.backend import Backend
 
                 back = Backend()
                 back.eval(query)

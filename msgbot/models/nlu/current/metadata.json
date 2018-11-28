@@ -28,7 +28,7 @@
             "max_features": null,
             "name": "intent_featurizer_char_word_gram",
             "featurizer_file": "intent_featurizer_char_word_gram.pkl",
-            "class": "components.intent_featurizer_tfidf_vectors.TfIdfCharWordFeaturizer"
+            "class": "components.intent_featurizers.TfIdfCharWordFeaturizer"
         },
         {
             "C": [
@@ -38,6 +38,9 @@
                 10,
                 20,
                 100
+            ],
+            "gamma": [
+                0.1
             ],
             "kernels": [
                 "linear"
@@ -93,6 +96,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20180904-185351",
-    "rasa_nlu_version": "0.13.2"
+    "trained_at": "20181128-210957",
+    "rasa_nlu_version": "0.13.8"
 }

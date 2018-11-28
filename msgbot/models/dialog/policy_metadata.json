@@ -6,26 +6,26 @@
     "utter_aufgeben": {
       "slots": []
     },
-    "utter_fallback2": {
-      "slots": []
-    },
     "utter_ask_open_googledoc": {
       "slots": []
     },
-    "utter_fallback_link": {
+    "utter_fallback2": {
+      "slots": []
+    },
+    "utter_ask_open_doc": {
       "slots": []
     },
     "utter_goodbye": {
       "slots": []
     },
-    "utter_ask_open_doc": {
+    "utter_fallback_link": {
       "slots": []
     },
     "utter_ask_open_rasa": {
       "slots": []
     }
   },
-  "rasa_core": "0.11.1",
+  "rasa_core": "0.12.2",
   "python": "3.6.5",
   "max_histories": [
     5,
@@ -35,5 +35,6 @@
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
-  ]
+  ],
+  "trained_at": "20181128-213634"
 }

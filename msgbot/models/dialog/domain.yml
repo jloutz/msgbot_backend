@@ -19,6 +19,7 @@ config:
   store_entities_as_slots: true
 entities:
 - dummy
+forms: []
 intents:
 - start:
     use_entities: true
@@ -30,6 +31,7 @@ intents:
     use_entities: true
 slots:
   dummy:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
