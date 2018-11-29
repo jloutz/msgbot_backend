@@ -3,13 +3,7 @@
     "action_listen": {
       "slots": []
     },
-    "utter_aufgeben": {
-      "slots": []
-    },
-    "utter_ask_open_googledoc": {
-      "slots": []
-    },
-    "utter_fallback2": {
+    "utter_fallback_link": {
       "slots": []
     },
     "utter_ask_open_doc": {
@@ -18,10 +12,16 @@
     "utter_goodbye": {
       "slots": []
     },
-    "utter_fallback_link": {
+    "utter_ask_open_googledoc": {
+      "slots": []
+    },
+    "utter_fallback2": {
       "slots": []
     },
     "utter_ask_open_rasa": {
+      "slots": []
+    },
+    "utter_aufgeben": {
       "slots": []
     }
   },
@@ -36,5 +36,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20181128-213634"
+  "trained_at": "20181129-011303"
 }

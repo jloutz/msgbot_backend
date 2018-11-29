@@ -150,6 +150,7 @@ if __name__ == '__main__':
             print("train_interactive -- interaktives Dialog-Trainieren starten")
             print("run -- startet den Bot in der Konsole.")
             print("run d -- startet den Bot in der Konsole mit debug-Ausgaben")
+            print("serve -- startet den Bot backend webserver")
             print("eval_nlu '<evalstring>' evaluiert ein Eingabe-String und liefert Ergebnisse von NLU Modell zurück")
             print("setup_db -- Datenbank initialisieren (muss Aufgabe-spezifisch implementiert werden")
             print("eval_sql <'sql'> <(params)> sql gegen db feuern und ergebnisse bekommen")
@@ -166,7 +167,7 @@ if __name__ == '__main__':
         elif command == "train_dialog":
             train_dialog()
         elif command == "train_interactive":
-            runbot(online_training=True)
+            runbot(mode='interactive')
         elif command == "run":
             dbug = False
             if len(sys.argv) >= 3:
@@ -175,16 +176,15 @@ if __name__ == '__main__':
                     dbug = True
             runbot(dbug)
         elif command == "serve":
-            dbug = False
-            runbot(dbug)
+            runbot(mode='server')
         elif command == "setup_db":
-            from msgbot.backend.backend import Backend
+            from bot_engine.backend.backend import Backend
             back = Backend()
             back.setup()
         elif command == "eval_sql":
             if len(sys.argv) >= 3:
                 query = sys.argv[2]
-                from msgbot.backend.backend import Backend
+                from bot_engine.backend.backend import Backend
 
                 back = Backend()
                 back.eval(query)

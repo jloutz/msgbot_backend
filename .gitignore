@@ -1,5 +1,4 @@
 .idea/
-msgbot/models
 # Byte-compiled / optimized / DLL files
 __pycache__/
 .py[cod]
@@ -7,6 +6,8 @@ __pycache__/
 
 # C extensions
 *.so
+
+bot_engine/models/*
 
 # Distribution / packaging
 .Python

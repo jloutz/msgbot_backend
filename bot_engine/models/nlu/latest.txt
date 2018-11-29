@@ -1,1 +1,1 @@
-C:\Projects\msgbot\msgbot\models\nlu\current
+C:\Projects\msgbot\msgbot_backend\bot_engine\models\nlu\current
