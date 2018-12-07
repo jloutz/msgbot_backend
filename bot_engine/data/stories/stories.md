@@ -1,57 +1,99 @@
 ## start
 * start
-    - utter_welcome
-    - utter_rasa
-    - utter_ask_open_rasa
-    
-## open rasa page
-- utter_ask_open_rasa
-* affirm
-    - utter_acknowledge
-    - action_open_rasa
-    - utter_ask_open_doc
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
 
-## open rasa doc page
-- utter_ask_open_doc
-* affirm
-    - utter_acknowledge
-    - action_open_doc
-    - utter_ask_open_googledoc
-    
-## open rasa page
-- utter_ask_open_googledoc
-* affirm
-    - utter_acknowledge
-    - action_open_googledoc
+## ask cui 
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+
+## ask ru smart
+* ask_ru_smart
+    - utter_answer_ru_smart
+
+## hep
+* need_hep
+    - utter_prompt_3
+
+## ask how 
+* ask_how_works_cui
+    - utter_answer_ml_1
+    - utter_answer_ml_2
+    - utter_answer_ml_3
+    - utter_noch_fragen    
+
+## which tech
+* ask_which_tech
+    - utter_answer_which_tech
+    - utter_noch_fragen
+
+## advant
+* ask_rasa_advantages
+    - utter_answer_rasa_advantages_1
+    - utter_answer_rasa_advantages_2
+    - utter_noch_fragen
+
+## noch fragen
+- utter_noch_fragen
+* nein
+- utter_goodbye
+
+## akk noch fragen
+* acknowledge
+- utter_noch_fragen
+* nein
+- utter_goodbye
+
+
+## fallback
+* fallback
+    - utter_fallback
+
+## fallback
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+    - utter_prompt_3
+
+## fallback
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+    - utter_prompt_3
+* fallback
+    - utter_fallback_3
     - utter_goodbye
 
-## response fallback
-- utter_ask_open_rasa
-* fallback
-    - utter_fallback_link
+## goodbye
+* goodbye
+    - utter_goodbye
 
-## response fallback
-- utter_ask_open_doc
-* fallback
-    - utter_fallback_link
+## Generated Story -7487856924129394995
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+* ask_how_works_cui
+    - utter_answer_ml_1
+    - utter_answer_ml_2
+    - utter_answer_ml_3
+* ask_which_tech
+    - utter_answer_which_tech
+* ask_rasa_advantages
+    - utter_answer_rasa_advantages_1
+    - utter_answer_rasa_advantages_2
 
-## response fallback
-- utter_ask_open_googledoc
-* fallback
-    - utter_fallback_link
-
-
-## response fallback2
-* fallback
-    - utter_fallback_link
-* fallback
-    - utter_fallback2
-
-## response aufgeben
-* fallback
-    - utter_fallback_link
-* fallback
-    - utter_fallback2
-* fallback
-    - utter_aufgeben    
+## 
+* ask_how_works_cui
+    - utter_answer_ml_1
+    - utter_answer_ml_2
+    - utter_answer_ml_3
+    - utter_noch_fragen
+* nein
+    - utter_goodbye
 

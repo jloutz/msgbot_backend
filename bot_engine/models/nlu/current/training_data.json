@@ -2,52 +2,224 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "intent": "affirm",
-        "text": "Ja"
+        "intent": "ask_how_works_cui",
+        "text": "Wie funktioniert eine CUI?"
       },
       {
-        "intent": "affirm",
-        "text": "ok"
+        "intent": "ask_how_works_cui",
+        "text": "wie entwickelt man eine CUI?"
       },
       {
-        "intent": "affirm",
-        "text": "ja, sicher"
+        "intent": "ask_how_works_cui",
+        "text": "wie entwickeln wir CUI weiter?"
       },
       {
-        "intent": "affirm",
-        "text": "ja mach das bitte"
+        "intent": "ask_how_works_cui",
+        "text": "wie trainiert man eine CUI?"
       },
       {
-        "intent": "affirm",
-        "text": "ja bitte"
+        "intent": "ask_how_works_cui",
+        "text": "was heisst trainieren?"
       },
       {
-        "intent": "affirm",
-        "text": "ja anzeigen bitte"
+        "intent": "ask_how_works_cui",
+        "text": "was sind trainings daten?"
       },
       {
-        "intent": "affirm",
-        "text": "ja bitte cheatsheet anzeigen"
+        "intent": "ask_how_works_cui",
+        "text": "wie bringt man einer CUI was neues bei?"
       },
       {
-        "intent": "negate",
-        "text": "nicht nötig"
+        "intent": "ask_how_works_cui",
+        "text": "wie baut man eine cui?"
       },
       {
-        "intent": "negate",
+        "intent": "ask_rasa_advantages",
+        "text": "welche Vorteile hat RASA"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "wieso RASA"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "wieso RASA und nicht andere 3rd-party tech?"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "wieso nicht Microsoft"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "Google oder Amazon haben bots"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "wieso nicht ein Kaufprodukt oder 3rd party api"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "wieso RASA?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "bist Du intelligent?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "bist Du eine KI?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "steckt echte KI drin?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "wie klug bist Du?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "du bist dumm"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "du bist nicht sehr schlau"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was heisst CUI?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was ist CUI?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was bedeutet CUI?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "nie von CUI gehört"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "ok was heisst cui überhaupt?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "welche Technologien benutzt msg für CUI?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "was steckt dahinter?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "welche tech hast du"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "welche Technologien benutzten wir?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "was steckt drin dahinter?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "welche software ist drin"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "welche technologie hast du drin?"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "ok danke"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "danke"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "verstehe"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "alles klar"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "danke schön"
+      },
+      {
+        "intent": "nein",
+        "text": "nein"
+      },
+      {
+        "intent": "nein",
+        "text": "keine"
+      },
+      {
+        "intent": "nein",
+        "text": "kein"
+      },
+      {
+        "intent": "nein",
+        "text": "nein keine"
+      },
+      {
+        "intent": "nein",
         "text": "nein danke"
       },
       {
-        "intent": "negate",
-        "text": "nein nicht jetzt"
+        "intent": "need_hep",
+        "text": "welche Fragen kann ich stellen?"
       },
       {
-        "intent": "negate",
-        "text": "nein Ciao!"
+        "intent": "need_hep",
+        "text": "ich brauche Hilfe"
       },
       {
-        "intent": "negate",
-        "text": "bitte nicht"
+        "intent": "need_hep",
+        "text": "hilf mir"
+      },
+      {
+        "intent": "need_hep",
+        "text": "was kann ich Dir fragen?"
+      },
+      {
+        "intent": "need_hep",
+        "text": "ich habe viele Fragen"
+      },
+      {
+        "intent": "need_hep",
+        "text": "ich weiss nicht was ich fragen soll"
+      },
+      {
+        "intent": "start",
+        "text": "Hi"
+      },
+      {
+        "intent": "start",
+        "text": "Hallo"
+      },
+      {
+        "intent": "start",
+        "text": "Hey"
+      },
+      {
+        "intent": "start",
+        "text": "Hi Hallo"
+      },
+      {
+        "intent": "start",
+        "text": "Hey Hey"
+      },
+      {
+        "intent": "start",
+        "text": "hallo"
       }
     ],
     "regex_features": [],

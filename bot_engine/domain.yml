@@ -1,56 +1,85 @@
-intents:
-  - start
-  - affirm
-  - deny
-  - fallback
+%YAML 1.1
+---
+actions:
+- utter_answer_ml_2
+- utter_answer_ml_1
+- utter_prompt_2
+- utter_greet
+- utter_answer_ru_smart
+- utter_answer_rasa_advantages_1
+- utter_fallback_3
+- utter_answer_whatis_cui
+- utter_answer_ml_3
+- utter_fallback
+- utter_answer_rasa_advantages_2
+- utter_fallback_2
+- utter_goodbye
+- utter_prompt_3
+- utter_answer_which_tech
+- utter_noch_fragen
 
+config:
+  store_entities_as_slots: true
 entities:
-  - dummy
-
+- dummy
+forms: []
+intents:
+- ask_whatis_cui
+- ask_rasa_advantages
+- ask_which_tech
+- ask_how_works_cui
+- start
+- fallback
+- ask_ru_smart
+- need_hep
+- goodbye
+- acknowledge
+- nein
 slots:
   dummy:
-    type: text
-
-actions:
-  - utter_welcome
-  - utter_rasa
-  - utter_ask_open_rasa
-  - action_open_rasa
-  - utter_acknowledge
-  - utter_ask_open_doc
-  - action_open_doc
-  - utter_ask_open_googledoc
-  - action_open_googledoc
-  - utter_goodbye
-
-  # fallback (error handling) -
-  - utter_fallback
-  - utter_fallback_link
-  - utter_fallback2
-  - utter_aufgeben
-
+    auto_fill: true
+    type: rasa_core.slots.TextSlot
 templates:
-  utter_welcome:
-  - "Hallo! Heute werden wir anfangen einen Chatbot zu bauen mit RASA."
-  utter_rasa:
-  - "RASA ist ein super open-source Bibliothek, für die Entwicklung von KI-getriebene Chatbots."
-  utter_ask_open_rasa:
-  - "Darf ich die RASA Website aufmachen?"
-  utter_acknowledge:
-    - "OK, wird gemacht!"
-    - "Sehr gut..."
-    - "Mache ich!"
-  utter_ask_open_doc:
-    - "Wenn Du die RASA technische Dokumentation noch nicht gefunden hast, kann ich das für Dich auch aufmachen..."
-  utter_ask_open_googledoc:
-    - "Eine weitere sehr hilfreiche Ressource für Chatbot Entwicklung sind die Conversation Design Guidelines von Google. Die kann ich auch aufmachen wenn Du  willst.."
+  utter_answer_ml_1:
+  - text: Eine moderne CUI benutzt Machine Learning, um flexibel und anpassbar zu
+      sein. Man "programmiert" eine CUI nicht so sehr als man sie "trainiert".
+  utter_answer_ml_2:
+  - text: Mit Machine Learning 'lerne' ich anhand von Beispielen oder "Trainings-Daten".
+      Ich lerne zu interpretieren was Sie "meinen" wenn Sie was typen oder sagen,
+      und wie ich darauf reagieren soll.
+  utter_answer_ml_3:
+  - text: Am Anfang kann ich recht wenig, aber durch mehr und mehr Trainings-Daten
+      kann ich mit mehr und mehr Anfragen und Anlegen vom Benutzer umgehen.
+  utter_answer_rasa_advantages_1:
+  - text: RASA ist open-source, frei kommerziell verwendbar, und benutzt state-of-the-art
+      Machine Learning und NLU (Natural Language Understanding) Technologien unter
+      der Haube.
+  utter_answer_rasa_advantages_2:
+  - text: RASA ist lokal installierbar und betreibbar, und benutzt keinerlei 3rd-Party
+      APIs vom Google oder Facebook oder Amazon zum Beispiel. Das Heisst man hat die
+      volle Kontrolle über die Technologien und die Daten, und muss sensible Nutzer-Daten
+      nicht nach Aussen freigeben.
+  utter_answer_ru_smart:
+  - text: ich bin nicht wirklich intelligent, aber durch Machine Learning Technologien
+      kann ich es manchmal so tun als ob...
+  utter_answer_which_tech:
+  - text: Wir verwenden RASA, eine sehr gute open-source CUI Framework https://rasa.com
+      RASA ist eine Berliner Startup.
+  utter_fallback:
+  - text: Hmmm... dazu kann ich im Moment nichts sagen...
+  utter_fallback_2:
+  - text: No, Sorry. Immer noch nicht verstanden. Probieren Sie es mit eine einfache Frage
+      zum CUI..
+  utter_fallback_3:
+  - text: Ich glaube, ich kann dir nicht weiterhelfen..
   utter_goodbye:
-    - "OK jetzt legen wir los! Viel Spaß und viel Erfolg!"
-  utter_fallbeck:
-  - "Sorry, das habe ich nicht verstanden."
-  utter_fallback_link:
-    - "Sorry, das habe ich nicht verstanden. Soll ich den Link aufmachen?"
-  utter_fallback2:
-    - "Nö ich habe das immer noch nicht verstanden... probieren Sie das mit ja oder nein..."
-  utter_aufgeben:
-    - "Pfffft...."
+  - text: Auf Wiedersehen!
+  utter_greet:
+  - text: Hallo!
+  utter_prompt_2:
+  - text: ich kann Ihnen ein Paar Fragen zum CUI beantworten
+  utter_prompt_3:
+  - text: Sie können Fragen zum Beispiel was CUI heißt, oder wie eine CUI funktioniert,
+      oder wie man eine CUI entwickelt und trainiert.
+  utter_noch_fragen:
+  - text: Haben Sie noch eine Frage?
