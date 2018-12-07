@@ -106,7 +106,7 @@ def runbot(dbug=False, mode='cmd'):
     agent = create_agent()
     if dbug:
         init_debug_logging()
-    elif mode is 'cmd':
+    if mode is 'cmd':
         redirect_stderr()
         rasa_core.run.serve_application(agent, channel='cmdline')
     elif mode == 'server':

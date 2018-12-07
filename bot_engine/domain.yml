@@ -40,6 +40,9 @@ slots:
     auto_fill: true
     type: rasa_core.slots.TextSlot
 templates:
+  utter_answer_whatis_cui:
+  - text: CUI steht für "Conversational User Interfaces", also eine Sprach-Schnittstelle zu einer Software Anwendung. Der Begriff "Chatbot" ist geläufiger, aber ist nicht so zutreffend wie 'CUI' (obwohl wir oft noch wie vor einfach 'Chatbot' sagen).
+
   utter_answer_ml_1:
   - text: Eine moderne CUI benutzt Machine Learning, um flexibel und anpassbar zu
       sein. Man "programmiert" eine CUI nicht so sehr als man sie "trainiert".

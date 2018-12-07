@@ -2,6 +2,26 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "acknowledge",
+        "text": "ok danke"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "danke"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "verstehe"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "alles klar"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "danke schön"
+      },
+      {
         "intent": "ask_how_works_cui",
         "text": "Wie funktioniert eine CUI?"
       },
@@ -62,6 +82,10 @@
         "text": "wieso RASA?"
       },
       {
+        "intent": "ask_rasa_advantages",
+        "text": "ja was sind die vorteile von RASA?"
+      },
+      {
         "intent": "ask_ru_smart",
         "text": "bist Du intelligent?"
       },
@@ -106,6 +130,10 @@
         "text": "ok was heisst cui überhaupt?"
       },
       {
+        "intent": "ask_whatis_cui",
+        "text": "ja was heisst CUI eigentlich?"
+      },
+      {
         "intent": "ask_which_tech",
         "text": "welche Technologien benutzt msg für CUI?"
       },
@@ -134,44 +162,8 @@
         "text": "welche technologie hast du drin?"
       },
       {
-        "intent": "acknowledge",
-        "text": "ok danke"
-      },
-      {
-        "intent": "acknowledge",
-        "text": "danke"
-      },
-      {
-        "intent": "acknowledge",
-        "text": "verstehe"
-      },
-      {
-        "intent": "acknowledge",
-        "text": "alles klar"
-      },
-      {
-        "intent": "acknowledge",
-        "text": "danke schön"
-      },
-      {
-        "intent": "nein",
-        "text": "nein"
-      },
-      {
-        "intent": "nein",
-        "text": "keine"
-      },
-      {
-        "intent": "nein",
-        "text": "kein"
-      },
-      {
-        "intent": "nein",
-        "text": "nein keine"
-      },
-      {
-        "intent": "nein",
-        "text": "nein danke"
+        "intent": "ask_which_tech",
+        "text": "ok welche technologie benutz man?"
       },
       {
         "intent": "need_hep",
@@ -198,6 +190,30 @@
         "text": "ich weiss nicht was ich fragen soll"
       },
       {
+        "intent": "nein",
+        "text": "nein"
+      },
+      {
+        "intent": "nein",
+        "text": "keine"
+      },
+      {
+        "intent": "nein",
+        "text": "kein"
+      },
+      {
+        "intent": "nein",
+        "text": "nein keine"
+      },
+      {
+        "intent": "nein",
+        "text": "nein danke"
+      },
+      {
+        "intent": "nein",
+        "text": "nein"
+      },
+      {
         "intent": "start",
         "text": "Hi"
       },
@@ -220,6 +236,10 @@
       {
         "intent": "start",
         "text": "hallo"
+      },
+      {
+        "intent": "start",
+        "text": "/start"
       }
     ],
     "regex_features": [],

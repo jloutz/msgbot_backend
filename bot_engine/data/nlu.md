@@ -1,3 +1,10 @@
+## intent:acknowledge
+- ok danke
+- danke
+- verstehe
+- alles klar
+- danke schön
+
 ## intent:ask_how_works_cui
 - Wie funktioniert eine CUI?
 - wie entwickelt man eine CUI?
@@ -16,6 +23,7 @@
 - Google oder Amazon haben bots
 - wieso nicht ein Kaufprodukt oder 3rd party api
 - wieso RASA?
+- ja was sind die vorteile von RASA?
 
 ## intent:ask_ru_smart
 - bist Du intelligent?
@@ -31,6 +39,7 @@
 - was bedeutet CUI?
 - nie von CUI gehört
 - ok was heisst cui überhaupt?
+- ja was heisst CUI eigentlich?
 
 ## intent:ask_which_tech
 - welche Technologien benutzt msg für CUI?
@@ -40,20 +49,7 @@
 - was steckt drin dahinter?
 - welche software ist drin
 - welche technologie hast du drin?
-
-## intent:acknowledge
-- ok danke
-- danke 
-- verstehe
-- alles klar
-- danke schön
-
-## intent:nein
-- nein
-- keine 
-- kein 
-- nein keine
-- nein danke
+- ok welche technologie benutz man?
 
 ## intent:need_hep
 - welche Fragen kann ich stellen?
@@ -63,6 +59,14 @@
 - ich habe viele Fragen
 - ich weiss nicht was ich fragen soll
 
+## intent:nein
+- nein
+- keine
+- kein
+- nein keine
+- nein danke
+- nein 
+
 ## intent:start
 - Hi
 - Hallo
@@ -70,3 +74,4 @@
 - Hi Hallo
 - Hey Hey
 - hallo
+- /start

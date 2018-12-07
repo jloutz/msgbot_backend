@@ -97,3 +97,32 @@
 * nein
     - utter_goodbye
 
+## Generated Story 4928243507289991714
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* ask_which_tech
+    - utter_answer_which_tech
+    - utter_noch_fragen
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+    - utter_noch_fragen
+* ask_rasa_advantages
+    - utter_answer_rasa_advantages_1
+    - utter_answer_rasa_advantages_2
+    - utter_noch_fragen
+* nein
+    - utter_goodbye
+
+## Generated Story 4928243507289991714
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+    - utter_noch_fragen
+* nein
+    - utter_goodbye
+
