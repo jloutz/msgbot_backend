@@ -7,6 +7,10 @@
       },
       {
         "intent": "acknowledge",
+        "text": "ok"
+      },
+      {
+        "intent": "acknowledge",
         "text": "danke"
       },
       {
@@ -20,6 +24,22 @@
       {
         "intent": "acknowledge",
         "text": "danke schön"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "ok gut danke"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "ah ok"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "alles klar"
+      },
+      {
+        "intent": "acknowledge",
+        "text": "ok"
       },
       {
         "intent": "ask_how_works_cui",
@@ -39,7 +59,7 @@
       },
       {
         "intent": "ask_how_works_cui",
-        "text": "was heisst trainieren?"
+        "text": "was heißt trainieren?"
       },
       {
         "intent": "ask_how_works_cui",
@@ -52,6 +72,38 @@
       {
         "intent": "ask_how_works_cui",
         "text": "wie baut man eine cui?"
+      },
+      {
+        "intent": "ask_how_works_cui",
+        "text": "ja wie funktioniert das?"
+      },
+      {
+        "intent": "ask_how_works_cui",
+        "text": "was hat machine learning mit CUI zu tun?"
+      },
+      {
+        "intent": "ask_how_works_cui",
+        "text": "was hat KI mit CUI zu tun?"
+      },
+      {
+        "intent": "ask_how_works_cui",
+        "text": "was hat machine learning mit CUI zu tun?"
+      },
+      {
+        "intent": "ask_rasa",
+        "text": "was ist rasa?"
+      },
+      {
+        "intent": "ask_rasa",
+        "text": "zeig mir den rasa link bitte"
+      },
+      {
+        "intent": "ask_rasa",
+        "text": "was heißt rasa?"
+      },
+      {
+        "intent": "ask_rasa",
+        "text": "rasa website oder rasa link"
       },
       {
         "intent": "ask_rasa_advantages",
@@ -71,7 +123,7 @@
       },
       {
         "intent": "ask_rasa_advantages",
-        "text": "Google oder Amazon haben bots"
+        "text": "ist rasa besser als Google oder IBM?"
       },
       {
         "intent": "ask_rasa_advantages",
@@ -84,6 +136,34 @@
       {
         "intent": "ask_rasa_advantages",
         "text": "ja was sind die vorteile von RASA?"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "sag mir mehr über rasa"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "gib mir mehr details zu rasa bitte"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "ja sag mir mehr über rasa"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "mussen wir daten nach aussen geben?"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "was ist mit datenschutz"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "sind unsere daten sicher?"
+      },
+      {
+        "intent": "ask_rasa_advantages",
+        "text": "sag mir mehr über rasa"
       },
       {
         "intent": "ask_ru_smart",
@@ -110,12 +190,28 @@
         "text": "du bist nicht sehr schlau"
       },
       {
+        "intent": "ask_ru_smart",
+        "text": "bist du schlauer als watson?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "hat das was mit ki zu tun?"
+      },
+      {
+        "intent": "ask_ru_smart",
+        "text": "hat das was mit KI zu tun?"
+      },
+      {
         "intent": "ask_whatis_cui",
-        "text": "was heisst CUI?"
+        "text": "was heißt CUI?"
       },
       {
         "intent": "ask_whatis_cui",
         "text": "was ist CUI?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was ist bitte CUI?"
       },
       {
         "intent": "ask_whatis_cui",
@@ -127,11 +223,55 @@
       },
       {
         "intent": "ask_whatis_cui",
-        "text": "ok was heisst cui überhaupt?"
+        "text": "ok was heißt cui überhaupt?"
       },
       {
         "intent": "ask_whatis_cui",
-        "text": "ja was heisst CUI eigentlich?"
+        "text": "ja was heißt CUI eigentlich?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was ist ein chatbot?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "wieso cui und nicht chatbot?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "unterschied zwischen cui und chatbot?"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "was ist cui"
+      },
+      {
+        "intent": "ask_whatis_cui",
+        "text": "ok was heißt CUIß"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "was ist machine learning?"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "was heißt machine learning?"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "was bedeutet machine learning?"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "wieso ist machine learning wichtig?"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "und was sind machine learning technologien?"
+      },
+      {
+        "intent": "ask_whatis_ml",
+        "text": "was ist machine learning?"
       },
       {
         "intent": "ask_which_tech",
@@ -164,6 +304,34 @@
       {
         "intent": "ask_which_tech",
         "text": "ok welche technologie benutz man?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "und welche technologie benutzt man für CUIs?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "steckt IBM oder Microsoft drin?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "ist das IBM Watson?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "bist Du von Microsoft?"
+      },
+      {
+        "intent": "ask_which_tech",
+        "text": "bist du von IBM oder Microsoft?"
+      },
+      {
+        "intent": "fallback",
+        "text": "was sind die lottozahlen?"
+      },
+      {
+        "intent": "fallback",
+        "text": "und das wetter heute?"
       },
       {
         "intent": "need_hep",
@@ -214,6 +382,22 @@
         "text": "nein"
       },
       {
+        "intent": "nein",
+        "text": "nein danke"
+      },
+      {
+        "intent": "nein",
+        "text": "nein danke"
+      },
+      {
+        "intent": "nein",
+        "text": "nein das wars danke"
+      },
+      {
+        "intent": "nein",
+        "text": "nein danke"
+      },
+      {
         "intent": "start",
         "text": "Hi"
       },
@@ -240,6 +424,66 @@
       {
         "intent": "start",
         "text": "/start"
+      },
+      {
+        "intent": "start",
+        "text": "heyho"
+      },
+      {
+        "intent": "start",
+        "text": "heyho"
+      },
+      {
+        "intent": "start",
+        "text": "hallo servus"
+      },
+      {
+        "intent": "start",
+        "text": "hi"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wozu brauche ich das"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wofür ist eine cui gut?"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wozu sind CUIs gut?"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wieso brauche ich ein chatbot"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wozu kann ich das gebrauchen?"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wieso ist eine cui sinnvoll"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "welche vorteile bietet eine cui"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "welche vorteile bietet ein chatbot"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wozu das ganze überhaupt"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "was kann ich damit anfangen?"
+      },
+      {
+        "intent": "wozu_cui",
+        "text": "wozu ist das gut?"
       }
     ],
     "regex_features": [],
