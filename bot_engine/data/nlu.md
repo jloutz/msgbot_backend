@@ -23,6 +23,7 @@
 - was hat machine learning mit CUI zu tun?
 - was hat KI mit CUI zu tun?
 - was hat machine learning mit CUI zu tun?
+- Ich verstehe nicht wie man eine CUI trainiert
 
 ## intent:ask_rasa
 - was ist rasa?
@@ -62,7 +63,7 @@
 - was heißt CUI?
 - was ist eine CUI?
 - was bedeutet CUI?
-- definiere CUI 
+- definiere CUI
 - nie von CUI gehört
 - ja was heißt CUI eigentlich?
 - was ist ein chatbot?
@@ -93,7 +94,6 @@
 - welche machine learning technologien gibt es?
 - welche machine learning software gibt es?
 
-
 ## intent:need_hep
 - welche Fragen kann ich stellen?
 - ich brauche Hilfe
@@ -115,6 +115,7 @@
 - nein danke
 - nein das wars danke
 - nein danke
+- Ich bin fertig
 
 ## intent:start
 - Hi
@@ -128,6 +129,7 @@
 - heyho
 - hallo servus
 - hi
+- Hallo
 
 ## intent:wozu_cui
 - wozu brauche ich das
