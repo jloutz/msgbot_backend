@@ -1,0 +1,49 @@
+
+
+- Hallo! 													utter_greet 
+- ich kann Ihnen ein Paar Fragen zum CUI beantworten		utter_prompt_2
+- Sie können Fragen zum Beispiel was CUI heißt, oder wie eine CUI funktioniert, oder wie man eine CUI entwickelt und trainiert.	 utter_prompt_3
+
+* was heißt CUI?	ask_whatis_cui
+- CUI steht für "Conversational User Interfaces", also eine Sprach-Schnittstelle zu einer Software Anwendung /		utter_answer_whatis_cui
+  Der Begriff "Chatbot" ist geläufiger, aber ist nicht so zutreffend wie 'CUI' (obwohl wir oft noch wie vor einfach 'Chatbot' sagen). /
+  Ich bin weder ein Roboter, noch wollen Sie mit mir in der ersten Linie "Chatten" oder Small-Talk machen, sondern Sie brauchen Informationen, /
+  oder Sie müssen was erledigen durch einer Software-Anwendung. Eine CUI ermöglicht es Ihnen, an Informationen ran zukommen oder Software zu bedienen mit der Sprache. 
+
+* bist Du Intelligent? / bist Du eine KI? / wie klug bist Du? 			ask_ru_smart 	
+- ich bin nicht wirklich intelligent, aber durch Machine Learning Technologien kann ich es manchmal so tun als ob...	 utter_answer_ru_smart
+
+* welche Fragen kann ich stellen? / ich brauche Hilfe / was kann ich Dir fragen? 	need_hep
+- Sie können Fragen zum Beispiel was CUI heißt, oder wie eine CUI funktioniert, oder wie man eine CUI entwickelt und trainiert. utter_prompt_3 
+
+* Wie funktioniert eine CUI?    	ask_how_works_cui
+- Eine moderne CUI benutzt Machine Learning, um flexibel und anpassbar zu sein. Man "programmiert" eine CUI nicht so sehr als man sie "trainiert".	 utter_answer_ml_1 
+- Mit Machine Learning 'lerne' ich anhand von Beispielen oder "Trainings-Daten". Ich lerne zu interpretieren was Sie "meinen" wenn Sie was typen oder sagen, und wie ich darauf reagieren soll. utter_answer_ml_2
+- Am Anfang kann ich recht wenig, aber durch mehr und mehr Trainings-Daten kann ich mit mehr und mehr Anfragen und Anlegen vom Benutzer umgehen. utter_answer_ml_3
+
+* wie entwickelt man eine CUI? / wie trainiert man eine CUI? / wie bringt man einer CUI was neues bei? 	ask_how_build_cui
+- Eine moderne CUI benutzt Machine Learning, um flexibel und anpassbar zu sein. Man "programmiert" eine CUI nicht so sehr als man sie "trainiert"    utter_answer_how_build_cui_1 
+- Um eine CUI weiter zu trainerien, muss man neue Beispiel Dialoge ausdenken, und die CUI mit den neuen Daten neue trainieren. Dafür braucht man so gut wie keine Programmierkenntnisse. 	utter_answer_how_build_cui_2
+- Wenn eine CUI was neues machen können soll, wie eine Datenbank abfragen oder Daten an anderen Systemen weiterleiten, dann muss man unter der Haube ein bisschen programmieren. 	utter_answer_how_build_cui_3
+
+* welche Technologien benutzt msg für CUI? 	ask_which_tech
+- die msg verwenden RASA, eine sehr gute open-source CUI Framework https://rasa.com RASA ist eine Berliner Startup. utter_answer_which_tech 
+
+* welche Vorteile hat RASA	ask_rasa_advantages
+- RASA ist open-source, frei kommerziell verwendbar, und benutzt state-of-the-art Machine Learning und NLU (Natural Language Understanding) Technologien unter der Haube. /	 utter_answer_rasa_advantages_1
+- RASA ist lokal installierbar und betreibbar, und benutzt keinerlei 3rd-Party APIs (von Google oder Facebook zum Beispiel). Das Heisst man hat die volle Kontrolle über die Technologien /
+  und die Daten, und muss sensible Nutzer-Daten nicht nach Aussen freigeben.   utter_answer_rasa_advantages_2
+
+
+- Hmmm... dafür habe ich kein Antwort parat... utter_fallback
+- Sie können Fragen zum Beispiel was CUI heißt, oder wie eine CUI funktioniert, oder wie man eine CUI entwickelt und trainiert. utter_prompt_3
+
+- No, Sorry. Immer noch nicht verstanden. Probieren Sie eine einfache Frage zum CUI.. 	 utter_fallback_2
+
+- Ich glaube, ich kann dir nicht weiterhelfen..  utter_fallback_3
+
+- Auf Wiedersehen! 	utter_goodbye 
+
+
+
+ 

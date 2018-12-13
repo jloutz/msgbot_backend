@@ -7,7 +7,7 @@ class FallbackIntentFilter(Component):
     Dieser fallback intent kann dann in dialog training (stories.md) verwendet werden,
     um Kontext-abhängige error-handling zu ermöglichen
     """
-    def __init__(self,component_config=None,threshold=0.7, fallback_intent="fallback"):
+    def __init__(self,component_config=None,threshold=0.35, fallback_intent="fallback"):
         ## threshold -- wenn intent Erkennung unter threshold, setzte fallback intent als erkannter Intent.
         ## TODO threshold auf sinnvolle Wert setzten beim error-handling (0.1 <> 0.5)
         ## mit sehr wenig intents, soll dieser wert relativ hoch gesetzt sein

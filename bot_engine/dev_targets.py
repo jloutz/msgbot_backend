@@ -106,16 +106,12 @@ def runbot(dbug=False, mode='cmd'):
     agent = create_agent()
     if dbug:
         init_debug_logging()
-    else:
+    if mode is 'cmd':
         redirect_stderr()
-    if mode == 'interactive':
-        from rasa_core.train import online
-        online.serve_agent(agent)
-    elif mode == 'cmd':
         rasa_core.run.serve_application(agent, channel='cmdline')
     elif mode == 'server':
-        from bot_engine.frontent_integration.bot_server_channel import BotServerInputChannel
-        channel = BotServerInputChannel(agent, port=5005)
+        import frontent_integration.bot_server_channel
+        channel = frontent_integration.bot_server_channel.BotServerInputChannel(agent, port=5005)
         agent.handle_channels([channel], http_port=5005)
 
 
@@ -130,6 +126,23 @@ def start_action_server():
     logger.info("Action endpoint is up and running. on {}"
                 "".format(http_server.address))
     http_server.serve_forever()
+
+def train_interactive():
+    import rasa_core.train as tr
+    import rasa_core.utils as utils
+    arg_parser = tr.create_argument_parser()
+    tr.set_default_subparser(arg_parser, 'default')
+    args = ['interactive','-o','models/dialog','-d','domain.yml','-s','data/stories/stories.md','--nlu','models/nlu/current','--endpoints','endpoints.yml']
+
+    cmdline_arguments = arg_parser.parse_args(args)
+    additional_args = tr._additional_arguments(cmdline_arguments)
+    utils.configure_colored_logging(cmdline_arguments.loglevel)
+    training_stories = cmdline_arguments.stories
+
+    tr.do_interactive_learning(cmdline_arguments,
+                                training_stories,
+                                additional_args)
+
 
 
 if __name__ == '__main__':
@@ -151,6 +164,7 @@ if __name__ == '__main__':
             print("run -- startet den Bot in der Konsole.")
             print("run d -- startet den Bot in der Konsole mit debug-Ausgaben")
             print("serve -- startet den Bot backend webserver")
+            print("serve d -- startet den Bot backend webserver mit debug Ausgaben")
             print("eval_nlu '<evalstring>' evaluiert ein Eingabe-String und liefert Ergebnisse von NLU Modell zurück")
             print("setup_db -- Datenbank initialisieren (muss Aufgabe-spezifisch implementiert werden")
             print("eval_sql <'sql'> <(params)> sql gegen db feuern und ergebnisse bekommen")
@@ -167,7 +181,7 @@ if __name__ == '__main__':
         elif command == "train_dialog":
             train_dialog()
         elif command == "train_interactive":
-            runbot(mode='interactive')
+            train_interactive()
         elif command == "run":
             dbug = False
             if len(sys.argv) >= 3:
@@ -176,7 +190,12 @@ if __name__ == '__main__':
                     dbug = True
             runbot(dbug)
         elif command == "serve":
-            runbot(mode='server')
+            dbug = False
+            if len(sys.argv) >= 3:
+                arg = sys.argv[2]
+                if arg == 'd':
+                    dbug = True
+            runbot(dbug=dbug, mode='server')
         elif command == "setup_db":
             from bot_engine.backend.backend import Backend
             back = Backend()
