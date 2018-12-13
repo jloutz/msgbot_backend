@@ -96,11 +96,12 @@ templates:
 
   utter_fallback:
   - text: Dazu kann ich leider nichts sagen...
+  - text: Das habe ich leider nicht verstanden...
   utter_fallback_2:
   - text: Es tut mir leid, das habe ich immer noch nicht verstanden. Probieren Sie
-      es mit eine einfache Frage zum CUI..
+      es mit einer einfachen Frage zur CUI..
   utter_fallback_3:
-  - text: Ich glaube, ich kann Ihnen damit nicht weiterhelfen..
+  - text: Ich glaube, ich kann Ihnen damit nicht weiterhelfen. Ich leite Sie an einen Mitarbeiter weiter...
   utter_goodbye:
   - text: Auf Wiedersehen!
   utter_greet:

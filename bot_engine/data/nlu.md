@@ -60,17 +60,14 @@
 
 ## intent:ask_whatis_cui
 - was heißt CUI?
-- was ist CUI?
-- was ist bitte CUI?
+- was ist eine CUI?
 - was bedeutet CUI?
+- definiere CUI 
 - nie von CUI gehört
-- ok was heißt cui überhaupt?
 - ja was heißt CUI eigentlich?
 - was ist ein chatbot?
 - wieso cui und nicht chatbot?
 - unterschied zwischen cui und chatbot?
-- was ist cui
-- ok was heißt CUIß
 
 ## intent:ask_whatis_ml
 - was ist machine learning?
@@ -79,29 +76,29 @@
 - wieso ist machine learning wichtig?
 - und was sind machine learning technologien?
 - was ist machine learning?
+- definiere machine learning bitte
+- sag mir mehr zu machine learning
 
 ## intent:ask_which_tech
 - welche Technologien benutzt msg für CUI?
 - was steckt dahinter?
 - welche tech hast du
-- welche Technologien benutzten wir?
+- welche Technologien benutzen wir?
 - was steckt drin dahinter?
 - welche software ist drin
+- welche CUI software gibt es?
+- welche chatbot software gibt es?
 - welche technologie hast du drin?
 - ok welche technologie benutz man?
-- und welche technologie benutzt man für CUIs?
-- steckt IBM oder Microsoft drin?
-- ist das IBM Watson?
-- bist Du von Microsoft?
-- bist du von IBM oder Microsoft?
+- welche machine learning technologien gibt es?
+- welche machine learning software gibt es?
 
-## intent:fallback
-- was sind die lottozahlen?
-- und das wetter heute?
 
 ## intent:need_hep
 - welche Fragen kann ich stellen?
 - ich brauche Hilfe
+- ich verstehe nichts
+- ich kapiere nichts
 - hilf mir
 - was kann ich Dir fragen?
 - ich habe viele Fragen
@@ -139,6 +136,7 @@
 - wieso brauche ich ein chatbot
 - wozu kann ich das gebrauchen?
 - wieso ist eine cui sinnvoll
+- wieso braucht man sowas?
 - welche vorteile bietet eine cui
 - welche vorteile bietet ein chatbot
 - wozu das ganze überhaupt

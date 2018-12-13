@@ -71,14 +71,12 @@
     - utter_fallback
 * fallback
     - utter_fallback_2
-    - utter_prompt_3
-
+    
 ## fallback
 * fallback
     - utter_fallback
 * fallback
     - utter_fallback_2
-    - utter_prompt_3
 * fallback
     - utter_fallback_3
     - utter_goodbye
@@ -267,9 +265,93 @@
     - utter_fallback
 * fallback
     - utter_fallback_2
-    - utter_prompt_3
 * acknowledge
     - utter_noch_fragen
 * nein
+    - utter_goodbye
+
+## falback
+## fallback
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+    - utter_answer_whatis_cui_2
+    - utter_noch_fragen
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+## Generated Story -4014548926650163372
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+    - utter_answer_whatis_cui_2
+    - utter_noch_fragen
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+
+## fallback 
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+
+## fallback
+ * ask_which_tech
+    - utter_answer_which_tech
+    - utter_rasa_link
+    - utter_noch_fragen
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+
+## fallback
+- utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+## Generated Story -1435179672794261220
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
+    - utter_goodbye
+* ask_whatis_cui
+    - utter_answer_whatis_cui
+    - utter_answer_whatis_cui_2
+    - utter_noch_fragen
+* fallback
+    - utter_fallback
+* fallback
+    - utter_fallback_2
+* fallback
+    - utter_fallback_3
     - utter_goodbye
 
