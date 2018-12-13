@@ -355,3 +355,16 @@
     - utter_fallback_3
     - utter_goodbye
 
+## Generated Story 1200520298660711397
+* start
+    - utter_greet
+    - utter_prompt_2
+    - utter_prompt_3
+* ask_how_works_cui
+    - utter_answer_ml_1
+    - utter_answer_ml_2
+    - utter_answer_ml_3
+    - utter_noch_fragen
+* nein
+    - utter_goodbye
+
