@@ -1,0 +1,10 @@
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.de.300.vec.gz in data/embeddings speichern
+python -m spacy init-model de data/embeddings/de_vectors_lg -v data/embeddings/cc.de.300.vec.gz
+
+This will create a model directory for you to load, /tmp/de_vectors_web_lg. You can use the vectors with the sm model by passing the nlp.vocab object as an argument to spacy.load():
+
+nlp = spacy.load('de')
+spacy.load('data/embeddings/de_vectors_lg', vocab=nlp.vocab)
+nlp.to_disk('data/embeddings/de_model_with_vectors')
+Because the sm models aren't trained with vectors,
+you're free to load your own like this. You can't do that with md or lg models --- those have to be used with the vectors the model was trained with. That's a big disadvantage --- so we're likely to move away from providing models based on pre-trained vectors, and prefer instead to have the vectors in separate packages. We might still have some models that use pre-trained vectors, depending no accuracy advantages --- but there's a big advantage to letting you choose the vectors at runtime.
