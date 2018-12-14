@@ -1,5 +1,3 @@
-
-
 ## intent:start
 - Hi
 - Hallo
@@ -13,3 +11,8 @@
 - hallo servus
 - hi
 - Hallo
+- Hallo
+##intent: fallback
+- Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
+- Jeder intent muss mindestens zwei Beispiele haben, sonst funktioniert die Klassifizierung nicht.
+
