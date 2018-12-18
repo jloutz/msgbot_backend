@@ -1,6 +1,8 @@
 .idea/
 __pycache__/
 bot_engine/models/
+bot_engine/data/embeddings/
+bot_engine/story_graph.dot
 
 # Environments
 .env
