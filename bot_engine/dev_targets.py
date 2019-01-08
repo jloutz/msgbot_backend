@@ -7,7 +7,7 @@ from rasa_core import run
 from gevent.pywsgi import WSGIServer
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter, RegexInterpreter, NaturalLanguageInterpreter
-from rasa_core.policies import FallbackPolicy, MemoizationPolicy
+from rasa_core.policies import FallbackPolicy, MemoizationPolicy, FormPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_nlu.config import load
 from rasa_nlu.model import Interpreter
@@ -61,7 +61,7 @@ def get_interpreter():
 
 def train_dialog():
     ## TODO bei sehr wenig stories - wie am Anfang - probiert erst memoization unk keras
-    agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy()])
+    agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy(),FormPolicy()])
     ## TODO sobald der Bot ein wenig stabil wird, nach ein duzent Stories oder so, probiere nur Keras
     #agent = Agent("domain.yml", policies=[KerasPolicy()])
     stories_file = "data\stories"

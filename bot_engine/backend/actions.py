@@ -1,7 +1,21 @@
 import subprocess
-from rasa_core_sdk import Action
+from rasa_core_sdk import Action, Tracker
 import webbrowser
 
+from rasa_core_sdk.forms import FormAction
+
+
+class NameForm(FormAction):
+    def name(self):
+        return "name_form"
+
+    @staticmethod
+    def required_slots(tracker: Tracker):
+        return ["name","age"]
+
+    def submit(self, dispatcher, tracker, domain):
+        dispatcher.utter_template('utter_submit',tracker)
+        return []
 class ActionShowRasa(Action):
     ## demo action for welcome bot
     def name(self):

@@ -1,19 +1,64 @@
 %YAML 1.1
 ---
 actions:
-- utter_greet
+
+- utter_question_time
+- utter_explanation_why_ehrenamt
+- utter_greeting_explanation
+- utter_question_type
+- utter_explanation_type
+- action_specific_answer
+- utter_explanation_ehrenamt
 config:
   store_entities_as_slots: true
 entities:
 - dummy
-forms: []
+forms:
+ - name_form
 intents:
-- start
+- inform
+- begruessung
+- ehrenamtlich_allgemein
+- ehrenamt_fluechtlinge
+- was_ist_ehrenamt
+- warum_ehrenamt
+- arten_ehrenamt
+- zeit_information_4plus
 - fallback
 slots:
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
+  name:
+    type: unfeaturized
+    auto_fill: false
+  age:
+    type: unfeaturized
+    auto_fill: false
 templates:
-  utter_greet:
-  - text: Hallo!
+  action_specific_answer:
+  - text: Es gibt drei Positionen zum Thema Flüchtlinge, du kannst sie unterstützen
+      beim Deutsch Lernen, du kannst Nachhilfe geben oder Brettspielabende organisieren.
+  utter_explanation_ehrenamt:
+  - text: Ehrenamtlich zu arbeiten bedeutet für irgendeinen gemeinnützigen Zweck ohne
+      Entgelt zu arbeiten.
+  utter_ask_age:
+  - text: Wie alt bist du?
+  utter_ask_name:
+  - text: Wie heisst du?
+  utter_explanation_type:
+  - text: Es gibt Bedarf nach ehrenamtlichen Mitarbeitern vor allen Dingen in den
+      Bereichen Sport, Kultur, und Flüchtlinge.
+  utter_explanation_why_ehrenamt:
+  - text: Ehrenamtliche Mitarbeiter können Menschen in Not helfen, besonders denen,
+      denen es finanziell nicht gut geht. Ausserdem Steuer Gründe/Langeweile.
+  utter_greeting_explanation:
+  - text: Hallo, ich bin Ehrich, ein Chatbot der Stadt Nürnberg rund um ehrenamtliches
+      Engagement in und um Nürnberg.
+  utter_question_time:
+  - text: Wie viel Zeit pro Woche willst du dich ehrenamtlich engagieren?
+  utter_question_type:
+  - text: Willst du lieber Flüchtlingen helfen, dich im Bereich Sport betätigen, oder
+      etwas für die Kultur tun? Oder soll ich noch andere Optionen suchen?
+  utter_submit:
+   - Danke für die Abgabe
