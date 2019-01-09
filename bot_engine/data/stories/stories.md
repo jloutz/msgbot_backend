@@ -68,3 +68,35 @@
     - form{"name": null}
     - slot{"requested_slot": null}
 
+## Generated Story -170588419855504386
+* begruessung
+    - utter_greeting_explanation
+    - name_form
+    - form{"name": "name_form"}
+    - slot{"requested_slot": "name"}
+* form: inform{"name": "Roman"}
+    - form: name_form
+    - slot{"name": "Roman"}
+    - slot{"requested_slot": "age"}
+* form: inform{"age": "13"}
+    - form: name_form
+    - slot{"age": "13"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+
+## Generated Story -1912393004255532548
+* begruessung
+    - utter_greeting_explanation
+    - name_form
+    - form{"name": "name_form"}
+    - slot{"requested_slot": "name"}
+* form: inform{"name": "lukas"}
+    - form: name_form
+    - slot{"name": "lukas"}
+    - slot{"requested_slot": "age"}
+* form: inform{"age": "999"}
+    - form: name_form
+    - slot{"age": "999"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+

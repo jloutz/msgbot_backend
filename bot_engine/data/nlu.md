@@ -28,6 +28,8 @@
 - Moin Moin, was geht?
 - Hallo
 - Hallo, mein name ist [John](name:john)
+- Servus
+- Was geht alter
 
 ## intent:ehrenamt_fluechtlinge
 - Ich will Flüchtlingen helfen.
@@ -62,6 +64,10 @@
 - Ich bin [Lukas](name:lukas)
 - Ich bin [24](age) Jahre alt
 - Ich heisse [John](name) und bin [24](age) Jahre alt
+- Ich bin [Roman](name)
+- [13](age)
+- Ich heisse [Lukas](name:lukas)
+- [999](age)
 
 ## intent:warum_ehrenamt
 - Warum soll ich umsonst arbeiten?
@@ -83,6 +89,9 @@
 - Ich will mich etwa 6 stunden pro wochen engagieren
 - Ich will etwa sieben stunden pro Woche nvestieren, bin mir da abe rnoch nicht so sicher
 - Ich habe nur 5 stunden pro Woche zeit um zu helfen, gibt es da irgendwas?
+
+## synonym:john
+- John
 
 ## synonym:lukas
 - Lukas
