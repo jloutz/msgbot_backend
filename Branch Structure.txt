@@ -1,0 +1,44 @@
+Branch Struktur des Projekts, basierend auf Nürnberg Beispiel
+
+Master
+Auf der allerobersten Ebene ist der Master Branch. Er enthält einen kleinen Beispiel Bot, der als Anfangsgrundlage für neue Bots genommen werden kann. Auf master sollen nur technische Änderungen gepusht werden, nicht neue Daten. Wenn also die Pipeline geändert wird, dann können wir das womöglich auf Master pushen, aber nicht wenn wir neue Stories hinzugefügt haben.
+
+Abgeleitet von Master sind die jeweiligen spezifischen Instanzen des Bots. Zum Beispiel bauen wir gerade einen Bot für Nürnberg, und diese Branches haben das Präfix nbg. Wenn wir einen Bot für Passau bauen würden, dann würden wir das Präfix Pas nehmen.
+
+Release Branch
+Dieser Branch enthält eine funktionsfähige Version des Bots (also mit Trainingsdaten), also ohne Bugs. Dialoge etc. auf diesem Branch sollten ausreichend TrainingsDaten haben und einigermassen robust sein. Es ist kein Problem, wenn der Release Bot nur sehr wenig kann, aber was er kann, sollte schon ordentlich sein. Praktisches Beispiel dafür ist nbg_release. 
+
+Develop Branch
+Dieser Branch ist der Entwicklungsbranch für eine spezifische Instanz des Bots. Sollte generell lauffähig sein (nicht abstürzen), muss aber nicht notwendigerweise viel Trainingsdaten haben oder ronderlich robust sein. Wenn die Qualität des Develop Branches hoch genug ist und der Bot robust genug ist, kann auf Release ein merge Request gestellt werden. Ein Beispiel hierfür ist nbg_develop. 
+
+Feature Branches
+Abgeleitet vom develop branch sind die verschiedenen Feature Branches. Es wird generell nicht direkt auf Develop entwickelt, sondern auf diesen Feature Branches. Benannt sind diese Branches mit dem Präfix der spezifischen Instanz (also z.B. nbg) und dann beliebig mit einem namen, also z.B. nbg_util_components, wenn ich an Utility Komponenten am arbeiten bin. Wenn diese dann keine grösseren bugs haben, können sie auf Develop gemerged werden. Beispiele hierfür sind nbg_util_components oder nbg_fresh_start.
+
+Natürlich lassen sich auch von Feature Branches abgeleitete Branches machen, und so weiter und so fort, die generelle Struktur bleibt aber bestehen.
+
+
+Generelle Arbeitsweise:
+Szenario: Ich möchte dem Nürnberg-Bot eine Abfrage des Alters des Nutzers hinzufügen. 
+Ich checke nbg_develop aus mithilfe von: 
+git checkout nbg_develop
+Ich erstelle einen eigenen Branch nbg_Alter_Abfrage
+git checkout -b nbg_Alter_Abfrage
+Auf diesem Branch entwickele ich munter weiter, bis mein Feature fertig ist. 
+Wenn ich aufs Repository pushen will, muss ich erstmal den Branch aufs Repo pushen:
+git push --set-upstream origin nbg_Alter_Abfrage
+Wenn ich mit der Entwicklung zufrieden bin, merge ich erstmal den Develop Branch in meinen Feature Branch
+git merge nbg_develop
+Dannn gehe ich auf gitlab, und stelle einen Merge-Request auf nbg_develop. 
+Wenn der merge request genehmigt ist (womöglich von einem selbst, aber eher von einem anderem Mitglied des Teams), kann der Feature Branch gelöscht werden:
+lokal: git branch -D nbg_Alter_Abfrage
+remote: mit Merge Request per GUI oder git push origin --delete nbg_Alter_Abfrage
+Da ich äusserst robust und gut gearbeitet habe, ist das Ganze direkt bereit zum Release, deswegen wiederholen wir den ganzen Prozess.
+git checkout nbg_develop
+git merge nbg_release
+Stellen Merge Request von nbg_develop auf nbg_release
+Und wenn der Merge Request genehmigt ist, dann ist das neue Feature auch auf Release. 
+ 
+
+
+
+
