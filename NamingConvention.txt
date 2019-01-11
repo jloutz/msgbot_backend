@@ -1,0 +1,17 @@
+Hier ein Vorschlag, wie wir entities, actions usw benennen sollen, um die Lesbarkeit zu erleichtern.
+
+Entities(selbstbenannt):
+Deutsche, kleingeschriebene Namen. Dies ist gedacht als Kontrast zu den englischen entity Namen, die wir vortrainiert von ner_spacy oder ner_duckling kriegen können.
+Slots:
+Die selben Namen wie die Entities. (Ist glaube ich auch ein technischer Grund).
+Forms:
+Ich schlage das Format Verwendungszweck_form vor. Das ist relativ standard so in RASA.
+intents:
+Ich schlage das Format Nomen(Deutsch)_Spezifikation vor. Also z.B. auswahl_feld oder begruessung .
+Actions:
+    Normale Sprech Aktionen:
+        utter_Spezifikation z.B. utter_begruessung
+    Fragen:
+        utter_ask_Spezifkation z.B. utter_ask_alter (Ist für forms technisch notwendig)
+    Aktionen (Allgemeiner):
+        action_Spezifikation              z.B. action_begruessung, wenn sie aus mehreren Utterances bestehen soll.
