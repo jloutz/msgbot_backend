@@ -1,7 +1,12 @@
 %YAML 1.1
 ---
 actions:
-- utter_greet
+- utter_begruessung
+- utter_faehigkeiten
+- utter_ask_interesse
+- utter_bereich_klarifikation
+- utter_list_bereich
+- utter_feld_details
 config:
   store_entities_as_slots: true
 entities:
@@ -10,10 +15,23 @@ forms: []
 intents:
 - start
 - fallback
+- information_interesse
+- auswahl_liste_bereich
+- auswahl_liste
 slots:
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
 templates:
-  utter_greet:
-  - text: Hallo!
+  utter_begruessung:
+  - text: Hallo, ich bin Buergerboty, und bni ein Experte für ehrenamtliche Tätigkeiten rund um Nürnberg
+  utter_faehigkeiten:
+  - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder Kultur erzählen.
+  utter_ask_interesse:
+  - text: Für welchen Bereich interessierst du dich?
+  utter_feld_details:
+  - text: Du hast ein Feld ausgewaehlt
+  utter_bereich_klarifikation:
+  - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen, oder ir eine Liste der Bereiche anzeigen.
+  utter_list_bereich:
+  - text: Lala
