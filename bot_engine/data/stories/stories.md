@@ -1,24 +1,43 @@
 ## happy path: Does not know
 * start 
-    - utter_begruessung
-    - utter_faehigkeiten
-    - utter_ask_interesse
+    -action_greeting
 * information_interesse
     - utter_bereich_klarifikation
 * auswahl_liste_bereich
     - utter_list_bereich
+* information_interesse{"bereich_interesse" : "sport"}
+    -slot{"bereich_interesse": "sport"}
+    -utter_sport_details
 * auswahl_liste
     - utter_feld_details
     
-## Generated Story 4721653732164457992
+## happy path: bereich sport
+* start 
+    -action_greeting
+* information_interesse{"bereich_interesse" : "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - utter_sport_details
+* auswahl_liste
+    - utter_feld_details
+## Generated Story -2845097536574265860
 * start
-    - utter_begruessung
-    - utter_faehigkeiten
-    - utter_ask_interesse
+    -action_greeting
 * information_interesse
     - utter_bereich_klarifikation
-* auswahl_liste_bereich
+* auswahl_liste
     - utter_list_bereich
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - utter_sport_details
+* auswahl_liste
+    - utter_feld_details
+
+## Generated Story 4109247210663124599
+* start
+    -action_greeting
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - utter_sport_details
 * auswahl_liste
     - utter_feld_details
 

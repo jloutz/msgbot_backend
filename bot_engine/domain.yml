@@ -1,16 +1,20 @@
 %YAML 1.1
 ---
 actions:
+- action_greeting
 - utter_begruessung
 - utter_faehigkeiten
 - utter_ask_interesse
 - utter_bereich_klarifikation
 - utter_list_bereich
 - utter_feld_details
+- utter_sport_details
 config:
   store_entities_as_slots: true
 entities:
 - dummy
+- bereich_interesse
+- liste_eintrag
 forms: []
 intents:
 - start
@@ -22,6 +26,27 @@ slots:
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
+  bereich_interesse:
+    auto_fill: true
+    type: categorical
+    values:
+      - sport
+      - kultur
+      - flüchtlinge
+  liste_eintrag:
+    auto_fill: true
+    type: categorical
+    values:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - letztes
+
+
 templates:
   utter_begruessung:
   - text: Hallo, ich bin Buergerboty, und bni ein Experte für ehrenamtliche Tätigkeiten rund um Nürnberg
@@ -34,4 +59,6 @@ templates:
   utter_bereich_klarifikation:
   - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen, oder ir eine Liste der Bereiche anzeigen.
   utter_list_bereich:
-  - text: Lala
+  - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
+  utter_sport_details:
+  - text: Im Bereich Sport gibt es die Felder Fussball, Badminton und Tennis. Möchtest du mehr über eins davon erfahren, oder dir einen anderen Bereich ansehen?
