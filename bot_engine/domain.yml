@@ -5,14 +5,14 @@ actions:
 - action_sport_details
 - action_fluechtling_details
 - action_kultur_details
-- utter_begruessung
-- utter_faehigkeiten
-- utter_ask_interesse
 - utter_bereich_klarifikation
 - utter_list_bereich
-- utter_feld_details
 - utter_sport_details
 - action_feld_details
+- utter_ende_konversation
+- utter_beispiele1
+- utter_beispiele2
+- utter_beispiele3
 config:
   store_entities_as_slots: true
 entities:
@@ -26,6 +26,9 @@ intents:
 - information_interesse
 - auswahl_liste_bereich
 - auswahl_liste
+- beispiele_konkret
+- weiter
+- zurück
 slots:
   dummy:
     auto_fill: true
@@ -58,11 +61,19 @@ templates:
   - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder Kultur erzählen.
   utter_ask_interesse:
   - text: Für welchen Bereich interessierst du dich?
-  utter_feld_details:
-  - text: Du hast ein Feld ausgewaehlt
   utter_bereich_klarifikation:
   - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen, oder ir eine Liste der Bereiche anzeigen.
   utter_list_bereich:
   - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
   utter_sport_details:
   - text: Im Bereich Sport gibt es die Felder Fussball, Badminton und Tennis. Möchtest du mehr über eins davon erfahren, oder dir einen anderen Bereich ansehen?
+  utter_ende_konversation:
+  - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das Gespräch ab. Ciao !
+  utter_beispiele1:
+  - text: Du könntest Jugend-Schiedsrichter werden, oder in einer Suppenküche helfen, oder Prospekte für ein Museum verteilen
+  utter_beispiele2:
+  - text: Es gibt viel Bedarf für ehrenamtliche Arbeit bei der freiwilligen Feuerwehr, für Wahlhelfer, und für Betreuer in Jugendhäusern.
+  utter_beispiele3:
+  - text: Gerichte verlassen sich auf ehrenamtliche Schöffen und Trainer für Jugend Fussballteams werden immer gesucht.
+
+

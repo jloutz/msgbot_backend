@@ -1,4 +1,4 @@
-## happy path: Does not know
+## happy path: Does not know bereich
 * start 
     -action_greeting
 * information_interesse
@@ -8,10 +8,30 @@
 * information_interesse{"bereich_interesse" : "sport"}
     -slot{"bereich_interesse": "sport"}
     -action_sport_details
-* auswahl_liste{"liste_eintrag" : "1"}
-    -slot{"liste_eintrag" : "1"}
+* auswahl_liste{"liste_eintrag" : "4"}
+    -slot{"liste_eintrag" : "4"}
     - action_feld_details
     
+## happy path: Does not know bereich, wants examples
+* start 
+    -action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* weiter 
+    -utter_beispiele2
+* weiter
+    - utter_beispiele3
+    
+## happy path: back and forth
+    - utter_beispiele2
+* zurück 
+    -utter_beispiele1
+* zurück
+    -utter_beispiele3
+* zurück 
+    - utter_beispiele2
 ## happy path: bereich sport
 * start 
     -action_greeting
@@ -41,6 +61,22 @@
 * auswahl_liste{"liste_eintrag" :"3"}
     -slot{"liste_eintrag" : "3"}
     - action_feld_details
+    
+## unhappy path
+* start 
+    -action_greeting
+* fallback
+    - utter_bereich_klarifikation
+    
+##unhappy path
+*fallback
+    - utter_bereich_klarifikation
+*fallback
+    -utter_bereich_klarifikation
+*fallback
+    -utter_ende_konversation
+    -action_restart
+
 ## Generated Story -316864321894813267
 * start
     - action_greeting

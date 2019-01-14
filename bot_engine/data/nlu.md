@@ -14,6 +14,35 @@
 - Sag mir was über den [zweiten](liste_eintrag:2) Eintrag bitte
 - Der [untereste](liste_eintrag:letztes) eintrag bitte
 
+##intent: beispiele_konkret
+- Gib mir bitte ein paar konkrete Beispiele 
+- Zeig mir bitte die beispiele 
+- Beispiele wären hilfreich
+- Etwas konkretes wäre sicherlich hilfreich
+- Zeig mir bitte ein paar handfeste initiativen
+- Beispiele
+##intent: weiter
+- weiter bitte 
+- weiter 
+- weida 
+- das nächste 
+- ich will mehr sehen
+- vorwärts 
+- voran
+- nächste Seite
+
+##intent: zurück
+- zurück bitte
+- zurück
+- das vorherige bitte 
+- ich will die letzte Seite noch mal sehen
+- können wir noch einmal kurz zurück 
+- das letzte was interessanter
+- nach hinten
+- rückwärts
+- retour 
+
+
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
 - Ich will weitere Bereiche sehen
