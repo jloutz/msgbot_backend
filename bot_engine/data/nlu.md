@@ -14,6 +14,8 @@
 - Sag mir was über den [zweiten](liste_eintrag:2) Eintrag bitte
 - Der [untereste](liste_eintrag:letztes) eintrag bitte
 - Die [dritte](liste_eintrag:3) Option bitte
+- das [2te](liste_eintrag:2)
+- Das [zweite](liste_eintrag:2) bitte
 
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
@@ -21,6 +23,7 @@
 - Liste! Pronto !
 - Zeig mir die Liste der Bereiche bitte
 - Zeig mir eine Liste der Bereiche
+- Zeig mir bitte eine Liste der Bereiche
 
 ## intent:beispiele_konkret
 - Gib mir bitte ein paar konkrete Beispiele
@@ -54,6 +57,7 @@
 - Sag mir was über [Flüchtlinge](bereich_interesse:flüchtlinge)
 - Ich will was über [Geflohene](bereich_interesse:flüchtlinge) wissen
 - Ich will im [Flüchtlingsheim](bereich_interesse:flüchtlinge) helfen
+- Kannst du mir bitte von [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erzählen?
 - Ich will mich [kulturell](bereich_interesse:kultur) betätigen
 - Ich will im bereich [Kultur](bereich_interesse:kultur) helfen
 - Ich will mich ehrenamtlich mit [Kulturgütern](bereich_interesse:kultur) beschäftigen.
@@ -61,7 +65,10 @@
 - Ich interessiere mich für [Kultur](bereich_interesse:kultur)
 - Isch hab kei Plan digga
 - Ich habe keine Orientierung
-- Kannst du mir von Projekten bezüglich [FLüchtlingen](bereich_interesse:flüchtlinge) erzählen? 
+- Kannst du mir von Projekten bezüglich [FLüchtlingen](bereich_interesse:flüchtlinge) erzählen?
+- Ich weiss nicht genau, was mich gerade daran interessiert
+- Dann erzähl mir mal was von [kulturellen](bereich_interesse:kultur) Dingen
+- Ich will was über [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erfahren
 
 ## intent:start
 - Hi
@@ -85,7 +92,9 @@
 - Hallo
 - Grüss Got
 - Moin moin, was geht?
-- Was geht alter? 
+- Was geht alter?
+- Wie gehts, wie stehts?
+- Hallo 
 
 ## intent:weiter
 - weiter bitte
@@ -120,6 +129,7 @@
 ## synonym:2
 - zweite
 - zweiten
+- 2te
 
 ## synonym:3
 - dritte
@@ -137,12 +147,15 @@
 - Flüchtlinge
 - Geflohene
 - Flüchtlingsheim
+- Flüchtlingshilfe
+- FLüchtlingen
 
 ## synonym:kultur
 - kulturell
 - Kultur
 - Kulturgütern
 - Kulturfanatiker
+- kulturellen
 
 ## synonym:letztes
 - unterste

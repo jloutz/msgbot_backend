@@ -144,3 +144,27 @@
     - slot{"liste_eintrag": "1"}
     - action_feld_details
 
+## Generated Story -9037978774805181019
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* auswahl_liste_bereich{"PER": "Zeig"}
+    - utter_list_bereich
+* information_interesse{"bereich_interesse": "kultur"}
+    - slot{"bereich_interesse": "kultur"}
+    - action_kultur_details
+* auswahl_liste{"liste_eintrag": "2"}
+    - slot{"liste_eintrag": "2"}
+    - action_feld_details
+
+## Generated Story -6729777404838759550
+* start
+    - action_greeting
+* information_interesse{"bereich_interesse": "fl\u00fcchtlinge"}
+    - slot{"bereich_interesse": "fl\u00fcchtlinge"}
+    - action_fluechtling_details
+* auswahl_liste{"liste_eintrag": "2"}
+    - slot{"liste_eintrag": "2"}
+    - action_feld_details
+
