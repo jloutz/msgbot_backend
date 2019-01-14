@@ -11,4 +11,8 @@ venv2/
 ENV/
 env.bak/
 venv.bak/
+domain_gen.yml
+story_graph.dot
+bot_engine/data/embeddings/
+rasa_core.log
 

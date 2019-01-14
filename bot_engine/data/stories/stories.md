@@ -32,6 +32,7 @@
     -utter_beispiele3
 * zurück 
     - utter_beispiele2
+    
 ## happy path: bereich sport
 * start 
     -action_greeting
@@ -109,5 +110,37 @@
     - action_kultur_details
 * auswahl_liste{"liste_eintrag": "letztes"}
     - slot{"liste_eintrag": "letztes"}
+    - action_feld_details
+
+## Generated Story 6707480065510242378
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* weiter
+    - utter_beispiele2
+* weiter
+    - utter_beispiele3
+
+## Generated Story 5481385524056445540
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* zurück
+    - utter_beispiele3
+
+## Generated Story 4525603202407279251
+* start
+    - action_greeting
+* information_interesse{"bereich_interesse": "fl\u00fcchtlinge"}
+    - slot{"bereich_interesse": "fl\u00fcchtlinge"}
+    - action_fluechtling_details
+* auswahl_liste{"liste_eintrag": "1"}
+    - slot{"liste_eintrag": "1"}
     - action_feld_details
 

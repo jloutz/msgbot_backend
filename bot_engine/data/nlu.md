@@ -13,35 +13,7 @@
 - Erzähl mir was über den [ersten](liste_eintrag:1) Eintrag
 - Sag mir was über den [zweiten](liste_eintrag:2) Eintrag bitte
 - Der [untereste](liste_eintrag:letztes) eintrag bitte
-
-##intent: beispiele_konkret
-- Gib mir bitte ein paar konkrete Beispiele 
-- Zeig mir bitte die beispiele 
-- Beispiele wären hilfreich
-- Etwas konkretes wäre sicherlich hilfreich
-- Zeig mir bitte ein paar handfeste initiativen
-- Beispiele
-##intent: weiter
-- weiter bitte 
-- weiter 
-- weida 
-- das nächste 
-- ich will mehr sehen
-- vorwärts 
-- voran
-- nächste Seite
-
-##intent: zurück
-- zurück bitte
-- zurück
-- das vorherige bitte 
-- ich will die letzte Seite noch mal sehen
-- können wir noch einmal kurz zurück 
-- das letzte was interessanter
-- nach hinten
-- rückwärts
-- retour 
-
+- Die [dritte](liste_eintrag:3) Option bitte
 
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
@@ -49,6 +21,16 @@
 - Liste! Pronto !
 - Zeig mir die Liste der Bereiche bitte
 - Zeig mir eine Liste der Bereiche
+
+## intent:beispiele_konkret
+- Gib mir bitte ein paar konkrete Beispiele
+- Zeig mir bitte die beispiele
+- Beispiele wären hilfreich
+- Etwas konkretes wäre sicherlich hilfreich
+- Zeig mir bitte ein paar handfeste initiativen
+- Beispiele
+- Mir würden konkrete Beispiele helfen
+- ich würde gerne konkrete Tätigkeitne sehen
 
 ## intent:fallback
 - Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
@@ -77,6 +59,9 @@
 - Ich will mich ehrenamtlich mit [Kulturgütern](bereich_interesse:kultur) beschäftigen.
 - Ich bin [Kulturfanatiker](bereich_interesse:kultur) und will deswegen dort helfen.
 - Ich interessiere mich für [Kultur](bereich_interesse:kultur)
+- Isch hab kei Plan digga
+- Ich habe keine Orientierung
+- Kannst du mir von Projekten bezüglich [FLüchtlingen](bereich_interesse:flüchtlinge) erzählen? 
 
 ## intent:start
 - Hi
@@ -98,6 +83,33 @@
 - Hallo
 - Hallo
 - Hallo
+- Grüss Got
+- Moin moin, was geht?
+- Was geht alter? 
+
+## intent:weiter
+- weiter bitte
+- weiter
+- weida
+- das nächste
+- ich will mehr sehen
+- vorwärts
+- voran
+- nächste Seite
+- Zeig mir mehr
+- weidah
+
+## intent:zurück
+- zurück bitte
+- zurück
+- das vorherige bitte
+- ich will die letzte Seite noch mal sehen
+- können wir noch einmal kurz zurück
+- das letzte was interessanter
+- nach hinten
+- rückwärts
+- retour
+- zurück bitte
 
 ## synonym:1
 - erste Eintrag
@@ -134,6 +146,7 @@
 
 ## synonym:letztes
 - unterste
+- untereste
 
 ## synonym:sport
 - Sport
