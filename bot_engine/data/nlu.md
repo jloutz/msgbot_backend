@@ -7,14 +7,19 @@
 - Kannst du mir das [zweite](liste_eintrag:2) zeigen?
 - Ich bin an nummer [sechs](liste_eintrag:6) interessiert
 - Das [oberste](liste_eintrag:1) hört sich gut an.
-- Das[unterste](liste_eintrag:letztes) ist gut 
+- Das[unterste](liste_eintrag:letztes) ist gut
 - Kannst du mir das [siebte](liste_eintrag:7)
-- Nummer [7](liste_eintrag:7) bitte
+- Nummer [7](liste_eintrag) bitte
+- Erzähl mir was über den [ersten](liste_eintrag:1) Eintrag
+- Sag mir was über den [zweiten](liste_eintrag:2) Eintrag bitte
+- Der [untereste](liste_eintrag:letztes) eintrag bitte
+
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
 - Ich will weitere Bereiche sehen
 - Liste! Pronto !
 - Zeig mir die Liste der Bereiche bitte
+- Zeig mir eine Liste der Bereiche
 
 ## intent:fallback
 - Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
@@ -31,6 +36,18 @@
 - Ich weiss es noch nicht genau
 - Sag mir bitte mehr über [sport](bereich_interesse)
 - Erzähl mir mehr über [sportliche](bereich_interesse:sport) aktivitäten
+- Ich weiss es noch nicht
+- Sag mir bitte was zu [spor](bereich_interesse:sport)
+- Sag mir was über [sport](bereich_interesse) bitte
+- Erzähl mir mehr über Felder im Bereich [Flüchtlinge](bereich_interesse:flüchtlinge)
+- Sag mir was über [Flüchtlinge](bereich_interesse:flüchtlinge)
+- Ich will was über [Geflohene](bereich_interesse:flüchtlinge) wissen
+- Ich will im [Flüchtlingsheim](bereich_interesse:flüchtlinge) helfen
+- Ich will mich [kulturell](bereich_interesse:kultur) betätigen
+- Ich will im bereich [Kultur](bereich_interesse:kultur) helfen
+- Ich will mich ehrenamtlich mit [Kulturgütern](bereich_interesse:kultur) beschäftigen.
+- Ich bin [Kulturfanatiker](bereich_interesse:kultur) und will deswegen dort helfen.
+- Ich interessiere mich für [Kultur](bereich_interesse:kultur)
 
 ## intent:start
 - Hi
@@ -49,7 +66,47 @@
 - Hallo
 - Moin Moin
 - Hallo
+- Hallo
+- Hallo
+- Hallo
+
+## synonym:1
+- erste Eintrag
+- Feld 1
+- oberste
+- ersten
+
+## synonym:2
+- zweite
+- zweiten
+
+## synonym:3
+- dritte
+
+## synonym:5
+- fünfte Elemnt
+
+## synonym:6
+- sechs
+
+## synonym:7
+- siebte
+
+## synonym:flüchtlinge
+- Flüchtlinge
+- Geflohene
+- Flüchtlingsheim
+
+## synonym:kultur
+- kulturell
+- Kultur
+- Kulturgütern
+- Kulturfanatiker
+
+## synonym:letztes
+- unterste
 
 ## synonym:sport
 - Sport
 - sportliche
+- spor
