@@ -2,6 +2,9 @@
 ---
 actions:
 - action_greeting
+- action_sport_details
+- action_fluechtling_details
+- action_kultur_details
 - utter_begruessung
 - utter_faehigkeiten
 - utter_ask_interesse
@@ -9,6 +12,7 @@ actions:
 - utter_list_bereich
 - utter_feld_details
 - utter_sport_details
+- action_feld_details
 config:
   store_entities_as_slots: true
 entities:
