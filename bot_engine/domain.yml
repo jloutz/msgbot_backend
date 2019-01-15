@@ -39,6 +39,9 @@ intents:
 - interesse_museum
 - interesse_kunst
 - interesse_musik
+- interesse_deutsch_kurs
+- interesse_behausung
+- interesse_suppenküche
 - weiter
 - zurück
 - konversation_ende
@@ -98,4 +101,10 @@ templates:
   - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen wie man sie verbindet?
   utter_musik_details:
   - text: Konzerte organisieren oder Musiklehrer spielen sind sicherlich möglich.
+  utter_suppenküche_details:
+  - text: Eine Suppe macht man in dem man allerhand Zutaten mit Wasser in einen Topf schmeisst und das Ganze dann vergisst. Dafür bist du wie geschaffen.
+  utter_deutsch_kurs_details:
+  - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner zum Deutsch lernen qualifiziert.
+  utter_behausung_details:
+  - text: Besonders jetzt im Winter sind handwerklich gut gemachte Zelte unerlässlich.
 

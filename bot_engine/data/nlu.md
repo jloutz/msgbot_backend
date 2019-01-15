@@ -159,6 +159,35 @@
 - Tennis war schon immer meine Leidenschaft
 - Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
 
+
+##intent:interesse_behausung
+- Ich würde gerne Behausung für die Flüchtlinge finden
+- Ich würde den Füchtlingen gerne ein Zuhause finden 
+- Jeder braucht ein dach überm Kopf, auch Flüchtlinge
+- Ich will ein Flüchtlingsheim  bauen 
+- Ich will in einem flüchtlingsheim mithelfen
+- Ich würde gerne helfen behausungen für flüchtlinge zu finden 
+- Wohnungen snd meine Spezialität 
+- Ich kann fúr jeden was zum wohnen finden 
+- Denen werde ich helfe indem ich Häuser finde 
+- Die müssen jetzt mal aus den Zelten raus 
+
+##intent:interesse_suppenküche
+-Ich würde gerne beim Aufbau einer Suppenküche hlefen 
+- Suppenküche 
+- Ich würde gerne beim kochen helfen 
+- Den flüchtlingen wäre echt geholfen mit etwas zum Essen 
+- Beim aufbau einer Suppenküche wäre ich gerne behelflich
+- Warum nur Suppe? 
+- Ich habe selber mal eine Suppe erfunden 
+#intent:interesse_deutsch_kurs
+- Ich würde gerne helfen beim Deutsch beibringen 
+- Zumindest kann ich beim deutshc lernen helfen 
+- Ich kann mich auf deutsch unterhalten 
+- Ich war mal deutsch lehrer 
+- ich würd eselber gerne einen deutsch kurs besuchen 
+- Mein bestes Fach in der Schule war deutsch
+- Für Unterhaltung kann mich mich vielleicht bei so etwas gebrauchen.
 ## intent:konversation_ende
 - Das wars, danke
 - Tschüss
