@@ -41,6 +41,7 @@ intents:
 - interesse_musik
 - weiter
 - zurück
+- konversation_ende
 slots:
   dummy:
     auto_fill: true

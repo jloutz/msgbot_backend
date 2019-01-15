@@ -68,6 +68,10 @@
 * interesse_kunst
     -utter_kunst_details
     
+## building block: user is DONE WITH DIS SHIT @@@@@@!!!!@@@@one one one 
+* konversation_ende
+    - utter_ende_konversation
+    
 ## happy path: bereich kultur
 * start 
     -action_greeting
@@ -234,4 +238,18 @@
     - action_greeting
 * interesse_museum
     - utter_museum_details
+
+## Generated Story -3876797893286221512
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* auswahl_liste_bereich
+    - utter_list_bereich
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - action_sport_details
+* auswahl_liste{"liste_eintrag": "2"}
+    - slot{"liste_eintrag": "2"}
+    - action_feld_details
 

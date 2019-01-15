@@ -16,6 +16,7 @@
 - Die [dritte](liste_eintrag:3) Option bitte
 - das [2te](liste_eintrag:2)
 - Das [zweite](liste_eintrag:2) bitte
+- Erzähl mir was vom [zweiten](liste_eintrag:2) Bereich
 
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
@@ -24,6 +25,7 @@
 - Zeig mir die Liste der Bereiche bitte
 - Zeig mir eine Liste der Bereiche
 - Zeig mir bitte eine Liste der Bereiche
+- dann zeig mir ein liste der Bereiche
 
 ## intent:beispiele_konkret
 - Gib mir bitte ein paar konkrete Beispiele
@@ -69,6 +71,8 @@
 - Ich weiss nicht genau, was mich gerade daran interessiert
 - Dann erzähl mir mal was von [kulturellen](bereich_interesse:kultur) Dingen
 - Ich will was über [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erfahren
+- Ich weiss es noch nicht genau
+- Dann erzähl mir mal was von [Sport](bereich_interesse:sport)
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -155,6 +159,27 @@
 - Tennis war schon immer meine Leidenschaft
 - Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
 
+## intent:konversation_ende
+- Das wars, danke
+- Tschüss
+- Ciao
+- Bis morgen
+- Du bist ein dummer bot, ich habe keine lust mehr
+- Danke, ich werde mich wieder melden
+- Auf wiedersehen
+- Hasta la vista
+- Ich gehe jetzt
+- Keine lust mehr
+- Du sagst mir ja sowieso nichts
+- Doofer bot, tschüss
+- RÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+- ich bin dann mal weg
+- leb wohl
+- Ade
+- Adieu
+- bye
+- Tschau
+
 ## intent:start
 - Hi
 - Hallo
@@ -187,6 +212,7 @@
 - Guten Abend
 - Grusss
 - Yo
+- Hallo 
 
 ## intent:weiter
 - weiter bitte
