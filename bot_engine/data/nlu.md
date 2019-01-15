@@ -101,7 +101,47 @@
 - Rasenballsport
 - Rasenball
 - Könntest du mir was zu Fussball sagen?
-- Können Sie mir was zu Fussball erzählen? 
+- Können Sie mir was zu Fussball erzählen?
+
+## intent:interesse_kunst
+- Kunst
+- Ich will jungen Künstlern helfen
+- Ich will in einer Kunst galerie helfen
+- Ich fühle mich künstlerisch
+- ich bin selber Künstler
+- Ich kenne mich gut mit farbe aus
+- Ich bin kunstlehrer
+- Ich würde gerne im Bereich Kunst mich betätigen
+- Ich bin artistisch veranlagt
+- Ich will menschen beim genuss der Kunst helfen
+- Malern würde ich gerne helfen
+- Skulpturen sind für mich ein besonderes Interessengebiet
+- Gemälde zu restaurieren wäre für mich das grösste
+- Kannst du mir erklären, wsa es für künstlerische Projekte gibt?
+
+## intent:interesse_museum
+- Museum
+- Ich würde gerne den Nürnberger Museen helfen
+- Ich würde gerne auftreten wie ein Mäzen
+- In meiner Jugend habe ich in einem Museum gearbeitet
+- Ich würde gerne an einer Austellung mitarbeiten
+- Ich würde gerne ein Exponat erstellen
+- Ich bin an Mitarbeit in einem Museum intressiert
+- Zeig mir die Seite zu museen
+- Museums bitte
+- Ich würde gerne ehrenamtlich in einem Museum arbeiten
+
+## intent:interesse_musik
+- Musik
+- Ich will Musiker unterstützen
+- Ich will ein Konzert organisieren
+- Ich war mal pianist
+- Ich will Geigenspielern helfen
+- Ich kann bei der Probe von Musikstuücken mithelfen
+- Ich war mal Dirigent und würde mich in der Richtung gerne betätigen
+- Musik bitte
+- Erzähl mir was vom Bereich Musik
+- Hey, kannst du mir etwas über musische Projekte sagen?
 
 ## intent:interesse_tennis
 - Kannst du mir wsa über Tennis Projekte erzählen?
@@ -144,6 +184,9 @@
 - guten Tag
 - guten Tag
 - guten Morgen
+- Guten Abend
+- Grusss
+- Yo
 
 ## intent:weiter
 - weiter bitte

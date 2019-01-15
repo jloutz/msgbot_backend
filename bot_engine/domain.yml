@@ -16,6 +16,9 @@ actions:
 - utter_badminton_details
 - utter_fussball_details
 - utter_tennis_details
+- utter_museum_details
+- utter_kunst_details
+- utter_musik_details
 config:
   store_entities_as_slots: true
 entities:
@@ -33,6 +36,9 @@ intents:
 - interesse_badminton
 - interesse_fussball
 - interesse_tennis
+- interesse_museum
+- interesse_kunst
+- interesse_musik
 - weiter
 - zurück
 slots:
@@ -71,8 +77,6 @@ templates:
   - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen, oder ir eine Liste der Bereiche anzeigen.
   utter_list_bereich:
   - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
-  utter_sport_details:
-  - text: Im Bereich Sport gibt es die Felder Fussball, Badminton und Tennis. Möchtest du mehr über eins davon erfahren, oder dir einen anderen Bereich ansehen?
   utter_ende_konversation:
   - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das Gespräch ab. Ciao !
   utter_beispiele1:
@@ -87,5 +91,10 @@ templates:
   - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die Deutschen gewinnen
   utter_tennis_details:
   - text: Keine Ahnung, Boris Becker oder so?
-
+  utter_museum_details:
+  - text: Nürnberg hat viele schöne Museen, irgendwer wird sicherlich Hilfe benötigen.
+  utter_kunst_details:
+  - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen wie man sie verbindet?
+  utter_musik_details:
+  - text: Konzerte organisieren oder Musiklehrer spielen sind sicherlich möglich.
 

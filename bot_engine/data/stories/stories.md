@@ -42,7 +42,7 @@
 * auswahl_liste{"liste_eintrag" :"1"}
     -slot{"liste_eintrag" : "1"}
     - action_feld_details
-    
+
 ## building block: wants badminton
 * interesse_badminton
     -utter_badminton_details
@@ -56,7 +56,18 @@
 * interesse_tennis
     -utter_tennis_details
     
-
+## building block: wants museum
+* interesse_museum
+    -utter_museum_details
+    
+## building block: wants musik
+* interesse_musik
+    -utter_musik_details
+    
+## building block: wants kunst
+* interesse_kunst
+    -utter_kunst_details
+    
 ## happy path: bereich kultur
 * start 
     -action_greeting
@@ -205,4 +216,22 @@
     - action_greeting
 * interesse_fussball
     - utter_fussball_details
+
+## Generated Story -1372487381279897231
+* start
+    - action_greeting
+* interesse_kunst
+    - utter_kunst_details
+
+## Generated Story 6279759184057738619
+* start
+    - action_greeting
+* interesse_musik
+    - utter_musik_details
+
+## Generated Story -3090019378127258292
+* start
+    - action_greeting
+* interesse_museum
+    - utter_museum_details
 

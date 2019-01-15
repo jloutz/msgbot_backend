@@ -53,15 +53,41 @@ class ActionFeldDetails(Action):
                 elif feld=="Fussball":
                     dispatcher.utter_template("utter_fussball_details",tracker)
                 elif feld=="Tennis":
-                    dispatcher.utter_template("utter_tennis_details")
+                    dispatcher.utter_template("utter_tennis_details",tracker)
                 else:
                     print("stuff matched weird")
             else:
                 print("Falscher Wert.")
         elif bereich == "kultur":
-            pass
+            if not(listindex>=len(feldKultur)):
+                feld=feldKultur[listindex]
+                if feld=="Museum":
+                    dispatcher.utter_template("utter_museum_details",tracker)
+                elif feld=="Musik":
+                    dispatcher.utter_template("utter_musik_details",tracker)
+                elif feld=="Kunst":
+                    dispatcher.utter_template("utter_kunst_details",tracker)
+                else:
+                    print("stuff matched weird")
+
+            else:
+                print("Falscher Wert")
+
         elif bereich == "flüchtlinge":
-            pass
+            if not(listindex>=len(feldKultur)):
+                feld=feldKultur[listindex]
+                feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
+                if feld=="Deutschkurs":
+                    pass
+                elif feld=="Behausung":
+                    pass
+                elif feld=="Suppenküche":
+                    pass
+                else:
+                    print("stuff matched weird")
+            else:
+                print("Falscher Wert")
+
         else:
             print("bereich_interesse ist nicht wie erwartet gesetzt. Wert ist: " + bereich)
 
