@@ -48,7 +48,14 @@ class ActionFeldDetails(Action):
         if bereich == "sport":
             if not (listindex >= len(feldSport)):
                 feld = feldSport[listindex]
-                dispatcher.utter_message("Du hast feld " + feld + " ausgewählt.")
+                if feld=="Badminton":
+                    dispatcher.utter_template("utter_badminton_details",tracker)
+                elif feld=="Fussball":
+                    dispatcher.utter_template("utter_fussball_details",tracker)
+                elif feld=="Tennis":
+                    dispatcher.utter_template("utter_tennis_details")
+                else:
+                    print("stuff matched weird")
             else:
                 print("Falscher Wert.")
         elif bereich == "kultur":

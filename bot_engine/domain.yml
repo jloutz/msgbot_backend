@@ -13,6 +13,9 @@ actions:
 - utter_beispiele1
 - utter_beispiele2
 - utter_beispiele3
+- utter_badminton_details
+- utter_fussball_details
+- utter_tennis_details
 config:
   store_entities_as_slots: true
 entities:
@@ -27,6 +30,9 @@ intents:
 - auswahl_liste_bereich
 - auswahl_liste
 - beispiele_konkret
+- interesse_badminton
+- interesse_fussball
+- interesse_tennis
 - weiter
 - zurück
 slots:
@@ -75,5 +81,11 @@ templates:
   - text: Es gibt viel Bedarf für ehrenamtliche Arbeit bei der freiwilligen Feuerwehr, für Wahlhelfer, und für Betreuer in Jugendhäusern.
   utter_beispiele3:
   - text: Gerichte verlassen sich auf ehrenamtliche Schöffen und Trainer für Jugend Fussballteams werden immer gesucht.
+  utter_badminton_details:
+  - text: Badminton ist der beste Sport. Alle anderen Sportarten sind schlechte Imitate
+  utter_fussball_details:
+  - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die Deutschen gewinnen
+  utter_tennis_details:
+  - text: Keine Ahnung, Boris Becker oder so?
 
 

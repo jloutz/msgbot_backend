@@ -42,6 +42,20 @@
 * auswahl_liste{"liste_eintrag" :"1"}
     -slot{"liste_eintrag" : "1"}
     - action_feld_details
+    
+## building block: wants badminton
+* interesse_badminton
+    -utter_badminton_details
+    
+## building block: wants fussball
+* interesse_fussball
+    -utter_fussball_details
+    
+    
+## building block: wants tennis
+* interesse_tennis
+    -utter_tennis_details
+    
 
 ## happy path: bereich kultur
 * start 
@@ -167,4 +181,28 @@
 * auswahl_liste{"liste_eintrag": "2"}
     - slot{"liste_eintrag": "2"}
     - action_feld_details
+
+## Generated Story -3600364210975583191
+* start
+    - action_greeting
+* interesse_badminton
+    - utter_badminton_details
+
+## Generated Story 7483388882428997534
+* start
+    - action_greeting
+* interesse_tennis
+    - utter_tennis_details
+
+## Generated Story -3073634602649486930
+* start
+    - action_greeting
+* interesse_fussball
+    - utter_fussball_details
+
+## Generated Story -712707802653501197
+* start
+    - action_greeting
+* interesse_fussball
+    - utter_fussball_details
 

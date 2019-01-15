@@ -70,6 +70,51 @@
 - Dann erzähl mir mal was von [kulturellen](bereich_interesse:kultur) Dingen
 - Ich will was über [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erfahren
 
+## intent:interesse_badminton
+- Kannst du mir über badminton Projekte erzählen?
+- Gibt es irgendwelche ehrenamtliche Tätigkeitne im Bereich Badminton?
+- Meine lieblingsportart ist badminton, gibst da was?
+- Ich habe schon immer gerne Federball gespielt, gibts da was?
+- Badminton bitte
+- Zeig mir was zu Federball
+- Ich will badminton helfen
+- Wie heisst noch mal der Sport mit den Schlägern und Federbällen
+- Gibts Projekte zu Badminton?
+- Ich wäre gerne Badminton trainer
+- badminton
+- Gibt es irgendwelche Projekte zu Badminton?
+
+## intent:interesse_fussball
+- Sag mir was über Fussball
+- ich will was über Fussball lesen
+- Fussball bitte
+- Ich war früher Fussball trainer, gibts da was?
+- Ich will leuten in die bundesliga helfen
+- ich würde gerne bei ballspielen helfen
+- wie siehts mit fussball aus?
+- Fußball bitte, wir sind ja deutsch
+- Fussi bitte
+- Spiel um das runde Leder
+- das Runde muss ins Eckige
+- bitte nicht DFB
+- ich bin DFB zertifiziert
+- Rasenballsport
+- Rasenball
+- Könntest du mir was zu Fussball sagen?
+- Können Sie mir was zu Fussball erzählen? 
+
+## intent:interesse_tennis
+- Kannst du mir wsa über Tennis Projekte erzählen?
+- Ich wär gern Tennis trainer
+- Als kind habe ich Tennis gespielt
+- Mein Hund frisst gerne Tennisbälle, da will ich was zurückgeben
+- Ich will tennis helfen, ich habe racket und so schon
+- Ich würde gerne im Bereich tennis helfen, ich habe schon mal ein Turnier auf sand organisiert
+- tennis
+- zeig mir tennis
+- Tennis war schon immer meine Leidenschaft
+- Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
+
 ## intent:start
 - Hi
 - Hallo
@@ -94,7 +139,11 @@
 - Moin moin, was geht?
 - Was geht alter?
 - Wie gehts, wie stehts?
-- Hallo 
+- Hallo
+- guten Tag
+- guten Tag
+- guten Tag
+- guten Morgen
 
 ## intent:weiter
 - weiter bitte
