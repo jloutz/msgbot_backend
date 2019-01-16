@@ -45,8 +45,9 @@ templates:
   - text: Wie heißt Du denn?
   utter_ende:
   - text: Dann bis zum nächsten Mal.
-    utter_sayname:
-  - text: Hallo,{name}, Du willst Dich in der Stadt Nürnberg innerhalb eines Ehrenamtes engagieren? Nenn mir Deine Interessen und ich sage Dir, welche Möglichkeiten es in der Stadt Nürnberg gibt.
-    utter_interesse:
+  utter_interesse:
   - text: Lieber,{name}, Du interessierst Dich also für {interesse}?
+  utter_sayname:
+    - text: Hallo,{name}, Du willst Dich in der Stadt Nürnberg innerhalb eines Ehrenamtes engagieren? Nenn mir Deine Interessen und ich sage Dir, welche Möglichkeiten es in der Stadt Nürnberg gibt.
+
   

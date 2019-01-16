@@ -72,7 +72,6 @@
 - Man nennt mich [Jochen](name)
 
 ## intent:interesse
-- Ich interessiere mich für [Ehrenamt](interesse)
 - Ich interessiere mich für [Gesundheit](interesse)
 - Ich interessiere mich für [Asyl](interesse)
 - Ich interessiere mich für [Familie](interesse)
