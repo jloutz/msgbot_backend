@@ -85,7 +85,7 @@
     
 ## building block: user is DONE WITH DIS SHIT @@@@@@!!!!@@@@one one one 
 * konversation_ende
-    - utter_ende_konversation
+    - utter_ende_konversation_erfolg
     
 ## happy path: bereich kultur
 * start 
@@ -119,7 +119,7 @@
 *fallback
     -utter_bereich_klarifikation
 *fallback
-    -utter_ende_konversation
+    -utter_ende_konversation_error
     -action_restart
 
 ## Generated Story -316864321894813267
@@ -281,7 +281,7 @@
 * interesse_suppenküche
     - utter_suppenküche_details
 * konversation_ende
-    - utter_ende_konversation
+    - utter_ende_konversation_erfolg
 
 ## Generated Story 8609600835704188296
 * start
@@ -295,7 +295,7 @@
 * interesse_tennis
     - utter_tennis_details
 * konversation_ende
-    - utter_ende_konversation
+    - utter_ende_konversation_erfolg
 
 
 ## Generated Story 7578907242159205317
@@ -313,7 +313,7 @@
 * interesse_kunst
     - utter_kunst_details
 * konversation_ende
-    - utter_ende_konversation
+    - utter_ende_konversation_erfolg
 
 ## Generated Story -7834441193052910079
 * start
@@ -334,7 +334,7 @@
 * interesse_suppenküche
     - utter_suppenküche_details
 * konversation_ende
-    - utter_ende_konversation
+    - utter_ende_konversation_erfolg
 
 ## Generated Story 4993184748327735893
 * fallback
@@ -342,8 +342,31 @@
 * fallback
     - utter_bereich_klarifikation
 * fallback
-    - utter_ende_konversation
+    - utter_ende_konversation_error
     - action_restart
 
 ## Generated Story 0
+
+## Generated Story 6341662476707079672
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* weiter
+    - utter_beispiele2
+* weiter
+    - utter_beispiele3
+* zurück
+    - utter_beispiele2
+* zurück
+    - utter_beispiele1
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - action_sport_details
+* interesse_fussball
+    - utter_fussball_details
+* konversation_ende
+    - utter_ende_konversation_erfolg
 
