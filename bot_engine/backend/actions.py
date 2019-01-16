@@ -1,37 +1,67 @@
 import subprocess
+
+
 from rasa_core_sdk import Action
 import webbrowser
 
+from rasa_core_sdk.events import UserUtteranceReverted
+
 feldSport = ["Badminton", "Fussball", "Tennis"]
-feldKultur = ["Museum","Musik","Kunst"]
-feldFlüchtlinge = ["Deutschkurs","Behausung","Suppenküche"]
+feldKultur = ["Museum", "Musik", "Kunst"]
+feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
+
+
+class ActionUndoPrevious(Action):
+    '''
+    Undoes previous user input.
+    '''
+    def name(self):
+        return "action_undo"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message("Ich gehe einen Schritt zurück")
+        return [UserUtteranceReverted()]
+
 
 class ActionFluechtlingDetails(Action):
     def name(self):
         return "action_fluechtling_details"
+
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Flüchtlingshilfe erzählen: ")
+        dispatcher.utter_message(
+            "Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Flüchtlingshilfe erzählen: ")
         for feldList in feldFlüchtlinge:
             dispatcher.utter_message(feldList)
         return []
+
 
 class ActionKulturDetails(Action):
     def name(self):
         return "action_kultur_details"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Kultur erzählen: ")
+        dispatcher.utter_message(
+            "Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Kultur erzählen: ")
         for feldList in feldKultur:
             dispatcher.utter_message(feldList)
         return []
+
+
 class ActionSportDetails(Action):
     def name(self):
         return "action_sport_details"
+
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Sport erzählen: ")
+        dispatcher.utter_message(
+            "Ich kann dir einen anderen Bereich zeigen oder dir Näheres zu den folgenden Feldern im Bereich Sport erzählen: ")
         for feldList in feldSport:
             dispatcher.utter_message(feldList)
         return []
+
 
 class ActionFeldDetails(Action):
     def name(self):
@@ -48,25 +78,25 @@ class ActionFeldDetails(Action):
         if bereich == "sport":
             if not (listindex >= len(feldSport)):
                 feld = feldSport[listindex]
-                if feld=="Badminton":
-                    dispatcher.utter_template("utter_badminton_details",tracker)
-                elif feld=="Fussball":
-                    dispatcher.utter_template("utter_fussball_details",tracker)
-                elif feld=="Tennis":
-                    dispatcher.utter_template("utter_tennis_details",tracker)
+                if feld == "Badminton":
+                    dispatcher.utter_template("utter_badminton_details", tracker)
+                elif feld == "Fussball":
+                    dispatcher.utter_template("utter_fussball_details", tracker)
+                elif feld == "Tennis":
+                    dispatcher.utter_template("utter_tennis_details", tracker)
                 else:
                     print("stuff matched weird")
             else:
                 print("Falscher Wert.")
         elif bereich == "kultur":
-            if not(listindex>=len(feldKultur)):
-                feld=feldKultur[listindex]
-                if feld=="Museum":
-                    dispatcher.utter_template("utter_museum_details",tracker)
-                elif feld=="Musik":
-                    dispatcher.utter_template("utter_musik_details",tracker)
-                elif feld=="Kunst":
-                    dispatcher.utter_template("utter_kunst_details",tracker)
+            if not (listindex >= len(feldKultur)):
+                feld = feldKultur[listindex]
+                if feld == "Museum":
+                    dispatcher.utter_template("utter_museum_details", tracker)
+                elif feld == "Musik":
+                    dispatcher.utter_template("utter_musik_details", tracker)
+                elif feld == "Kunst":
+                    dispatcher.utter_template("utter_kunst_details", tracker)
                 else:
                     print("stuff matched weird")
 
@@ -74,15 +104,15 @@ class ActionFeldDetails(Action):
                 print("Falscher Wert")
 
         elif bereich == "flüchtlinge":
-            if not(listindex>=len(feldKultur)):
-                feld=feldKultur[listindex]
+            if not (listindex >= len(feldKultur)):
+                feld = feldKultur[listindex]
                 feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
-                if feld=="Deutschkurs":
-                    dispatcher.utter_template("utter_deutsch_kurs_details",tracker)
-                elif feld=="Behausung":
-                    dispatcher.utter_template("utter_behausung_details",tracker)
-                elif feld=="Suppenküche":
-                    dispatcher.utter_template("utter_suppenküche_details",tracker)
+                if feld == "Deutschkurs":
+                    dispatcher.utter_template("utter_deutsch_kurs_details", tracker)
+                elif feld == "Behausung":
+                    dispatcher.utter_template("utter_behausung_details", tracker)
+                elif feld == "Suppenküche":
+                    dispatcher.utter_template("utter_suppenküche_details", tracker)
                 else:
                     print("stuff matched weird")
             else:
@@ -102,5 +132,3 @@ class ActionBegruessung(Action):
         dispatcher.utter_template("utter_faehigkeiten", tracker)
         dispatcher.utter_template("utter_ask_interesse", tracker)
         return []
-
-

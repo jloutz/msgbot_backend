@@ -33,6 +33,9 @@
 * zurück 
     - utter_beispiele2
     
+## building block: go back a step 
+* zurück 
+    - action_undo
 ## happy path: bereich sport
 * start 
     -action_greeting
@@ -294,4 +297,21 @@
 * konversation_ende
     - utter_ende_konversation
 
+
+## Generated Story 7578907242159205317
+* start
+    - action_greeting
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - action_sport_details
+* zurück
+    - action_undo
+    - rewind
+* information_interesse{"bereich_interesse": "kultur"}
+    - slot{"bereich_interesse": "kultur"}
+    - action_kultur_details
+* interesse_kunst
+    - utter_kunst_details
+* konversation_ende
+    - utter_ende_konversation
 

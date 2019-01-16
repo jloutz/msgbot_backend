@@ -48,6 +48,7 @@
 - Ich habe keine Ahnung
 - Ich habe wenig Interesse
 - Ich weiss noch nicht wirklich für welchen Bereich ich mich interessierre
+- Ich interessier mich für [Sport](bereich_interesse:sport)
 - Erzähl mir mehr über [Sport](bereich_interesse:sport)
 - Ich will was über [sport](bereich_interesse) wissen
 - Sag mir mehr über [sportliche](bereich_interesse:sport) Projekte
@@ -78,6 +79,8 @@
 - Ich weiss es noch nicht genau
 - [Fluechtlingen](bereich_interesse:flüchtlinge) zu helfen hört sich gut an
 - Hmm, könntest du mir doch lieber was von [Sport](bereich_interesse:sport) erzählen?
+- [sportlicher](bereich_interesse:sport) Bereich
+- Kannst du mir was zu [Kultur](bereich_interesse:kultur) sgaen? 
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -139,6 +142,7 @@
 - Skulpturen sind für mich ein besonderes Interessengebiet
 - Gemälde zu restaurieren wäre für mich das grösste
 - Kannst du mir erklären, wsa es für künstlerische Projekte gibt?
+- Sag mir was über Kunst bitte
 
 ## intent:interesse_museum
 - Museum
@@ -216,6 +220,7 @@
 - Tschau
 - Vielen Dank für die Info
 - Das wras
+- Ich bin fertig, danke
 
 ## intent:start
 - Hi
@@ -253,6 +258,7 @@
 - Einen schönen guten Morgen
 - Gott zum Grusse
 - Hallolo
+- ein schönen Mittag
 
 ## intent:weiter
 - weiter bitte
@@ -277,6 +283,7 @@
 - rückwärts
 - retour
 - zurück bitte
+- Einen schritt zurück bitte
 
 ## synonym:1
 - erste Eintrag
