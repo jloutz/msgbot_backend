@@ -78,11 +78,11 @@ class ActionFeldDetails(Action):
                 feld=feldKultur[listindex]
                 feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
                 if feld=="Deutschkurs":
-                    pass
+                    dispatcher.utter_template("utter_deutsch_kurs_details",tracker)
                 elif feld=="Behausung":
-                    pass
+                    dispatcher.utter_template("utter_behausung_details",tracker)
                 elif feld=="Suppenküche":
-                    pass
+                    dispatcher.utter_template("utter_suppenküche_details",tracker)
                 else:
                     print("stuff matched weird")
             else:
@@ -90,6 +90,7 @@ class ActionFeldDetails(Action):
 
         else:
             print("bereich_interesse ist nicht wie erwartet gesetzt. Wert ist: " + bereich)
+        return []
 
 
 class ActionBegruessung(Action):
@@ -103,28 +104,3 @@ class ActionBegruessung(Action):
         return []
 
 
-class ActionShowRasa(Action):
-    ## demo action for welcome bot
-    def name(self):
-        return "action_open_rasa"
-
-    def run(self, dispatcher, tracker, domain):
-        webbrowser.open('http://rasa.com/', new=2)
-
-
-class ActionShowRasaDoc(Action):
-    ## demo action for welcome bot
-    def name(self):
-        return "action_open_doc"
-
-    def run(self, dispatcher, tracker, domain):
-        webbrowser.open('http://www.rasa.com/docs/getting-started/overview/', new=2)
-
-
-class ActionShowGoogleDoc(Action):
-    ## demo action for welcome bot
-    def name(self):
-        return "action_open_googledoc"
-
-    def run(self, dispatcher, tracker, domain):
-        webbrowser.open('https://designguidelines.withgoogle.com/conversation/', new=2)

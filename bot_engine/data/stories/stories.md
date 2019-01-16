@@ -68,6 +68,18 @@
 * interesse_kunst
     -utter_kunst_details
     
+## building block: wants behausung
+* interesse_behausung
+    - utter_behausung_details
+
+## building block: wants suppenküche
+* interesse_suppenküche
+    - utter_suppenküche_details
+    
+## building block: wants deutsch kurs
+* interesse_deutsch_kurs
+    -utter_deutsch_kurs_details
+    
 ## building block: user is DONE WITH DIS SHIT @@@@@@!!!!@@@@one one one 
 * konversation_ende
     - utter_ende_konversation
@@ -252,4 +264,34 @@
 * auswahl_liste{"liste_eintrag": "2"}
     - slot{"liste_eintrag": "2"}
     - action_feld_details
+
+## Generated Story 625695173360257220
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* auswahl_liste_bereich
+    - utter_list_bereich
+* information_interesse{"bereich_interesse": "fl\u00fcchtlinge"}
+    - slot{"bereich_interesse": "fl\u00fcchtlinge"}
+    - action_fluechtling_details
+* interesse_suppenküche
+    - utter_suppenküche_details
+* konversation_ende
+    - utter_ende_konversation
+
+## Generated Story 8609600835704188296
+* start
+    - action_greeting
+* auswahl_liste{"bereich_interesse": "fl\u00fcchtlinge"}
+    - slot{"bereich_interesse": "fl\u00fcchtlinge"}
+    - action_fluechtling_details
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - action_sport_details
+* interesse_tennis
+    - utter_tennis_details
+* konversation_ende
+    - utter_ende_konversation
+
 

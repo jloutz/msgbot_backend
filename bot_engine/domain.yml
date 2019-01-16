@@ -1,24 +1,27 @@
 %YAML 1.1
 ---
 actions:
-- action_greeting
-- action_sport_details
+- utter_museum_details
+- utter_beispiele3
+- utter_beispiele2
 - action_fluechtling_details
 - action_kultur_details
-- utter_bereich_klarifikation
-- utter_list_bereich
-- utter_sport_details
-- action_feld_details
 - utter_ende_konversation
-- utter_beispiele1
-- utter_beispiele2
-- utter_beispiele3
-- utter_badminton_details
+- action_sport_details
+- action_feld_details
 - utter_fussball_details
-- utter_tennis_details
-- utter_museum_details
+- utter_badminton_details
+- utter_list_bereich
+- utter_beispiele1
 - utter_kunst_details
 - utter_musik_details
+- utter_behausung_details
+- utter_sport_details
+- utter_deutsch_kurs_details
+- utter_suppenküche_details
+- utter_tennis_details
+- utter_bereich_klarifikation
+- action_greeting
 config:
   store_entities_as_slots: true
 entities:
@@ -46,65 +49,73 @@ intents:
 - zurück
 - konversation_ende
 slots:
+  bereich_interesse:
+    auto_fill: true
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - sport
+    - kultur
+    - flüchtlinge
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
-  bereich_interesse:
-    auto_fill: true
-    type: categorical
-    values:
-      - sport
-      - kultur
-      - flüchtlinge
   liste_eintrag:
     auto_fill: true
-    type: categorical
+    type: rasa_core.slots.CategoricalSlot
     values:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - letztes
-
-
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - letztes
 templates:
-  utter_begruessung:
-  - text: Hallo, ich bin Buergerboty, und bni ein Experte für ehrenamtliche Tätigkeiten rund um Nürnberg
-  utter_faehigkeiten:
-  - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder Kultur erzählen.
   utter_ask_interesse:
   - text: Für welchen Bereich interessierst du dich?
-  utter_bereich_klarifikation:
-  - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen, oder ir eine Liste der Bereiche anzeigen.
-  utter_list_bereich:
-  - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
-  utter_ende_konversation:
-  - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das Gespräch ab. Ciao !
-  utter_beispiele1:
-  - text: Du könntest Jugend-Schiedsrichter werden, oder in einer Suppenküche helfen, oder Prospekte für ein Museum verteilen
-  utter_beispiele2:
-  - text: Es gibt viel Bedarf für ehrenamtliche Arbeit bei der freiwilligen Feuerwehr, für Wahlhelfer, und für Betreuer in Jugendhäusern.
-  utter_beispiele3:
-  - text: Gerichte verlassen sich auf ehrenamtliche Schöffen und Trainer für Jugend Fussballteams werden immer gesucht.
   utter_badminton_details:
   - text: Badminton ist der beste Sport. Alle anderen Sportarten sind schlechte Imitate
+  utter_begruessung:
+  - text: Hallo, ich bin Buergerboty, und bni ein Experte für ehrenamtliche Tätigkeiten
+      rund um Nürnberg
+  utter_behausung_details:
+  - text: Besonders jetzt im Winter sind handwerklich gut gemachte Zelte unerlässlich.
+  utter_beispiele1:
+  - text: Du könntest Jugend-Schiedsrichter werden, oder in einer Suppenküche helfen,
+      oder Prospekte für ein Museum verteilen
+  utter_beispiele2:
+  - text: Es gibt viel Bedarf für ehrenamtliche Arbeit bei der freiwilligen Feuerwehr,
+      für Wahlhelfer, und für Betreuer in Jugendhäusern.
+  utter_beispiele3:
+  - text: Gerichte verlassen sich auf ehrenamtliche Schöffen und Trainer für Jugend
+      Fussballteams werden immer gesucht.
+  utter_bereich_klarifikation:
+  - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen,
+      oder ir eine Liste der Bereiche anzeigen.
+  utter_deutsch_kurs_details:
+  - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner
+      zum Deutsch lernen qualifiziert.
+  utter_ende_konversation:
+  - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das
+      Gespräch ab. Ciao !
+  utter_faehigkeiten:
+  - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder
+      Kultur erzählen.
   utter_fussball_details:
-  - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die Deutschen gewinnen
-  utter_tennis_details:
-  - text: Keine Ahnung, Boris Becker oder so?
+  - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die
+      Deutschen gewinnen
+  utter_kunst_details:
+  - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen
+      wie man sie verbindet?
+  utter_list_bereich:
+  - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
   utter_museum_details:
   - text: Nürnberg hat viele schöne Museen, irgendwer wird sicherlich Hilfe benötigen.
-  utter_kunst_details:
-  - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen wie man sie verbindet?
   utter_musik_details:
   - text: Konzerte organisieren oder Musiklehrer spielen sind sicherlich möglich.
   utter_suppenküche_details:
-  - text: Eine Suppe macht man in dem man allerhand Zutaten mit Wasser in einen Topf schmeisst und das Ganze dann vergisst. Dafür bist du wie geschaffen.
-  utter_deutsch_kurs_details:
-  - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner zum Deutsch lernen qualifiziert.
-  utter_behausung_details:
-  - text: Besonders jetzt im Winter sind handwerklich gut gemachte Zelte unerlässlich.
-
+  - text: Eine Suppe macht man in dem man allerhand Zutaten mit Wasser in einen Topf
+      schmeisst und das Ganze dann vergisst. Dafür bist du wie geschaffen.
+  utter_tennis_details:
+  - text: Keine Ahnung, Boris Becker oder so?

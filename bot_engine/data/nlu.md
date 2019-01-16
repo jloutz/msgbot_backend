@@ -17,6 +17,7 @@
 - das [2te](liste_eintrag:2)
 - Das [zweite](liste_eintrag:2) bitte
 - Erzähl mir was vom [zweiten](liste_eintrag:2) Bereich
+- Den [Geflohenen](bereich_interesse:flüchtlinge) zu helfne hört sich gut an
 
 ## intent:auswahl_liste_bereich
 - Zeige mir die Liste bitte
@@ -26,6 +27,7 @@
 - Zeig mir eine Liste der Bereiche
 - Zeig mir bitte eine Liste der Bereiche
 - dann zeig mir ein liste der Bereiche
+- Kannst du mir eine vollständige Liste der Bereiche zeigen?
 
 ## intent:beispiele_konkret
 - Gib mir bitte ein paar konkrete Beispiele
@@ -73,6 +75,9 @@
 - Ich will was über [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erfahren
 - Ich weiss es noch nicht genau
 - Dann erzähl mir mal was von [Sport](bereich_interesse:sport)
+- Ich weiss es noch nicht genau
+- [Fluechtlingen](bereich_interesse:flüchtlinge) zu helfen hört sich gut an
+- Hmm, könntest du mir doch lieber was von [Sport](bereich_interesse:sport) erzählen?
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -87,6 +92,18 @@
 - Ich wäre gerne Badminton trainer
 - badminton
 - Gibt es irgendwelche Projekte zu Badminton?
+
+## intent:interesse_behausung
+- Ich würde gerne Behausung für die Flüchtlinge finden
+- Ich würde den Füchtlingen gerne ein Zuhause finden
+- Jeder braucht ein dach überm Kopf, auch Flüchtlinge
+- Ich will ein Flüchtlingsheim  bauen
+- Ich will in einem flüchtlingsheim mithelfen
+- Ich würde gerne helfen behausungen für flüchtlinge zu finden
+- Wohnungen snd meine Spezialität
+- Ich kann fúr jeden was zum wohnen finden
+- Denen werde ich helfe indem ich Häuser finde
+- Die müssen jetzt mal aus den Zelten raus
 
 ## intent:interesse_fussball
 - Sag mir was über Fussball
@@ -147,6 +164,23 @@
 - Erzähl mir was vom Bereich Musik
 - Hey, kannst du mir etwas über musische Projekte sagen?
 
+## intent:interesse_suppenküche
+- Ich würde gerne beim Aufbau einer Suppenküche hlefen
+- Suppenküche
+- Ich würde gerne beim kochen helfen
+- Den flüchtlingen wäre echt geholfen mit etwas zum Essen
+- Beim aufbau einer Suppenküche wäre ich gerne behelflich
+- Warum nur Suppe?
+- Ich habe selber mal eine Suppe erfunden
+- Ich würde gerne helfen beim Deutsch beibringen
+- Zumindest kann ich beim deutshc lernen helfen
+- Ich kann mich auf deutsch unterhalten
+- Ich war mal deutsch lehrer
+- ich würd eselber gerne einen deutsch kurs besuchen
+- Mein bestes Fach in der Schule war deutsch
+- Für Unterhaltung kann mich mich vielleicht bei so etwas gebrauchen.
+- Könntest du mir Detaisl zur Suppenküche geben?
+
 ## intent:interesse_tennis
 - Kannst du mir wsa über Tennis Projekte erzählen?
 - Ich wär gern Tennis trainer
@@ -158,36 +192,8 @@
 - zeig mir tennis
 - Tennis war schon immer meine Leidenschaft
 - Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
+- Gibt mir bitte Details zu Tennis
 
-
-##intent:interesse_behausung
-- Ich würde gerne Behausung für die Flüchtlinge finden
-- Ich würde den Füchtlingen gerne ein Zuhause finden 
-- Jeder braucht ein dach überm Kopf, auch Flüchtlinge
-- Ich will ein Flüchtlingsheim  bauen 
-- Ich will in einem flüchtlingsheim mithelfen
-- Ich würde gerne helfen behausungen für flüchtlinge zu finden 
-- Wohnungen snd meine Spezialität 
-- Ich kann fúr jeden was zum wohnen finden 
-- Denen werde ich helfe indem ich Häuser finde 
-- Die müssen jetzt mal aus den Zelten raus 
-
-##intent:interesse_suppenküche
--Ich würde gerne beim Aufbau einer Suppenküche hlefen 
-- Suppenküche 
-- Ich würde gerne beim kochen helfen 
-- Den flüchtlingen wäre echt geholfen mit etwas zum Essen 
-- Beim aufbau einer Suppenküche wäre ich gerne behelflich
-- Warum nur Suppe? 
-- Ich habe selber mal eine Suppe erfunden 
-#intent:interesse_deutsch_kurs
-- Ich würde gerne helfen beim Deutsch beibringen 
-- Zumindest kann ich beim deutshc lernen helfen 
-- Ich kann mich auf deutsch unterhalten 
-- Ich war mal deutsch lehrer 
-- ich würd eselber gerne einen deutsch kurs besuchen 
-- Mein bestes Fach in der Schule war deutsch
-- Für Unterhaltung kann mich mich vielleicht bei so etwas gebrauchen.
 ## intent:konversation_ende
 - Das wars, danke
 - Tschüss
@@ -208,6 +214,8 @@
 - Adieu
 - bye
 - Tschau
+- Vielen Dank für die Info
+- Das wras
 
 ## intent:start
 - Hi
@@ -241,7 +249,10 @@
 - Guten Abend
 - Grusss
 - Yo
-- Hallo 
+- Hallo
+- Einen schönen guten Morgen
+- Gott zum Grusse
+- Hallolo
 
 ## intent:weiter
 - weiter bitte
@@ -291,11 +302,13 @@
 - siebte
 
 ## synonym:flüchtlinge
+- Geflohenen
 - Flüchtlinge
 - Geflohene
 - Flüchtlingsheim
 - Flüchtlingshilfe
 - FLüchtlingen
+- Fluechtlingen
 
 ## synonym:kultur
 - kulturell
