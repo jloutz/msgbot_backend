@@ -315,3 +315,35 @@
 * konversation_ende
     - utter_ende_konversation
 
+## Generated Story -7834441193052910079
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* weiter
+    - utter_beispiele2
+* zurück
+    - utter_beispiele1
+* auswahl_liste_bereich
+    - utter_list_bereich
+* information_interesse{"bereich_interesse": "fl\u00fcchtlinge"}
+    - slot{"bereich_interesse": "fl\u00fcchtlinge"}
+    - action_fluechtling_details
+* interesse_suppenküche
+    - utter_suppenküche_details
+* konversation_ende
+    - utter_ende_konversation
+
+## Generated Story 4993184748327735893
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_ende_konversation
+    - action_restart
+
+## Generated Story 0
+

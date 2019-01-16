@@ -75,13 +75,18 @@ slots:
 templates:
   utter_ask_interesse:
   - text: Für welchen Bereich interessierst du dich?
+  - text: Bist du an einem spezifischen Bereich interessiert?
+  - text: Mit welchem Bereich kann ich dienen?
   utter_badminton_details:
   - text: Badminton ist der beste Sport. Alle anderen Sportarten sind schlechte Imitate
+  - text: Wenn Badminton einfach wäre, dann würde es Fussball heissen.
   utter_begruessung:
-  - text: Hallo, ich bin Buergerboty, und bni ein Experte für ehrenamtliche Tätigkeiten
-      rund um Nürnberg
+  - text: Hallo, ich bin Bürgerboty, und bin ein Experte für ehrenamtliche Tätigkeiten
+      rund um Nürnberg.
+  - text: Servus, man nennt mich Bürgerboty, und ich kann dir bei Fragen über ehrenamtliche Tätigkeiten in Nürnberg helfen.
   utter_behausung_details:
   - text: Besonders jetzt im Winter sind handwerklich gut gemachte Zelte unerlässlich.
+  - text: Behausungen sind besonders im Winter von besonderer Bedeutung
   utter_beispiele1:
   - text: Du könntest Jugend-Schiedsrichter werden, oder in einer Suppenküche helfen,
       oder Prospekte für ein Museum verteilen
@@ -93,30 +98,41 @@ templates:
       Fussballteams werden immer gesucht.
   utter_bereich_klarifikation:
   - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen,
-      oder ir eine Liste der Bereiche anzeigen.
+      oder dir eine Liste der Bereiche anzeigen.
+  - Ich kann dir eine vollständige Liste der Bereiche anzeigen, oder vielleicht wäre es für dich hilfreich ein paar konkrete Beispiele zu sehen.
   utter_deutsch_kurs_details:
   - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner
       zum Deutsch lernen qualifiziert.
+  - text: Dadurch, dass du zu dieser Stelle im Gespräch gekommen bist, hast du gezeigt, dass du deutsch kannst. Du kannst also helfen.
   utter_ende_konversation:
   - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das
       Gespräch ab. Ciao !
+  - text: Leider gab es irreparable Probleme im Verständis. Deswegen breche ich jetzt das Gespräch ab. Tschüss !
   utter_faehigkeiten:
   - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder
       Kultur erzählen.
+  -text: Informationen zu Projekten in Bereichen wie Flüchtlingshilfe, Sport, oder Kultur gehören zu meinem Repertoire.
   utter_fussball_details:
   - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die
       Deutschen gewinnen
+  - text: Ohne Holland fahren wir zur WM.
   utter_kunst_details:
   - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen
       wie man sie verbindet?
+  - text: Eine vage, nicht interessante Aussage hier gilt sicherlich auch als eine Art von Kunst.
   utter_list_bereich:
   - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
+  - text: Momentan gibt es ehrenamtliche Tätigkeiten in den Bereichen Sport, Kultur und Flüchtlingshilfe
   utter_museum_details:
   - text: Nürnberg hat viele schöne Museen, irgendwer wird sicherlich Hilfe benötigen.
+  - text: Hast du mal den Film "Nachts im Museum" geguckt? Genauso läuft es auch in Nürnberg.
   utter_musik_details:
   - text: Konzerte organisieren oder Musiklehrer spielen sind sicherlich möglich.
+  - text: Kleinkindern "Für Elise" beibringen ist technisch gesehen auch ehrenamtliche Arbeit.
   utter_suppenküche_details:
   - text: Eine Suppe macht man in dem man allerhand Zutaten mit Wasser in einen Topf
       schmeisst und das Ganze dann vergisst. Dafür bist du wie geschaffen.
+  - text: Zu viele Köche versalzen den Brei, über Suppe wurde nie etwas gesagt.
   utter_tennis_details:
   - text: Keine Ahnung, Boris Becker oder so?
+  - text: Was ist der Unterschied zwischen Bungeejumping und Tennis?   Beim Tennis hat man zwei Aufschläge

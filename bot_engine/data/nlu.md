@@ -28,6 +28,7 @@
 - Zeig mir bitte eine Liste der Bereiche
 - dann zeig mir ein liste der Bereiche
 - Kannst du mir eine vollständige Liste der Bereiche zeigen?
+- Könntest du mir vielleicht doch die Liste mit Bereichen zeigen?
 
 ## intent:beispiele_konkret
 - Gib mir bitte ein paar konkrete Beispiele
@@ -38,10 +39,14 @@
 - Beispiele
 - Mir würden konkrete Beispiele helfen
 - ich würde gerne konkrete Tätigkeitne sehen
+- konkrete Beispiele bitte
 
 ## intent:fallback
 - Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
 - Jeder intent muss mindestens zwei Beispiele haben, sonst funktioniert die Klassifizierung nicht.
+- laberdischwall
+- willst du mich heiraten ?
+- Chuck norrist ist der mächtigste Krieger der Welt
 
 ## intent:information_interesse
 - Ich weiss es nicht
@@ -80,7 +85,9 @@
 - [Fluechtlingen](bereich_interesse:flüchtlinge) zu helfen hört sich gut an
 - Hmm, könntest du mir doch lieber was von [Sport](bereich_interesse:sport) erzählen?
 - [sportlicher](bereich_interesse:sport) Bereich
-- Kannst du mir was zu [Kultur](bereich_interesse:kultur) sgaen? 
+- Kannst du mir was zu [Kultur](bereich_interesse:kultur) sgaen?
+- Ich weiss es noch nicht genau
+- Der interessantest bereich ist für mich die [Flüchtlingshilfe](bereich_interesse:flüchtlinge)
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -184,6 +191,7 @@
 - Mein bestes Fach in der Schule war deutsch
 - Für Unterhaltung kann mich mich vielleicht bei so etwas gebrauchen.
 - Könntest du mir Detaisl zur Suppenküche geben?
+- Am liebsten würde ich was uber Suppen hören
 
 ## intent:interesse_tennis
 - Kannst du mir wsa über Tennis Projekte erzählen?
@@ -221,6 +229,7 @@
 - Vielen Dank für die Info
 - Das wras
 - Ich bin fertig, danke
+- Vielen dank, ich bin durch
 
 ## intent:start
 - Hi
@@ -259,6 +268,7 @@
 - Gott zum Grusse
 - Hallolo
 - ein schönen Mittag
+- Hallo bot, wie gehts?
 
 ## intent:weiter
 - weiter bitte
@@ -271,6 +281,7 @@
 - nächste Seite
 - Zeig mir mehr
 - weidah
+- kannst du mir noch ein paar mehr zeigen?
 
 ## intent:zurück
 - zurück bitte
@@ -284,6 +295,7 @@
 - retour
 - zurück bitte
 - Einen schritt zurück bitte
+- Kannst du bitte noch einmal zurückgehen?
 
 ## synonym:1
 - erste Eintrag
@@ -332,3 +344,4 @@
 - Sport
 - sportliche
 - spor
+- sportlicher
