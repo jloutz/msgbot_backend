@@ -64,9 +64,9 @@ def train_dialog():
     agent = Agent("domain.yml", policies=[MemoizationPolicy(), KerasPolicy()])
     ## TODO sobald der Bot ein wenig stabil wird, nach ein duzent Stories oder so, probiere nur Keras
     #agent = Agent("domain.yml", policies=[KerasPolicy()])
-    stories_file = "data\stories"
+    stories_file = "data/stories"
     stories_data = agent.load_data(stories_file)
-    output_path = "models\dialog"
+    output_path = "models/dialog"
     agent.train(
         stories_data,
         validation_split=0.2,
@@ -148,7 +148,7 @@ def train_interactive():
 if __name__ == '__main__':
     ## Main Methode
     ## Aufrufen von Projekt Dir aus mit --> python dev_targets
-    ## python dev_targets help für Hilfe
+    ## python dev_targets help fuer Hilfe
     src_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
     os.chdir(src_dir)
     if len(sys.argv) >= 2:
@@ -165,7 +165,7 @@ if __name__ == '__main__':
             print("run d -- startet den Bot in der Konsole mit debug-Ausgaben")
             print("serve -- startet den Bot backend webserver")
             print("serve d -- startet den Bot backend webserver mit debug Ausgaben")
-            print("eval_nlu '<evalstring>' evaluiert ein Eingabe-String und liefert Ergebnisse von NLU Modell zurück")
+            print("eval_nlu '<evalstring>' evaluiert ein Eingabe-String und liefert Ergebnisse von NLU Modell zurueck")
             print("setup_db -- Datenbank initialisieren (muss Aufgabe-spezifisch implementiert werden")
             print("eval_sql <'sql'> <(params)> sql gegen db feuern und ergebnisse bekommen")
 

@@ -1,116 +1,52 @@
 %YAML 1.1
 ---
 actions:
-- utter_answer_wozu_cui
-- utter_answer_wozu_cui_2
-- utter_prompt_3
-- utter_fallback
-- utter_goodbye
-- utter_answer_whatis_cui
-- utter_answer_whatis_cui_2
-- utter_fallback_3
-- utter_answer_rasa_advantages_1
-- utter_answer_rasa_advantages_2
-- utter_answer_rasa_advantages_3
-- utter_answer_ml_3
-- utter_answer_ml_2
-- utter_greet
-- utter_answer_ml_1
-- utter_answer_ru_smart
-- utter_answer_whatis_ml
-- utter_answer_whatis_ml_2
-- utter_answer_which_tech
-- utter_rasa_link
-- utter_prompt_2
-- utter_fallback_2
-- utter_noch_fragen
+- utter_start
+- utter_ende
+- utter_askname
+- utter_sayname
+- utter_interesse
 config:
   store_entities_as_slots: true
 entities:
 - dummy
+- name
+- interesse
 forms: []
 intents:
-- ask_ru_smart
-- nein
-- ask_which_tech
+- sayname
+- askname
 - acknowledge
-- ask_whatis_ml
+- nein
 - start
-- ask_rasa_advantages
-- ask_whatis_cui
-- ask_how_works_cui
-- ask_rasa
-- wozu_cui
-- fallback
-- need_hep
-- goodbye
+- ende
+- interesse
 slots:
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
+  name:
+    auto_fill: true
+    type: rasa_core.slots.TextSlot
+    initial_value: "Dummy"
+  interesse:
+    auto_fill: true
+    type: categorical
+    values:
+      - asyl
+      - familie
+      - gesundheit
 templates:
-  utter_answer_ml_1:
-  - text: Eine moderne CUI benutzt Machine Learning, um flexibel und anpassbar zu
-      sein. Man "programmiert" eine CUI nicht so sehr als man sie "trainiert".
-  utter_answer_ml_2:
-  - text: Mit Machine Learning 'lerne' ich anhand von Beispielen oder "Trainings-Daten".
-      Ich lerne zu interpretieren was Sie "meinen" wenn Sie was typen oder sagen,
-      und wie ich darauf reagieren soll.
-  utter_answer_ml_3:
-  - text: Am Anfang kann ich recht wenig, aber durch mehr und mehr Trainings-Daten
-      kann ich mit mehr und mehr Anfragen und Anlegen vom Benutzer umgehen.
-  utter_answer_rasa_advantages_1:
-  - text: RASA ist open-source, frei kommerziell verwendbar, und benutzt state-of-the-art
-      Machine Learning und NLU (Natural Language Understanding) Technologien unter
-      der Haube.
-  utter_answer_rasa_advantages_2:
-  - text: RASA ist komplet lokal installierbar und betreibbar, und benutzt keinerlei 3rd-Party
-      APIs vom Google oder Facebook oder Amazon zum Beispiel.
-  utter_answer_rasa_advantages_3:
-  - text: Das heißt man hat die volle Kontrolle über die Technologien und die Daten, und muss sensible Nutzer-Daten
-      nicht nach außen freigeben.
-
-  utter_answer_ru_smart:
-  - text: ich bin nicht wirklich intelligent, aber durch Machine Learning Technologien
-      tue ich als ob ich das wäre.
-  utter_answer_whatis_cui:
-  - text: CUI steht für "Conversational User Interfaces", also eine Sprach-Schnittstelle zu einer Software Anwendung. Moderne CUIs wie ich benutzen Machine Learning, um flexibel und anpassbar zu
-      sein
-  utter_answer_whatis_cui_2:
-  - text: Der Begriff "Chatbot" ist geläufiger als CUI, aber man meint damit dasselbe.
-
-  utter_answer_whatis_ml:
-  - text: Machine Learning ist die Technologie, die das öffentliche Interesse an KI in den letzten Jahren wieder geweckt hat.
-  utter_answer_whatis_ml_2:
-  - text: Machine Learning gibt Software die Fähigkeit Muster in großen Datenmengen zu erkennen, und somit mit unscharfen, unvollständigen, oder unbekannten Daten sinnvoll umzugehen
-
-  utter_answer_which_tech:
-  - text: Wir verwenden RASA, eine sehr gute open-source CUI Framework.
-  utter_rasa_link:
-  - text: https://rasa.com
-
-  utter_answer_wozu_cui:
-  - text: CUIs können erheblich dazu beitragen, wiederkehrende Customer-Service und Help-Desk Vorgänge zu automatisieren.
-  utter_answer_wozu_cui_2:
-  - text: CUIs eignen sich hervorragend als Schnittstellen zu Informations-Systemen wie FAQs zum Beispiel.
-
-  utter_fallback:
-  - text: Dazu kann ich leider nichts sagen...
-  - text: Das habe ich leider nicht verstanden...
-  utter_fallback_2:
-  - text: Es tut mir leid, das habe ich immer noch nicht verstanden. Probieren Sie
-      es mit einer einfachen Frage zur CUI..
-  utter_fallback_3:
-  - text: Ich glaube, ich kann Ihnen damit nicht weiterhelfen. Ich leite Sie an einen Mitarbeiter weiter...
-  utter_goodbye:
-  - text: Auf Wiedersehen!
-  utter_greet:
-  - text: Hallo!
-  utter_noch_fragen:
-  - text: Haben Sie noch eine Frage?
-  - text: Kann ich sonst was für Sie tun?
-  utter_prompt_2:
-  - text: ich kann Ihnen ein Paar Fragen zum CUI beantworten
-  utter_prompt_3:
-  - text: Sie können Fragen zum Beispiel was CUI heißt, oder wie eine CUI funktioniert,
-      oder wie man eine CUI entwickelt und trainiert.
+  utter_start:
+  - text: Hallo und Willkommen in Nürnberg.
+  - text: Hallo ich bin ein Bürgerboty und helfe Dir!
+  utter_askname:
+  - text: Wie darf ich Dich nennen?
+  - text: Wie heißt Du denn?
+  utter_ende:
+  - text: Dann bis zum nächsten Mal.
+    utter_sayname:
+  - text: Hallo,{name}, Du willst Dich in der Stadt Nürnberg innerhalb eines Ehrenamtes engagieren? Nenn mir Deine Interessen und ich sage Dir, welche Möglichkeiten es in der Stadt Nürnberg gibt.
+    utter_interesse:
+  - text: Lieber,{name}, Du interessierst Dich also für {interesse}?
+  
