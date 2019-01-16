@@ -40,6 +40,7 @@
 - Mir würden konkrete Beispiele helfen
 - ich würde gerne konkrete Tätigkeitne sehen
 - konkrete Beispiele bitte
+- Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
 
 ## intent:fallback
 - Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
@@ -88,6 +89,8 @@
 - Kannst du mir was zu [Kultur](bereich_interesse:kultur) sgaen?
 - Ich weiss es noch nicht genau
 - Der interessantest bereich ist für mich die [Flüchtlingshilfe](bereich_interesse:flüchtlinge)
+- Ich weiss es noch nicht
+- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben? 
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -133,6 +136,7 @@
 - Rasenball
 - Könntest du mir was zu Fussball sagen?
 - Können Sie mir was zu Fussball erzählen?
+- Fussball hört sich genau richtig an 
 
 ## intent:interesse_kunst
 - Kunst
@@ -230,6 +234,7 @@
 - Das wras
 - Ich bin fertig, danke
 - Vielen dank, ich bin durch
+- Das wars dann auch
 
 ## intent:start
 - Hi
@@ -269,6 +274,7 @@
 - Hallolo
 - ein schönen Mittag
 - Hallo bot, wie gehts?
+- Hallo, mein metallischer Freund
 
 ## intent:weiter
 - weiter bitte
@@ -282,6 +288,8 @@
 - Zeig mir mehr
 - weidah
 - kannst du mir noch ein paar mehr zeigen?
+- Kannst du mir noch ein paar zeigen? 
+- und noch ein paar mehr? 
 
 ## intent:zurück
 - zurück bitte
@@ -296,6 +304,8 @@
 - zurück bitte
 - Einen schritt zurück bitte
 - Kannst du bitte noch einmal zurückgehen?
+- zurück bitte
+- und noch einmal zurück bitte
 
 ## synonym:1
 - erste Eintrag

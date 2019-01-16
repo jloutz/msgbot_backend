@@ -16,7 +16,8 @@ actions:
 - utter_beispiele1
 - action_sport_details
 - utter_badminton_details
-- utter_ende_konversation
+- utter_ende_konversation_error
+- utter_ende_konversation_erfolg
 - utter_beispiele3
 - action_fluechtling_details
 - action_feld_details
@@ -104,7 +105,7 @@ templates:
   - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner
       zum Deutsch lernen qualifiziert.
   - text: Dadurch, dass du zu dieser Stelle im Gespräch gekommen bist, hast du gezeigt, dass du deutsch kannst. Du kannst also helfen.
-  utter_ende_konversation:
+  utter_ende_konversation_error:
   - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das
       Gespräch ab. Ciao !
   - text: Leider gab es irreparable Probleme im Verständis. Deswegen breche ich jetzt das Gespräch ab. Tschüss !
@@ -136,3 +137,6 @@ templates:
   utter_tennis_details:
   - text: Keine Ahnung, Boris Becker oder so?
   - text: Was ist der Unterschied zwischen Bungeejumping und Tennis?   Beim Tennis hat man zwei Aufschläge
+  utter_ende_konversation_erfolg:
+  - text: Vielen Dank für das Gespräch, bis zum nächsten Mal
+  - text: Danke für das Gespräch, hoffentlich hattest du Spass.
