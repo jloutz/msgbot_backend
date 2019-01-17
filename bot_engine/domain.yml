@@ -1,43 +1,44 @@
 %YAML 1.1
 ---
 actions:
-- action_greeting
-- utter_sport_details
-- utter_bereich_klarifikation
-- utter_deutsch_kurs_details
-- utter_tennis_details
-- utter_musik_details
-- utter_list_bereich
-- utter_kunst_details
 - action_undo
-- action_kultur_details
-- utter_suppenküche_details
-- utter_fussball_details
-- utter_beispiele1
-- action_sport_details
-- utter_badminton_details
-- utter_ende_konversation_error
 - utter_ende_konversation_erfolg
-- utter_beispiele3
-- action_fluechtling_details
-- action_feld_details
-- utter_museum_details
-- utter_behausung_details
+- utter_badminton_details
+- utter_musik_details
+- utter_bereich_klarifikation
+- action_kultur_details
+- action_greeting
 - utter_beispiele2
+- utter_list_bereich
+- utter_tennis_details
+- utter_fussball_details
+- utter_beispiele3
+- utter_ende_konversation_error
+- action_fluechtling_details
+- action_sport_details
+- utter_verwirrung
+- utter_sport_details
+- utter_beispiele1
+- utter_behausung_details
+- utter_suppenküche_details
+- utter_kunst_details
+- action_feld_details
+- utter_deutsch_kurs_details
+- utter_museum_details
 config:
   store_entities_as_slots: true
 entities:
 - bereich_interesse
-- dummy
 - liste_eintrag
+- dummy
 forms: []
 intents:
-- information_interesse
 - start
+- fallback
+- information_interesse
 - interesse_kunst
 - konversation_ende
 - zurück
-- fallback
 - auswahl_liste_bereich
 - auswahl_liste
 - beispiele_konkret
@@ -74,6 +75,117 @@ slots:
     - '7'
     - letztes
 templates:
+  -text:
+  - text: I
+  - text: n
+  - text: f
+  - text: o
+  - text: r
+  - text: m
+  - text: a
+  - text: t
+  - text: i
+  - text: o
+  - text: n
+  - text: e
+  - text: n
+  - text: ' '
+  - text: z
+  - text: u
+  - text: ' '
+  - text: P
+  - text: r
+  - text: o
+  - text: j
+  - text: e
+  - text: k
+  - text: t
+  - text: e
+  - text: n
+  - text: ' '
+  - text: i
+  - text: n
+  - text: ' '
+  - text: B
+  - text: e
+  - text: r
+  - text: e
+  - text: i
+  - text: c
+  - text: h
+  - text: e
+  - text: n
+  - text: ' '
+  - text: w
+  - text: i
+  - text: e
+  - text: ' '
+  - text: F
+  - text: l
+  - text: ü
+  - text: c
+  - text: h
+  - text: t
+  - text: l
+  - text: i
+  - text: n
+  - text: g
+  - text: s
+  - text: h
+  - text: i
+  - text: l
+  - text: f
+  - text: e
+  - text: ','
+  - text: ' '
+  - text: S
+  - text: p
+  - text: o
+  - text: r
+  - text: t
+  - text: ','
+  - text: ' '
+  - text: o
+  - text: d
+  - text: e
+  - text: r
+  - text: ' '
+  - text: K
+  - text: u
+  - text: l
+  - text: t
+  - text: u
+  - text: r
+  - text: ' '
+  - text: g
+  - text: e
+  - text: h
+  - text: ö
+  - text: r
+  - text: e
+  - text: n
+  - text: ' '
+  - text: z
+  - text: u
+  - text: ' '
+  - text: m
+  - text: e
+  - text: i
+  - text: n
+  - text: e
+  - text: m
+  - text: ' '
+  - text: R
+  - text: e
+  - text: p
+  - text: e
+  - text: r
+  - text: t
+  - text: o
+  - text: i
+  - text: r
+  - text: e
+  - text: .
   utter_ask_interesse:
   - text: Für welchen Bereich interessierst du dich?
   - text: Bist du an einem spezifischen Bereich interessiert?
@@ -84,7 +196,8 @@ templates:
   utter_begruessung:
   - text: Hallo, ich bin Bürgerboty, und bin ein Experte für ehrenamtliche Tätigkeiten
       rund um Nürnberg.
-  - text: Servus, man nennt mich Bürgerboty, und ich kann dir bei Fragen über ehrenamtliche Tätigkeiten in Nürnberg helfen.
+  - text: Servus, man nennt mich Bürgerboty, und ich kann dir bei Fragen über ehrenamtliche
+      Tätigkeiten in Nürnberg helfen.
   utter_behausung_details:
   - text: Besonders jetzt im Winter sind handwerklich gut gemachte Zelte unerlässlich.
   - text: Behausungen sind besonders im Winter von besonderer Bedeutung
@@ -100,19 +213,24 @@ templates:
   utter_bereich_klarifikation:
   - text: Ich kann dir einige konkrete Beispiele von ehrenamtlichen Tätigkeiten sagen,
       oder dir eine Liste der Bereiche anzeigen.
-  - Ich kann dir eine vollständige Liste der Bereiche anzeigen, oder vielleicht wäre es für dich hilfreich ein paar konkrete Beispiele zu sehen.
+  - text: Ich kann dir eine vollständige Liste der Bereiche anzeigen, oder vielleicht
+      wäre es für dich hilfreich ein paar konkrete Beispiele zu sehen.
   utter_deutsch_kurs_details:
   - text: Wenn du diesen Text lesen kannst, dann bist du schon als Gesprächspartner
       zum Deutsch lernen qualifiziert.
-  - text: Dadurch, dass du zu dieser Stelle im Gespräch gekommen bist, hast du gezeigt, dass du deutsch kannst. Du kannst also helfen.
+  - text: Dadurch, dass du zu dieser Stelle im Gespräch gekommen bist, hast du gezeigt,
+      dass du deutsch kannst. Du kannst also helfen.
+  utter_ende_konversation_erfolg:
+  - text: Vielen Dank für das Gespräch, bis zum nächsten Mal
+  - text: Danke für das Gespräch, hoffentlich hattest du Spass.
   utter_ende_konversation_error:
   - text: Ich konnte dich leider wiederholt nicht verstehen. Ich breche deswegen das
       Gespräch ab. Ciao !
-  - text: Leider gab es irreparable Probleme im Verständis. Deswegen breche ich jetzt das Gespräch ab. Tschüss !
+  - text: Leider gab es irreparable Probleme im Verständis. Deswegen breche ich jetzt
+      das Gespräch ab. Tschüss !
   utter_faehigkeiten:
   - text: Ich kann dir von Projekten in Bereichen wie Flüchtlingshilfe, Sport oder
       Kultur erzählen.
-  -text: Informationen zu Projekten in Bereichen wie Flüchtlingshilfe, Sport, oder Kultur gehören zu meinem Repertoire.
   utter_fussball_details:
   - text: Fussball ist wenn 22 Spieler einem Ball hinterher rennen und am Ende die
       Deutschen gewinnen
@@ -120,23 +238,29 @@ templates:
   utter_kunst_details:
   - text: Papier und Farbe. Vielleicht kannst du irgendwelchen kleinen Kindern zeigen
       wie man sie verbindet?
-  - text: Eine vage, nicht interessante Aussage hier gilt sicherlich auch als eine Art von Kunst.
+  - text: Eine vage, nicht interessante Aussage hier gilt sicherlich auch als eine
+      Art von Kunst.
   utter_list_bereich:
   - text: Es gibt die Bereiche Sport, Kultur und Flüchtlingshilfe.
-  - text: Momentan gibt es ehrenamtliche Tätigkeiten in den Bereichen Sport, Kultur und Flüchtlingshilfe
+  - text: Momentan gibt es ehrenamtliche Tätigkeiten in den Bereichen Sport, Kultur
+      und Flüchtlingshilfe
   utter_museum_details:
   - text: Nürnberg hat viele schöne Museen, irgendwer wird sicherlich Hilfe benötigen.
-  - text: Hast du mal den Film "Nachts im Museum" geguckt? Genauso läuft es auch in Nürnberg.
+  - text: Hast du mal den Film "Nachts im Museum" geguckt? Genauso läuft es auch in
+      Nürnberg.
   utter_musik_details:
   - text: Konzerte organisieren oder Musiklehrer spielen sind sicherlich möglich.
-  - text: Kleinkindern "Für Elise" beibringen ist technisch gesehen auch ehrenamtliche Arbeit.
+  - text: Kleinkindern "Für Elise" beibringen ist technisch gesehen auch ehrenamtliche
+      Arbeit.
   utter_suppenküche_details:
   - text: Eine Suppe macht man in dem man allerhand Zutaten mit Wasser in einen Topf
       schmeisst und das Ganze dann vergisst. Dafür bist du wie geschaffen.
   - text: Zu viele Köche versalzen den Brei, über Suppe wurde nie etwas gesagt.
   utter_tennis_details:
   - text: Keine Ahnung, Boris Becker oder so?
-  - text: Was ist der Unterschied zwischen Bungeejumping und Tennis?   Beim Tennis hat man zwei Aufschläge
-  utter_ende_konversation_erfolg:
-  - text: Vielen Dank für das Gespräch, bis zum nächsten Mal
-  - text: Danke für das Gespräch, hoffentlich hattest du Spass.
+  - text: Was ist der Unterschied zwischen Bungeejumping und Tennis?   Beim Tennis
+      hat man zwei Aufschläge
+  utter_verwirrung:
+  - text: Ich habe dich leider nicht verstanden.
+  - text: Ich konnte dich nicht verstehen.
+  - text: Könntest du das vielleicht in anderen Worten wiederholen?

@@ -117,7 +117,7 @@
 *fallback
     - utter_bereich_klarifikation
 *fallback
-    -utter_bereich_klarifikation
+    -utter_verwirrung
 *fallback
     -utter_ende_konversation_error
     -action_restart
@@ -340,7 +340,7 @@
 * fallback
     - utter_bereich_klarifikation
 * fallback
-    - utter_bereich_klarifikation
+    - utter_verwirrung
 * fallback
     - utter_ende_konversation_error
     - action_restart
@@ -369,4 +369,71 @@
     - utter_fussball_details
 * konversation_ende
     - utter_ende_konversation_erfolg
+
+## Generated Story 1099407376754921249
+* start
+    - action_greeting
+* interesse_fussball
+    - utter_fussball_details
+* information_interesse{"bereich_interesse": "kultur"}
+    - slot{"bereich_interesse": "kultur"}
+    - action_kultur_details
+* interesse_musik
+    - utter_musik_details
+* konversation_ende
+    - utter_ende_konversation_erfolg
+
+## Generated Story -497313531183900849
+* start
+    - action_greeting
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_verwirrung
+* fallback
+    - utter_ende_konversation_error
+    - action_restart
+
+## Generated Story 6378941967018413226
+* start
+    - action_greeting
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_verwirrung
+* fallback
+    - utter_ende_konversation_error
+    - action_restart
+
+## Generated Story -6247335118013534436
+* start
+    - action_greeting
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_verwirrung
+* fallback
+    - utter_ende_konversation_error
+
+## Generated Story -7235270137339208084
+* start
+    - action_greeting
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_verwirrung
+* fallback
+    - utter_ende_konversation_error
+    - action_restart
+
+## Generated Story 5833010171878226449
+* start
+    - action_greeting
+* fallback
+    - utter_bereich_klarifikation
+* fallback
+    - utter_verwirrung
+* fallback
+    - utter_ende_konversation_error
+    - action_restart
 

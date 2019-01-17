@@ -42,12 +42,6 @@
 - konkrete Beispiele bitte
 - Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
 
-## intent:fallback
-- Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
-- Jeder intent muss mindestens zwei Beispiele haben, sonst funktioniert die Klassifizierung nicht.
-- laberdischwall
-- willst du mich heiraten ?
-- Chuck norrist ist der mächtigste Krieger der Welt
 
 ## intent:information_interesse
 - Ich weiss es nicht
@@ -90,7 +84,8 @@
 - Ich weiss es noch nicht genau
 - Der interessantest bereich ist für mich die [Flüchtlingshilfe](bereich_interesse:flüchtlinge)
 - Ich weiss es noch nicht
-- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben? 
+- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben?
+- Gibt es vielleicht doch etwas zum bereich [kultur](bereich_interesse)?
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -136,7 +131,8 @@
 - Rasenball
 - Könntest du mir was zu Fussball sagen?
 - Können Sie mir was zu Fussball erzählen?
-- Fussball hört sich genau richtig an 
+- Fussball hört sich genau richtig an
+- Sag mir bitte was zu Fussball
 
 ## intent:interesse_kunst
 - Kunst
@@ -178,6 +174,7 @@
 - Musik bitte
 - Erzähl mir was vom Bereich Musik
 - Hey, kannst du mir etwas über musische Projekte sagen?
+- Ich möcht ein Konzert organisieren
 
 ## intent:interesse_suppenküche
 - Ich würde gerne beim Aufbau einer Suppenküche hlefen
@@ -235,6 +232,7 @@
 - Ich bin fertig, danke
 - Vielen dank, ich bin durch
 - Das wars dann auch
+- Vielen Dank, das war sehr hilfreich
 
 ## intent:start
 - Hi
@@ -275,6 +273,12 @@
 - ein schönen Mittag
 - Hallo bot, wie gehts?
 - Hallo, mein metallischer Freund
+- Hallo
+- yoyo was geht
+- Hallo
+- Guten abend mein lieber
+- Hallo
+- Hallo 
 
 ## intent:weiter
 - weiter bitte
@@ -288,8 +292,8 @@
 - Zeig mir mehr
 - weidah
 - kannst du mir noch ein paar mehr zeigen?
-- Kannst du mir noch ein paar zeigen? 
-- und noch ein paar mehr? 
+- Kannst du mir noch ein paar zeigen?
+- und noch ein paar mehr?
 
 ## intent:zurück
 - zurück bitte
