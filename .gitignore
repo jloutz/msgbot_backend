@@ -15,4 +15,8 @@ domain_gen.yml
 story_graph.dot
 bot_engine/data/embeddings/
 rasa_core.log
-
+python3
+backup/
+msgbot_frontend-master
+bot_engine/message_store.json
+bot_engine/components/__init__.pyc

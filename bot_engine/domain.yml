@@ -14,6 +14,7 @@ actions:
 - utter_no_name
 - utter_interesse_Asyl
 - utter_interesse_Gesundheit
+- action_ehrenamt_site
 config:
   store_entities_as_slots: true
 entities:
