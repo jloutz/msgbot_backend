@@ -41,6 +41,8 @@
 - ich würde gerne konkrete Tätigkeitne sehen
 - konkrete Beispiele bitte
 - Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
+- Zeig mir bitte die konkreten Beispiele
+- zeig mir bitte noch mehr beispiele
 
 ## intent:fallback
 - Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
@@ -90,7 +92,8 @@
 - Ich weiss es noch nicht genau
 - Der interessantest bereich ist für mich die [Flüchtlingshilfe](bereich_interesse:flüchtlinge)
 - Ich weiss es noch nicht
-- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben? 
+- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben?
+- Ich bin mir nicht ganz sicher
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -136,7 +139,7 @@
 - Rasenball
 - Könntest du mir was zu Fussball sagen?
 - Können Sie mir was zu Fussball erzählen?
-- Fussball hört sich genau richtig an 
+- Fussball hört sich genau richtig an
 
 ## intent:interesse_kunst
 - Kunst
@@ -235,6 +238,8 @@
 - Ich bin fertig, danke
 - Vielen dank, ich bin durch
 - Das wars dann auch
+- Das wars danke
+- jetzt bin ich zufrieden
 
 ## intent:start
 - Hi
@@ -275,6 +280,8 @@
 - ein schönen Mittag
 - Hallo bot, wie gehts?
 - Hallo, mein metallischer Freund
+- moin moin
+- Hallo, wie gehts?
 
 ## intent:weiter
 - weiter bitte
@@ -288,8 +295,27 @@
 - Zeig mir mehr
 - weidah
 - kannst du mir noch ein paar mehr zeigen?
-- Kannst du mir noch ein paar zeigen? 
-- und noch ein paar mehr? 
+- Kannst du mir noch ein paar zeigen?
+- und noch ein paar mehr?
+
+## intent:witz
+- Erzähl mir einen Witz
+- ich will witze hörenn
+- erzähl mir was zum lachen
+- witz bitte
+- sag was lustiges
+- unterhalte mich
+- Sei ein clown
+- Sein ein Komiker
+- wir wollen witze hören
+- ich will einen witz
+- mach einen Scherz
+- Ein jokus bitte
+- Mach etwas Unfug
+- Erzähl einen gag
+- Erzähl mir einen witz
+- Noch einen Witz bitte
+- Erzähl mir einen Witz
 
 ## intent:zurück
 - zurück bitte
@@ -306,6 +332,7 @@
 - Kannst du bitte noch einmal zurückgehen?
 - zurück bitte
 - und noch einmal zurück bitte
+- Zeig mir bitte die letzten beispiele
 
 ## synonym:1
 - erste Eintrag

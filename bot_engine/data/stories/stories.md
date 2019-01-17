@@ -87,6 +87,11 @@
 * konversation_ende
     - utter_ende_konversation_erfolg
     
+    
+##building block: witze
+* witz 
+    - utter_witz
+    
 ## happy path: bereich kultur
 * start 
     -action_greeting
@@ -369,4 +374,31 @@
     - utter_fussball_details
 * konversation_ende
     - utter_ende_konversation_erfolg
+
+## Generated Story -2546369626884247029
+* start
+    - action_greeting
+* information_interesse
+    - utter_bereich_klarifikation
+* beispiele_konkret
+    - utter_beispiele1
+* witz
+    - utter_witz
+* beispiele_konkret
+    - utter_beispiele2
+* witz
+    - utter_witz
+* zurück
+    - utter_beispiele1
+* konversation_ende
+    - utter_ende_konversation_erfolg
+
+## Generated Story -6092905266865668930
+* start
+    - action_greeting
+* witz
+    - utter_witz
+* konversation_ende
+    - utter_ende_konversation_erfolg
+    - action_restart
 

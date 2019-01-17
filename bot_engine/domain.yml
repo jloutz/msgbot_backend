@@ -24,6 +24,8 @@ actions:
 - utter_museum_details
 - utter_behausung_details
 - utter_beispiele2
+- utter_witz
+
 config:
   store_entities_as_slots: true
 entities:
@@ -50,6 +52,7 @@ intents:
 - interesse_behausung
 - interesse_suppenküche
 - weiter
+- witz
 slots:
   bereich_interesse:
     auto_fill: true
@@ -140,3 +143,14 @@ templates:
   utter_ende_konversation_erfolg:
   - text: Vielen Dank für das Gespräch, bis zum nächsten Mal
   - text: Danke für das Gespräch, hoffentlich hattest du Spass.
+  utter_witz:
+  - text: Was ist weiß und guckt durchs Schlüsselloch? — Ein Spannbettlaken.
+  - text: Welches Getränk trinken Firmenchefs? — Leitungswasser
+  - text: Was sagt ein Origami-Lehrer zu seinem Schüler? — „Das kannste knicken.“
+  - text: Was findet man beim Kannibalen in der Dusche? — Head and Shoulders.
+  - text: Was passiert wenn man Cola und Bier gleichzeitig trinkt? — Man colabiert.
+  - text: Was essen Autos am liebsten? — Parkplätzchen.
+  - text: Was macht eine Bombe im Bordell? — Puff.
+  - text: Wie heißt ein Spanier ohne Auto? — Carlos
+  - text: Was sitzt auf einem Baum und winkt? — Ein Huhu!
+  - text: Was ist niedlich und hüpft qualmend über'n Acker? — Ein Kaminchen!
