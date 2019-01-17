@@ -1,53 +1,88 @@
 %YAML 1.1
 ---
 actions:
-- utter_start
-- utter_ende
 - utter_askname
-- utter_sayname
 - utter_interesse
+- utter_interesse_2
+- utter_confirm
+- utter_start
+- utter_sayname
+- utter_ende
+- utter_welche
+- utter_interesse_Familie
+- utter_out_of_scope
+- utter_no_name
+- utter_interesse_Asyl
+- utter_interesse_Gesundheit
 config:
   store_entities_as_slots: true
 entities:
 - dummy
-- name
 - interesse
+- name
 forms: []
 intents:
+- start
+- interesse
+- fallback
 - sayname
 - askname
 - acknowledge
+- confirm
 - nein
-- start
 - ende
-- interesse
+- welche
+- out_of_scope
+- interesse_Familie
+- interesse_Asyl
+- interesse_Gesundheit
 slots:
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
-  name:
-    auto_fill: true
-    type: rasa_core.slots.TextSlot
-    initial_value: "Dummy"
   interesse:
     auto_fill: true
-    type: categorical
+    type: rasa_core.slots.CategoricalSlot
     values:
-      - asyl
-      - familie
-      - gesundheit
+    - asyl
+    - familie
+    - gesundheit
+  name:
+    auto_fill: true
+    initial_value: Dummy
+    type: rasa_core.slots.TextSlot
 templates:
-  utter_start:
-  - text: Hallo und Willkommen in Nürnberg.
-  - text: Hallo ich bin ein Bürgerboty und helfe Dir!
   utter_askname:
   - text: Wie darf ich Dich nennen?
   - text: Wie heißt Du denn?
+  utter_confirm:
+  - text: Verstanden,{name}
+  - text: Super,{name}
   utter_ende:
   - text: Dann bis zum nächsten Mal.
   utter_interesse:
-  - text: Lieber,{name}, Du interessierst Dich also für {interesse}?
+  - text: Lieber,{name}, Du interessierst Dich also für ehrenamtliche Tätigkeiten
+      rund ums Thema {interesse}? Stimmt das?
   utter_sayname:
-    - text: Hallo,{name}, Du willst Dich in der Stadt Nürnberg innerhalb eines Ehrenamtes engagieren? Nenn mir Deine Interessen und ich sage Dir, welche Möglichkeiten es in der Stadt Nürnberg gibt.
+  - text: Hallo,{name}, Du willst Dich in der Stadt Nürnberg innerhalb eines Ehrenamtes
+      engagieren? Nenn mir Deine Interessen und ich sage Dir, welche Möglichkeiten
+      es in der Stadt Nürnberg gibt.
+  utter_start:
+  - text: Hallo und Willkommen in Nürnberg.
+  - text: Hallo ich bin ein Bürgerboty und helfe Dir!
+  utter_welche:
+  - text: Es gibt viele Interessenbereiche, die eine ehrenamtliche Tätigkeit ermöglichen. Im Moment in dieser Demo zu den Interessen Familie, Asyl oder Gesundheit.
+  utter_interesse_Familie:
+  - text: Hier habe ich zum Beispiel "Übungsleiter/in Familiensportgruppe d. Lebenshilfe Nbg In der Familiensportgruppe der Lebenshilfe Nürnberg treffen sich jung und alt, Menschen mit und ohne Behinderung, Eltern mit ihren Kindern bzw. erwachsenen Familienmitgliedern." "https://engagementtools.de/feeds/html_complete/zeitspenden/detailanzeige.php?zboerse_id=22207&zboerseoptik_id=142"
+  utter_out_of_scope:
+  - text: Es tut mir leid, dazu habe ich keine Informationen. Versuche es noch einmal
+  utter_no_name:
+  - text: Leider konnte ich Deinen Namen nicht verstehen, sagst Du ihn mir nochmal? Am besten mit "Ich heisse..."
+  utter_interesse_2:
+  - text: Lieber {name}, nenne mir einfach eines dieser Interessen.
+  utter_interesse_Asyl:
+  - text: Alles zum Thema Asyl...
+  utter_interesse_Gesundheit:
+  - text: Alles zum Thema Gesundheit...
 
   
