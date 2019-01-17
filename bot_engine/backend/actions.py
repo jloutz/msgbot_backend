@@ -18,6 +18,13 @@ class ActionShowEhrenamtWebsite(Action):
 
     def run(self,dispatcher,tracker,domain):
         webbrowser.open('https://www.iska-nuernberg.de/zab/buergernetz.html', new=2)
+class ActionShowEhrenamtFamilie(Action):
+    ## demo action for welcome bot
+    def name(self):
+        return "action_ehrenamt_familie"
+
+    def run(self,dispatcher,tracker,domain):
+        webbrowser.open('https://engagementtools.de/feeds/html_complete/zeitspenden/detailanzeige.php?zboerse_id=22207&zboerseoptik_id=142', new=2)
 class ActionUndoPrevious(Action):
     '''
     Undoes previous user input.

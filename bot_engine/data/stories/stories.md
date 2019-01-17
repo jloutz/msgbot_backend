@@ -13,8 +13,8 @@
 > check_interest
 * welche
 	- utter_welche
-	- action_default_fallback
 	- utter_interesse_2
+	- action_default_fallback
 > check_interest
 
 ## interesse
@@ -31,6 +31,7 @@
 > check_interest
 * interesse_Familie
     - utter_interesse_Familie
+    - action_ehrenamt_familie
 
 ## interesse_Asyl
 > check_interest
@@ -128,4 +129,29 @@
 * confirm
     - utter_confirm
 
+
+## Generated Story -5560556440775937267
+* start
+    - utter_start
+    - utter_askname
+* sayname{"name": "bodo"}
+    - slot{"name": "bodo"}
+    - utter_sayname
+* interesse_Familie{"interesse": "familie"}
+    - slot{"interesse": "familie"}
+    - utter_interesse_Familie
+    - action_ehrenamt_familie
+
+## Generated Story -843866072154854523
+* start
+    - utter_start
+    - utter_askname
+* sayname{"name": "jochen"}
+    - slot{"name": "jochen"}
+    - utter_sayname
+* welche
+    - utter_welche
+* interesse_Gesundheit{"interesse": "Gesundheit"}
+    - slot{"interesse": "Gesundheit"}
+    - utter_interesse_Gesundheit
 

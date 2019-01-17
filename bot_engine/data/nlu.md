@@ -50,19 +50,21 @@
 - [Asyl](interesse:asyl)
 - [Asyl](interesse:asyl)
 
-## intent:interesse_Familie
-- Familie
-- familie
-- [Familie](interesse:familie)
-
 ## intent:interesse_Asyl
 - asyl
 - Asyl
 - [Asyl](interesse:asyl)
 
+## intent:interesse_Familie
+- Familie
+- familie
+- [Familie](interesse:familie)
+- Ich interessiere mich für [Familie](interesse:familie)
+
 ## intent:interesse_Gesundheit
 - Gesundheit
 - gesundheit
+- [Gesundheit](interesse)
 
 ## intent:nein
 - nein
@@ -115,6 +117,8 @@
 - [Peter](name)
 - Ich heisse [Peter](name:peter)
 - Ich heisse [Inge](name:inge)
+- Ich heisse [Bodo](name:bodo)
+- Ich bin [Jochen](name:jochen)
 
 ## intent:start
 - Hi
@@ -135,6 +139,8 @@
 - Hallo
 - Hi
 - Hallo
+- Hallo
+- Hallo
 
 ## intent:welche
 - Was gibt es?
@@ -152,12 +158,19 @@
 - Übersicht
 - Ich brauche eine Übersicht
 - Keine Ahnung
+- Keine Ahnung
 
 ## synonym:asyl
 - Asyl
 
+## synonym:bodo
+- Bodo
+
 ## synonym:familie
 - Familie
+
+## synonym:inge
+- Inge
 
 ## synonym:john
 - John

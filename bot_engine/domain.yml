@@ -15,6 +15,7 @@ actions:
 - utter_interesse_Asyl
 - utter_interesse_Gesundheit
 - action_ehrenamt_site
+- action_ehrenamt_familie
 config:
   store_entities_as_slots: true
 entities:
@@ -74,7 +75,7 @@ templates:
   utter_welche:
   - text: Es gibt viele Interessenbereiche, die eine ehrenamtliche Tätigkeit ermöglichen. Im Moment in dieser Demo zu den Interessen Familie, Asyl oder Gesundheit.
   utter_interesse_Familie:
-  - text: Hier habe ich zum Beispiel "Übungsleiter/in Familiensportgruppe d. Lebenshilfe Nbg In der Familiensportgruppe der Lebenshilfe Nürnberg treffen sich jung und alt, Menschen mit und ohne Behinderung, Eltern mit ihren Kindern bzw. erwachsenen Familienmitgliedern." "https://engagementtools.de/feeds/html_complete/zeitspenden/detailanzeige.php?zboerse_id=22207&zboerseoptik_id=142"
+  - text: Hier habe ich zum Beispiel "Übungsleiter/in Familiensportgruppe d. Lebenshilfe Nbg In der Familiensportgruppe der Lebenshilfe Nürnberg treffen sich jung und alt, Menschen mit und ohne Behinderung, Eltern mit ihren Kindern bzw. erwachsenen Familienmitgliedern."
   utter_out_of_scope:
   - text: Es tut mir leid, dazu habe ich keine Informationen. Versuche es noch einmal
   utter_no_name:
