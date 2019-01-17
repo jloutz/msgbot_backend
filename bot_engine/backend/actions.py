@@ -11,6 +11,13 @@ feldKultur = ["Museum", "Musik", "Kunst"]
 feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
 
 
+class ActionShowEhrenamtWebsite(Action):
+    ## demo action for welcome bot
+    def name(self):
+        return "action_ehrenamt_site"
+
+    def run(self,dispatcher,tracker,domain):
+        webbrowser.open('https://www.iska-nuernberg.de/zab/buergernetz.html', new=2)
 class ActionUndoPrevious(Action):
     '''
     Undoes previous user input.
