@@ -437,3 +437,27 @@
     - utter_ende_konversation_error
     - action_restart
 
+## Generated Story -510311022195910851
+* start
+    - action_greeting
+* information_interesse{"bereich_interesse": "kultur"}
+    - slot{"bereich_interesse": "kultur"}
+    - action_kultur_details
+* information_interesse{"bereich_interesse": "sport"}
+    - slot{"bereich_interesse": "sport"}
+    - action_sport_details
+* interesse_tennis
+    - utter_tennis_details
+* konversation_ende
+    - utter_ende_konversation_erfolg
+
+## Generated Story -8485116859397342150
+* interesse_fussball
+    - utter_fussball_details
+* konversation_ende
+    - utter_ende_konversation_erfolg
+
+## Generated Story -7575110410090838225
+* konversation_ende
+    - utter_ende_konversation_erfolg
+

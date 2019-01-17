@@ -42,7 +42,6 @@
 - konkrete Beispiele bitte
 - Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
 
-
 ## intent:information_interesse
 - Ich weiss es nicht
 - Ich habe keine Ahnung
@@ -86,6 +85,8 @@
 - Ich weiss es noch nicht
 - Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben?
 - Gibt es vielleicht doch etwas zum bereich [kultur](bereich_interesse)?
+- Erzähl mir bitte was von [Kultur](bereich_interesse:kultur)
+- Könnntest du mir doch die Projekte für [Sport](bereich_interesse:sport) zeigen?
 
 ## intent:interesse_badminton
 - Kannst du mir über badminton Projekte erzählen?
@@ -133,6 +134,7 @@
 - Können Sie mir was zu Fussball erzählen?
 - Fussball hört sich genau richtig an
 - Sag mir bitte was zu Fussball
+- Sag mir was zu ehrenamtlichen Projekten in bezug zu Fussball
 
 ## intent:interesse_kunst
 - Kunst
@@ -206,6 +208,7 @@
 - Tennis war schon immer meine Leidenschaft
 - Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
 - Gibt mir bitte Details zu Tennis
+- Kannst du mir informationen zu Tennis geben?
 
 ## intent:konversation_ende
 - Das wars, danke
@@ -233,6 +236,9 @@
 - Vielen dank, ich bin durch
 - Das wars dann auch
 - Vielen Dank, das war sehr hilfreich
+- Das war alles was ich wissen wollte
+- Danke mein lieber bot
+- Ich hbae keine lust mit dir zu sprechen
 
 ## intent:start
 - Hi
@@ -278,7 +284,8 @@
 - Hallo
 - Guten abend mein lieber
 - Hallo
-- Hallo 
+- Hallo
+- Guten Tag
 
 ## intent:weiter
 - weiter bitte
