@@ -10,6 +10,7 @@ pipeline:
 - name: "components.intent_featurizers.TfIdfCharWordFeaturizer"
 - name: "intent_classifier_sklearn"
 - name: "components.fallback_intent_filter.FallbackIntentFilter"
+#- name: "ner_spacy"
 #- name: "ner_duckling"
 #  dimensions: ["time"]
 - name: "ner_crf"
