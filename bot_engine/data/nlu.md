@@ -42,173 +42,75 @@
 - konkrete Beispiele bitte
 - Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
 
-## intent:fallback
-- Es müssen mindestens zwei intents da sein, sonst gibt die pipeline Probleme
-- Jeder intent muss mindestens zwei Beispiele haben, sonst funktioniert die Klassifizierung nicht.
-- laberdischwall
-- willst du mich heiraten ?
-- Chuck norrist ist der mächtigste Krieger der Welt
+## intent:interesse_familie
+- Kannst du mir von Projekten im bereich Familie erzählen?
+- Die familiäre Einheit ist mir wichtig 
+- Wasser ist dicker als blut
+- Ich will verwandten leuten helfen 
+- Ich will verwnadschaftsgruppen helfen 
+- Familie 
+- Im Bereich familei wúrde ich gerne eingesetzt werden 
+- Gebt mir was zu tun um Familien zu helfen.
+- Ich will Familien helfen 
+- Ich will Familien unterstützen
 
-## intent:information_interesse
-- Ich weiss es nicht
-- Ich habe keine Ahnung
-- Ich habe wenig Interesse
-- Ich weiss noch nicht wirklich für welchen Bereich ich mich interessierre
-- Ich interessier mich für [Sport](bereich_interesse:sport)
-- Erzähl mir mehr über [Sport](bereich_interesse:sport)
-- Ich will was über [sport](bereich_interesse) wissen
-- Sag mir mehr über [sportliche](bereich_interesse:sport) Projekte
-- Ich weiss es noch nicht genau
-- Sag mir bitte mehr über [sport](bereich_interesse)
-- Erzähl mir mehr über [sportliche](bereich_interesse:sport) aktivitäten
-- Ich weiss es noch nicht
-- Sag mir bitte was zu [spor](bereich_interesse:sport)
-- Sag mir was über [sport](bereich_interesse) bitte
-- Erzähl mir mehr über Felder im Bereich [Flüchtlinge](bereich_interesse:flüchtlinge)
-- Sag mir was über [Flüchtlinge](bereich_interesse:flüchtlinge)
-- Ich will was über [Geflohene](bereich_interesse:flüchtlinge) wissen
-- Ich will im [Flüchtlingsheim](bereich_interesse:flüchtlinge) helfen
-- Kannst du mir bitte von [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erzählen?
-- Ich will mich [kulturell](bereich_interesse:kultur) betätigen
-- Ich will im bereich [Kultur](bereich_interesse:kultur) helfen
-- Ich will mich ehrenamtlich mit [Kulturgütern](bereich_interesse:kultur) beschäftigen.
-- Ich bin [Kulturfanatiker](bereich_interesse:kultur) und will deswegen dort helfen.
-- Ich interessiere mich für [Kultur](bereich_interesse:kultur)
-- Isch hab kei Plan digga
-- Ich habe keine Orientierung
-- Kannst du mir von Projekten bezüglich [FLüchtlingen](bereich_interesse:flüchtlinge) erzählen?
-- Ich weiss nicht genau, was mich gerade daran interessiert
-- Dann erzähl mir mal was von [kulturellen](bereich_interesse:kultur) Dingen
-- Ich will was über [Flüchtlingshilfe](bereich_interesse:flüchtlinge) erfahren
-- Ich weiss es noch nicht genau
-- Dann erzähl mir mal was von [Sport](bereich_interesse:sport)
-- Ich weiss es noch nicht genau
-- [Fluechtlingen](bereich_interesse:flüchtlinge) zu helfen hört sich gut an
-- Hmm, könntest du mir doch lieber was von [Sport](bereich_interesse:sport) erzählen?
-- [sportlicher](bereich_interesse:sport) Bereich
-- Kannst du mir was zu [Kultur](bereich_interesse:kultur) sgaen?
-- Ich weiss es noch nicht genau
-- Der interessantest bereich ist für mich die [Flüchtlingshilfe](bereich_interesse:flüchtlinge)
-- Ich weiss es noch nicht
-- Jugendschiedsrichter hört sich gut an, könntest du mir andere [Sport](bereich_interesse:sport) beispiele geben? 
+## intent:interesse_kinder
+- Ich will kindern hlefen 
+- Kinder
+- Gbt mir was im beriech Kinder 
+- Ich will den kleinen helfen 
+- Ich will jungen Leuten helfen 
+- ich will den kids helfen 
+- kiddies ist mein interessen gebiet 
+- Kinder, solange sie nicht zu jung sind 
+- Ich bin lehrer 
+- Ich habe erfahrung mit kleinen menschen 
+- die ganz winzigen sind niedlich 
 
-## intent:interesse_badminton
-- Kannst du mir über badminton Projekte erzählen?
-- Gibt es irgendwelche ehrenamtliche Tätigkeitne im Bereich Badminton?
-- Meine lieblingsportart ist badminton, gibst da was?
-- Ich habe schon immer gerne Federball gespielt, gibts da was?
-- Badminton bitte
-- Zeig mir was zu Federball
-- Ich will badminton helfen
-- Wie heisst noch mal der Sport mit den Schlägern und Federbällen
-- Gibts Projekte zu Badminton?
-- Ich wäre gerne Badminton trainer
-- badminton
-- Gibt es irgendwelche Projekte zu Badminton?
+## intent: interesse_senioren 
+- Ich will senioren helfne 
+- Senioren, bitte 
+- Erzähl mir bitte was zum Bereich Senioren. 
+- Ich will älteren menschen helfen 
+- den Alten geht es schlecht
+- Ich will greisen helfen 
+- Erzähl mir was von den Omas
+- Erzähl mir was von den Opas
+- Ich will den Dinosaurieren helfen 
+- alte Leute brauchen hilfe 
+- Ich kann i mAltenheim helfen 
+- Seniorenheime brauchen immer leute
 
-## intent:interesse_behausung
-- Ich würde gerne Behausung für die Flüchtlinge finden
-- Ich würde den Füchtlingen gerne ein Zuhause finden
-- Jeder braucht ein dach überm Kopf, auch Flüchtlinge
-- Ich will ein Flüchtlingsheim  bauen
-- Ich will in einem flüchtlingsheim mithelfen
-- Ich würde gerne helfen behausungen für flüchtlinge zu finden
-- Wohnungen snd meine Spezialität
-- Ich kann fúr jeden was zum wohnen finden
-- Denen werde ich helfe indem ich Häuser finde
-- Die müssen jetzt mal aus den Zelten raus
+## intent: interesse_stadtteil
+- Ich will in meinem Stadtteil helfen
+- ich will in meiner Nachbarschaft helfen 
+- gebt mir was zu tun in meiner Nachbarschaft 
+- Nachbarschaft
+- Stadtteil, bitte
+- Was für Projekte gibt es in der GEgend? 
+- Was für Projekte gibt es in der náhe? 
+- Ich will beim Stadteil aktiv werden 
 
-## intent:interesse_fussball
-- Sag mir was über Fussball
-- ich will was über Fussball lesen
-- Fussball bitte
-- Ich war früher Fussball trainer, gibts da was?
-- Ich will leuten in die bundesliga helfen
-- ich würde gerne bei ballspielen helfen
-- wie siehts mit fussball aus?
-- Fußball bitte, wir sind ja deutsch
-- Fussi bitte
-- Spiel um das runde Leder
-- das Runde muss ins Eckige
-- bitte nicht DFB
-- ich bin DFB zertifiziert
-- Rasenballsport
-- Rasenball
-- Könntest du mir was zu Fussball sagen?
-- Können Sie mir was zu Fussball erzählen?
-- Fussball hört sich genau richtig an 
+## intent: interesse_zab
+- Ich will beim ZAB direkt helfen 
+- ich will bei euch aktiv werden 
+- ihr seid fü rmich interessant 
+- Ich will beim ZAB aktiv werden
+- sag mir mehr über Projekte fürs ZAB 
 
-## intent:interesse_kunst
-- Kunst
-- Ich will jungen Künstlern helfen
-- Ich will in einer Kunst galerie helfen
-- Ich fühle mich künstlerisch
-- ich bin selber Künstler
-- Ich kenne mich gut mit farbe aus
-- Ich bin kunstlehrer
-- Ich würde gerne im Bereich Kunst mich betätigen
-- Ich bin artistisch veranlagt
-- Ich will menschen beim genuss der Kunst helfen
-- Malern würde ich gerne helfen
-- Skulpturen sind für mich ein besonderes Interessengebiet
-- Gemälde zu restaurieren wäre für mich das grösste
-- Kannst du mir erklären, wsa es für künstlerische Projekte gibt?
-- Sag mir was über Kunst bitte
+## intent: interesse_praktisches
+- Kann ich was praktisches machen? 
+- Sag mir bitte was über praktische Bereiche 
+- Könntest du mir etwas aus dem bereich praktischers erzählen? 
+- Ich bin ein sehr praktischer mensch
+- ich würde gerne im bereich praktisches was machen 
+- ich hätte Interesse an etwas Praktischem
 
-## intent:interesse_museum
-- Museum
-- Ich würde gerne den Nürnberger Museen helfen
-- Ich würde gerne auftreten wie ein Mäzen
-- In meiner Jugend habe ich in einem Museum gearbeitet
-- Ich würde gerne an einer Austellung mitarbeiten
-- Ich würde gerne ein Exponat erstellen
-- Ich bin an Mitarbeit in einem Museum intressiert
-- Zeig mir die Seite zu museen
-- Museums bitte
-- Ich würde gerne ehrenamtlich in einem Museum arbeiten
 
-## intent:interesse_musik
-- Musik
-- Ich will Musiker unterstützen
-- Ich will ein Konzert organisieren
-- Ich war mal pianist
-- Ich will Geigenspielern helfen
-- Ich kann bei der Probe von Musikstuücken mithelfen
-- Ich war mal Dirigent und würde mich in der Richtung gerne betätigen
-- Musik bitte
-- Erzähl mir was vom Bereich Musik
-- Hey, kannst du mir etwas über musische Projekte sagen?
 
-## intent:interesse_suppenküche
-- Ich würde gerne beim Aufbau einer Suppenküche hlefen
-- Suppenküche
-- Ich würde gerne beim kochen helfen
-- Den flüchtlingen wäre echt geholfen mit etwas zum Essen
-- Beim aufbau einer Suppenküche wäre ich gerne behelflich
-- Warum nur Suppe?
-- Ich habe selber mal eine Suppe erfunden
-- Ich würde gerne helfen beim Deutsch beibringen
-- Zumindest kann ich beim deutshc lernen helfen
-- Ich kann mich auf deutsch unterhalten
-- Ich war mal deutsch lehrer
-- ich würd eselber gerne einen deutsch kurs besuchen
-- Mein bestes Fach in der Schule war deutsch
-- Für Unterhaltung kann mich mich vielleicht bei so etwas gebrauchen.
-- Könntest du mir Detaisl zur Suppenküche geben?
-- Am liebsten würde ich was uber Suppen hören
 
-## intent:interesse_tennis
-- Kannst du mir wsa über Tennis Projekte erzählen?
-- Ich wär gern Tennis trainer
-- Als kind habe ich Tennis gespielt
-- Mein Hund frisst gerne Tennisbälle, da will ich was zurückgeben
-- Ich will tennis helfen, ich habe racket und so schon
-- Ich würde gerne im Bereich tennis helfen, ich habe schon mal ein Turnier auf sand organisiert
-- tennis
-- zeig mir tennis
-- Tennis war schon immer meine Leidenschaft
-- Kannst du mir was über ehrenamtliche Initiativen im Bereich Tennis erzählen?
-- Gibt mir bitte Details zu Tennis
+
+
 
 ## intent:konversation_ende
 - Das wars, danke
@@ -330,28 +232,8 @@
 ## synonym:7
 - siebte
 
-## synonym:flüchtlinge
-- Geflohenen
-- Flüchtlinge
-- Geflohene
-- Flüchtlingsheim
-- Flüchtlingshilfe
-- FLüchtlingen
-- Fluechtlingen
-
-## synonym:kultur
-- kulturell
-- Kultur
-- Kulturgütern
-- Kulturfanatiker
-- kulturellen
 
 ## synonym:letztes
 - unterste
 - untereste
 
-## synonym:sport
-- Sport
-- sportliche
-- spor
-- sportlicher

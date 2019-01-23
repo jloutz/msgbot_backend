@@ -11,6 +11,15 @@ feldKultur = ["Museum", "Musik", "Kunst"]
 feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
 
 
+class ActionInfoZuwanderer(Action):
+
+    def name(self):
+        return "action_info_zuwanderer"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message("Für Zuwanderer kannst du in den Bereichen Sprach und Kulturvermittler, Patenschaften für Zuwanderer und GefLüchtete, Flüchtlingshilfe, oder als Engagementbegleiter tätig werden. Für welche davon interessierst du dich?")
+        return [] #TODO: Make this return some slot event. 
+
 class ActionUndoPrevious(Action):
     '''
     Undoes previous user input.

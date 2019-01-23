@@ -2,62 +2,39 @@
 ---
 actions:
 - action_greeting
-- utter_sport_details
 - utter_bereich_klarifikation
-- utter_deutsch_kurs_details
-- utter_tennis_details
-- utter_musik_details
 - utter_list_bereich
-- utter_kunst_details
 - action_undo
-- action_kultur_details
-- utter_suppenküche_details
-- utter_fussball_details
 - utter_beispiele1
-- action_sport_details
-- utter_badminton_details
 - utter_ende_konversation_error
 - utter_ende_konversation_erfolg
 - utter_beispiele3
-- action_fluechtling_details
 - action_feld_details
-- utter_museum_details
-- utter_behausung_details
 - utter_beispiele2
+- action_info_zuwanderer
 config:
   store_entities_as_slots: true
 entities:
-- bereich_interesse
 - dummy
 - liste_eintrag
 forms: []
 intents:
-- information_interesse
+- interesse_familie
+- interesse_kinder
+- interesse_zuwanderer
+- interesse_senioren
+- interesse_stadtteil
+- interesse_zab
+- interesse_praktisches
 - start
-- interesse_kunst
 - konversation_ende
 - zurück
 - fallback
 - auswahl_liste_bereich
 - auswahl_liste
 - beispiele_konkret
-- interesse_badminton
-- interesse_fussball
-- interesse_tennis
-- interesse_museum
-- interesse_musik
-- interesse_deutsch_kurs
-- interesse_behausung
-- interesse_suppenküche
 - weiter
 slots:
-  bereich_interesse:
-    auto_fill: true
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - sport
-    - kultur
-    - flüchtlinge
   dummy:
     auto_fill: true
     type: rasa_core.slots.TextSlot
