@@ -18,7 +18,7 @@ class ActionInfoZuwanderer(Action):
 
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message("Für Zuwanderer kannst du in den Bereichen Sprach und Kulturvermittler, Patenschaften für Zuwanderer und GefLüchtete, Flüchtlingshilfe, oder als Engagementbegleiter tätig werden. Für welche davon interessierst du dich?")
-        return [] #TODO: Make this return some slot event. 
+        return [] #TODO: Make this return some slot event.
 
 class ActionUndoPrevious(Action):
     '''
