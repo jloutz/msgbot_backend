@@ -12,6 +12,7 @@ actions:
 - action_feld_details
 - utter_beispiele2
 - action_info_zuwanderer
+- action_info_patenschaften
 config:
   store_entities_as_slots: true
 entities:
@@ -26,6 +27,7 @@ intents:
 - interesse_stadtteil
 - interesse_zab
 - interesse_praktisches
+- interesse_patenschaften
 - start
 - konversation_ende
 - zurück

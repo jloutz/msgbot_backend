@@ -1,14 +1,27 @@
 import subprocess
 
-
 from rasa_core_sdk import Action
 import webbrowser
 
 from rasa_core_sdk.events import UserUtteranceReverted
 
+from bot_engine.backend.backend import NuernbergBackend
+
 feldSport = ["Badminton", "Fussball", "Tennis"]
 feldKultur = ["Museum", "Musik", "Kunst"]
 feldFlüchtlinge = ["Deutschkurs", "Behausung", "Suppenküche"]
+
+class ActionInfoPatenschaften(Action):
+
+    def name(self):
+        return "action_info_patenschaften"
+
+    def run(self, dispatcher, tracker, domain):
+        backend=NuernbergBackend()
+
+        dispatcher.utter_message(backend.datastorage["zuwanderer"]["patenschaften"]["kurzbeschreibung"])
+        dispatcher.utter_message("Willst du eine detailliertere Beschreibung, oder Kontaktpersonen für diese Projekte erfahren?")
+        return [] #TODO: Make this use slots. Add kontaktpersonen.
 
 
 class ActionInfoZuwanderer(Action):

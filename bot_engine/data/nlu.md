@@ -106,7 +106,15 @@
 - ich würde gerne im bereich praktisches was machen 
 - ich hätte Interesse an etwas Praktischem
 
-
+## intent: interesse_patenschaften
+- Kannst du mir mehr über die Patenschaften erzählen? 
+- Was genau ist mit Patenschaften für Zuwanderer und Geflüchtetete gemeint? 
+- wofür genau werden Paten gebraucht? 
+- Ich würde gerne mehr über dne bereich Patenschaft hören.
+- Könntest du mir mehr von dem Paten dings erzählen? 
+- Ich würde gerne Patin sein 
+- Ich wäre gerne Patentante
+- Ich wäre gerne Patenonkel
 
 
 
