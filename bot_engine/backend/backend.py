@@ -49,8 +49,8 @@ Je nach Einzelfall können Entlastungsangebote sein:
     Wohnungssuche.
 
 Ehrenamtliche Familienpatinnen und Paten des ZAB werden durch eine pädagogische Fachkraft vermittelt, begleitet und unterstützt. Durch 1:1 Patenschaften – ein/e Ehrenamtliche/r für eine Familie – ergeben sich neue soziokulturelle Perspektiven für alle Beteiligten. """
-        self.datastorage["zuwanderer"]["flüchtlingshilfe"]["kurzbeschreibung"]="Die Möglichkeiten, sich beim Zentrum Aktiver Bürger ehrenamtlich für Geflüchtete zu engagieren, sind vielfältig. Integration und Teilhabe stehen dabei im Mittelpunkt unserer Arbeit."
-        self.datastorage["zuwanderer"]["flüchtlingshilfe"]["langbeschreibung"]=""" Das ZAB arbeitet eng mit Asylsozialbetreuungen sowie  Organisationen, Vereinen und Initiativen in der Flüchtlingshilfe zusammen. Wir vermitteln Freiwillige in bestehende Projekte oder entwickeln – falls nötig – passende Angebote und eigene Einsatzfelder.
+        self.datastorage["zuwanderer"]["Flüchtlingshilfe"]["kurzbeschreibung"]="Die Möglichkeiten, sich beim Zentrum Aktiver Bürger ehrenamtlich für Geflüchtete zu engagieren, sind vielfältig. Integration und Teilhabe stehen dabei im Mittelpunkt unserer Arbeit."
+        self.datastorage["zuwanderer"]["Flüchtlingshilfe"]["langbeschreibung"]=""" Das ZAB arbeitet eng mit Asylsozialbetreuungen sowie  Organisationen, Vereinen und Initiativen in der Flüchtlingshilfe zusammen. Wir vermitteln Freiwillige in bestehende Projekte oder entwickeln – falls nötig – passende Angebote und eigene Einsatzfelder.
 Eigene Projekte und Kooperationsprojekte
 
 Für geflüchtete Familien organisieren wir Patenschaften.
@@ -64,8 +64,8 @@ Für geflüchtete Familien organisieren wir Patenschaften.
      Helferkreis Witschelstraße
      Sprachtandemprojekt
 """
-        self.datastorage["zuwanderer"]["engagementbegleiter"]["kurzbeschreibung"]="Engagementbegleiter vom Zentrum Aktiver Bürger (ZAB) unterstützen Menschen mit geringen Deutschkenntnissen bei deren Einstieg ins Ehrenamt. "
-        self.datastorage["zuwanderer"]["engagementbegleiter"]["langbeschreibung"]="""
+        self.datastorage["zuwanderer"]["Engagementbegleiter"]["kurzbeschreibung"]="Engagementbegleiter vom Zentrum Aktiver Bürger (ZAB) unterstützen Menschen mit geringen Deutschkenntnissen bei deren Einstieg ins Ehrenamt. "
+        self.datastorage["zuwanderer"]["Engagementbegleiter"]["langbeschreibung"]="""
         Viele Menschen in Nürnberg, die wenig oder kaum deutsch sprechen, möchten sich ehrenamtlich engagieren. So bekommen sie einen wertvollen Kontakt zur deutschen Kultur und Sprache. Jedoch ist für diesen Personenkreis der Einstieg als Ehrenamtlicher in eine Einrichtung oft schwierig. Denn durch die sprachlichen Hürden gestaltet sich die Einarbeitung für die Einrichtungen oft äußerst zeitaufwändig.
 Engagementbegleiter als Mittler
 
