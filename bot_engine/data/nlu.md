@@ -41,6 +41,8 @@
 - ich würde gerne konkrete Tätigkeitne sehen
 - konkrete Beispiele bitte
 - Zeig mir mal ein paar Beispile, das hilft wahrscheinlich der Orientierung
+- Zeig mir bitte die konkreten Beispiele
+- zeig mir bitte noch mehr beispiele
 
 ## intent:interesse_familie
 - Kannst du mir von Projekten im bereich Familie erzählen?
@@ -118,8 +120,6 @@
 
 
 
-
-
 ## intent:konversation_ende
 - Das wars, danke
 - Tschüss
@@ -145,6 +145,8 @@
 - Ich bin fertig, danke
 - Vielen dank, ich bin durch
 - Das wars dann auch
+- Das wars danke
+- jetzt bin ich zufrieden
 
 ## intent:start
 - Hi
@@ -185,6 +187,8 @@
 - ein schönen Mittag
 - Hallo bot, wie gehts?
 - Hallo, mein metallischer Freund
+- moin moin
+- Hallo, wie gehts?
 
 ## intent:weiter
 - weiter bitte
@@ -198,8 +202,27 @@
 - Zeig mir mehr
 - weidah
 - kannst du mir noch ein paar mehr zeigen?
-- Kannst du mir noch ein paar zeigen? 
-- und noch ein paar mehr? 
+- Kannst du mir noch ein paar zeigen?
+- und noch ein paar mehr?
+
+## intent:witz
+- Erzähl mir einen Witz
+- ich will witze hörenn
+- erzähl mir was zum lachen
+- witz bitte
+- sag was lustiges
+- unterhalte mich
+- Sei ein clown
+- Sein ein Komiker
+- wir wollen witze hören
+- ich will einen witz
+- mach einen Scherz
+- Ein jokus bitte
+- Mach etwas Unfug
+- Erzähl einen gag
+- Erzähl mir einen witz
+- Noch einen Witz bitte
+- Erzähl mir einen Witz
 
 ## intent:zurück
 - zurück bitte
@@ -216,6 +239,7 @@
 - Kannst du bitte noch einmal zurückgehen?
 - zurück bitte
 - und noch einmal zurück bitte
+- Zeig mir bitte die letzten beispiele
 
 ## synonym:1
 - erste Eintrag

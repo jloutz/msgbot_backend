@@ -5,5 +5,10 @@
     -action_info_zuwanderer
 * interesse_patenschaften
     - action_info_patenschaften
+   
     
 
+##building block: witze
+* witz 
+    - utter_witz
+    
