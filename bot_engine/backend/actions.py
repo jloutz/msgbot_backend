@@ -5,7 +5,7 @@ import webbrowser
 
 from rasa_core_sdk.events import UserUtteranceReverted
 
-from bot_engine.backend.backend import NuernbergBackend
+from .backend import NuernbergBackend
 
 feldSport = ["Badminton", "Fussball", "Tennis"]
 feldKultur = ["Museum", "Musik", "Kunst"]
